@@ -12,6 +12,7 @@ npm install
 | --- | --- |
 | `npm run dev` | فتح Remotion Studio في المتصفح لمعاينة الفيديو وتعديله |
 | `npm run build` | تصيير فيديو «Cours de français 01» إلى `out/cours-francais-01.mp4` |
+| `npm run thumbnail` | إنشاء الصورة المصغّرة ليوتيوب في `out/miniature-cours-01.png` |
 | `npm run lint` | التحقق من أخطاء TypeScript |
 
 ## هيكل المشروع

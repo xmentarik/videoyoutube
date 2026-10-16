@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "remotion studio",
     "build": "remotion render CoursFrancais01 out/cours-francais-01.mp4",
+    "thumbnail": "remotion still MiniatureCours01 out/miniature-cours-01.png",
     "upgrade": "remotion upgrade",
     "lint": "tsc"
   },
