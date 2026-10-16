@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "remotion studio",
     "build": "remotion render CoursFrancais01 out/cours-francais-01.mp4",
+    "tcf:voices": "python3 scripts/generate_tcf_audio.py gemini",
     "tcf:audio": "python3 scripts/measure_tcf_audio.py",
     "tcf:build": "remotion render TcfA1Partie1 out/tcf-canada-a1-partie1.mp4",
     "thumbnail": "remotion still MiniatureCours01 out/miniature-cours-01.png",
