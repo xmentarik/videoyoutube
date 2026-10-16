@@ -1,1 +1,857 @@
-{}
+{
+ "intro_01": {
+  "file": "tcf/audio/intro_01.wav",
+  "duration": 12.576
+ },
+ "intro_02": {
+  "file": "tcf/audio/intro_02.wav",
+  "duration": 21.672
+ },
+ "intro_03": {
+  "file": "tcf/audio/intro_03.wav",
+  "duration": 32.208
+ },
+ "section_01": {
+  "file": "tcf/audio/section_01.wav",
+  "duration": 5.808
+ },
+ "q01_1_document": {
+  "file": "tcf/audio/q01_1_document.wav",
+  "duration": 12.786,
+  "marks": [
+   0.0,
+   6.078
+  ]
+ },
+ "q01_2_question": {
+  "file": "tcf/audio/q01_2_question.wav",
+  "duration": 14.04,
+  "marks": [
+   4.673,
+   7.072,
+   9.787,
+   11.596
+  ]
+ },
+ "q01_3_reponse": {
+  "file": "tcf/audio/q01_3_reponse.wav",
+  "duration": 7.272
+ },
+ "q02_1_document": {
+  "file": "tcf/audio/q02_1_document.wav",
+  "duration": 10.26,
+  "marks": [
+   0.0,
+   3.561,
+   7.683
+  ]
+ },
+ "q02_2_question": {
+  "file": "tcf/audio/q02_2_question.wav",
+  "duration": 13.632,
+  "marks": [
+   3.997,
+   6.38,
+   8.803,
+   11.298
+  ]
+ },
+ "q02_3_reponse": {
+  "file": "tcf/audio/q02_3_reponse.wav",
+  "duration": 7.8
+ },
+ "q03_1_document": {
+  "file": "tcf/audio/q03_1_document.wav",
+  "duration": 8.784
+ },
+ "q03_2_question": {
+  "file": "tcf/audio/q03_2_question.wav",
+  "duration": 14.136,
+  "marks": [
+   5.105,
+   7.545,
+   10.0,
+   12.42
+  ]
+ },
+ "q03_3_reponse": {
+  "file": "tcf/audio/q03_3_reponse.wav",
+  "duration": 9.36
+ },
+ "q04_1_document": {
+  "file": "tcf/audio/q04_1_document.wav",
+  "duration": 8.298,
+  "marks": [
+   0.0,
+   2.872
+  ]
+ },
+ "q04_2_question": {
+  "file": "tcf/audio/q04_2_question.wav",
+  "duration": 14.304,
+  "marks": [
+   7.349,
+   9.614,
+   10.314,
+   12.737
+  ]
+ },
+ "q04_3_reponse": {
+  "file": "tcf/audio/q04_3_reponse.wav",
+  "duration": 8.064
+ },
+ "q05_1_document": {
+  "file": "tcf/audio/q05_1_document.wav",
+  "duration": 9.066,
+  "marks": [
+   0.0,
+   3.288
+  ]
+ },
+ "q05_2_question": {
+  "file": "tcf/audio/q05_2_question.wav",
+  "duration": 14.448,
+  "marks": [
+   4.237,
+   6.667,
+   9.104,
+   11.708
+  ]
+ },
+ "q05_3_reponse": {
+  "file": "tcf/audio/q05_3_reponse.wav",
+  "duration": 9.024
+ },
+ "q06_1_document": {
+  "file": "tcf/audio/q06_1_document.wav",
+  "duration": 6.048
+ },
+ "q06_2_question": {
+  "file": "tcf/audio/q06_2_question.wav",
+  "duration": 12.72,
+  "marks": [
+   6.47,
+   8.458,
+   9.248,
+   11.194
+  ]
+ },
+ "q06_3_reponse": {
+  "file": "tcf/audio/q06_3_reponse.wav",
+  "duration": 10.56
+ },
+ "q07_1_document": {
+  "file": "tcf/audio/q07_1_document.wav",
+  "duration": 8.226,
+  "marks": [
+   0.0,
+   2.64
+  ]
+ },
+ "q07_2_question": {
+  "file": "tcf/audio/q07_2_question.wav",
+  "duration": 14.376,
+  "marks": [
+   7.079,
+   9.612,
+   10.272,
+   12.673
+  ]
+ },
+ "q07_3_reponse": {
+  "file": "tcf/audio/q07_3_reponse.wav",
+  "duration": 9.192
+ },
+ "q08_1_document": {
+  "file": "tcf/audio/q08_1_document.wav",
+  "duration": 9.6
+ },
+ "q08_2_question": {
+  "file": "tcf/audio/q08_2_question.wav",
+  "duration": 15.144,
+  "marks": [
+   7.065,
+   7.711,
+   10.72,
+   12.463
+  ]
+ },
+ "q08_3_reponse": {
+  "file": "tcf/audio/q08_3_reponse.wav",
+  "duration": 8.112
+ },
+ "q09_1_document": {
+  "file": "tcf/audio/q09_1_document.wav",
+  "duration": 7.818,
+  "marks": [
+   0.0,
+   3.377
+  ]
+ },
+ "q09_2_question": {
+  "file": "tcf/audio/q09_2_question.wav",
+  "duration": 15.12,
+  "marks": [
+   8.381,
+   10.143,
+   10.822,
+   13.201
+  ]
+ },
+ "q09_3_reponse": {
+  "file": "tcf/audio/q09_3_reponse.wav",
+  "duration": 9.528
+ },
+ "q10_1_document": {
+  "file": "tcf/audio/q10_1_document.wav",
+  "duration": 5.898,
+  "marks": [
+   0.0,
+   2.846
+  ]
+ },
+ "q10_2_question": {
+  "file": "tcf/audio/q10_2_question.wav",
+  "duration": 12.984,
+  "marks": [
+   6.738,
+   7.313,
+   9.386,
+   10.8
+  ]
+ },
+ "q10_3_reponse": {
+  "file": "tcf/audio/q10_3_reponse.wav",
+  "duration": 8.616
+ },
+ "section_02": {
+  "file": "tcf/audio/section_02.wav",
+  "duration": 10.32
+ },
+ "q11_1_document": {
+  "file": "tcf/audio/q11_1_document.wav",
+  "duration": 6.642,
+  "marks": [
+   0.0,
+   3.854
+  ]
+ },
+ "q11_2_question": {
+  "file": "tcf/audio/q11_2_question.wav",
+  "duration": 15.96,
+  "marks": [
+   4.266,
+   6.979,
+   10.053,
+   13.03
+  ]
+ },
+ "q11_3_reponse": {
+  "file": "tcf/audio/q11_3_reponse.wav",
+  "duration": 4.176
+ },
+ "q12_1_document": {
+  "file": "tcf/audio/q12_1_document.wav",
+  "duration": 6.042,
+  "marks": [
+   0.0,
+   3.63
+  ]
+ },
+ "q12_2_question": {
+  "file": "tcf/audio/q12_2_question.wav",
+  "duration": 14.688,
+  "marks": [
+   4.051,
+   6.356,
+   9.032,
+   11.768
+  ]
+ },
+ "q12_3_reponse": {
+  "file": "tcf/audio/q12_3_reponse.wav",
+  "duration": 11.208
+ },
+ "q13_1_document": {
+  "file": "tcf/audio/q13_1_document.wav",
+  "duration": 7.392
+ },
+ "q13_2_question": {
+  "file": "tcf/audio/q13_2_question.wav",
+  "duration": 14.952,
+  "marks": [
+   6.609,
+   8.225,
+   10.855,
+   13.21
+  ]
+ },
+ "q13_3_reponse": {
+  "file": "tcf/audio/q13_3_reponse.wav",
+  "duration": 6.96
+ },
+ "q14_1_document": {
+  "file": "tcf/audio/q14_1_document.wav",
+  "duration": 6.594,
+  "marks": [
+   0.0,
+   3.694
+  ]
+ },
+ "q14_2_question": {
+  "file": "tcf/audio/q14_2_question.wav",
+  "duration": 14.808,
+  "marks": [
+   7.463,
+   9.995,
+   10.629,
+   13.013
+  ]
+ },
+ "q14_3_reponse": {
+  "file": "tcf/audio/q14_3_reponse.wav",
+  "duration": 4.872
+ },
+ "q15_1_document": {
+  "file": "tcf/audio/q15_1_document.wav",
+  "duration": 9.252,
+  "marks": [
+   0.0,
+   4.288,
+   7.098
+  ]
+ },
+ "q15_2_question": {
+  "file": "tcf/audio/q15_2_question.wav",
+  "duration": 15.12,
+  "marks": [
+   7.405,
+   8.056,
+   10.74,
+   13.294
+  ]
+ },
+ "q15_3_reponse": {
+  "file": "tcf/audio/q15_3_reponse.wav",
+  "duration": 10.488
+ },
+ "q16_1_document": {
+  "file": "tcf/audio/q16_1_document.wav",
+  "duration": 6.336
+ },
+ "q16_2_question": {
+  "file": "tcf/audio/q16_2_question.wav",
+  "duration": 17.352,
+  "marks": [
+   5.827,
+   8.778,
+   11.239,
+   14.282
+  ]
+ },
+ "q16_3_reponse": {
+  "file": "tcf/audio/q16_3_reponse.wav",
+  "duration": 4.248
+ },
+ "q17_1_document": {
+  "file": "tcf/audio/q17_1_document.wav",
+  "duration": 13.278,
+  "marks": [
+   0.0,
+   7.265,
+   8.299,
+   9.568
+  ]
+ },
+ "q17_2_question": {
+  "file": "tcf/audio/q17_2_question.wav",
+  "duration": 14.208,
+  "marks": [
+   6.969,
+   7.555,
+   10.069,
+   12.34
+  ]
+ },
+ "q17_3_reponse": {
+  "file": "tcf/audio/q17_3_reponse.wav",
+  "duration": 7.368
+ },
+ "q18_1_document": {
+  "file": "tcf/audio/q18_1_document.wav",
+  "duration": 6.234,
+  "marks": [
+   0.0,
+   3.255
+  ]
+ },
+ "q18_2_question": {
+  "file": "tcf/audio/q18_2_question.wav",
+  "duration": 14.28,
+  "marks": [
+   7.079,
+   7.667,
+   10.149,
+   12.669
+  ]
+ },
+ "q18_3_reponse": {
+  "file": "tcf/audio/q18_3_reponse.wav",
+  "duration": 8.736
+ },
+ "q19_1_document": {
+  "file": "tcf/audio/q19_1_document.wav",
+  "duration": 5.616
+ },
+ "q19_2_question": {
+  "file": "tcf/audio/q19_2_question.wav",
+  "duration": 16.008,
+  "marks": [
+   5.608,
+   7.702,
+   10.528,
+   13.314
+  ]
+ },
+ "q19_3_reponse": {
+  "file": "tcf/audio/q19_3_reponse.wav",
+  "duration": 4.032
+ },
+ "q20_1_document": {
+  "file": "tcf/audio/q20_1_document.wav",
+  "duration": 10.908,
+  "marks": [
+   0.0,
+   3.53,
+   9.029
+  ]
+ },
+ "q20_2_question": {
+  "file": "tcf/audio/q20_2_question.wav",
+  "duration": 15.168,
+  "marks": [
+   5.031,
+   7.628,
+   10.499,
+   12.661
+  ]
+ },
+ "q20_3_reponse": {
+  "file": "tcf/audio/q20_3_reponse.wav",
+  "duration": 8.352
+ },
+ "pause_milieu": {
+  "file": "tcf/audio/pause_milieu.wav",
+  "duration": 16.608
+ },
+ "section_03": {
+  "file": "tcf/audio/section_03.wav",
+  "duration": 8.904
+ },
+ "q21_1_document": {
+  "file": "tcf/audio/q21_1_document.wav",
+  "duration": 6.714,
+  "marks": [
+   0.0,
+   4.204
+  ]
+ },
+ "q21_2_question": {
+  "file": "tcf/audio/q21_2_question.wav",
+  "duration": 15.528,
+  "marks": [
+   5.087,
+   7.995,
+   10.244,
+   13.005
+  ]
+ },
+ "q21_3_reponse": {
+  "file": "tcf/audio/q21_3_reponse.wav",
+  "duration": 4.104
+ },
+ "q22_1_document": {
+  "file": "tcf/audio/q22_1_document.wav",
+  "duration": 6.672
+ },
+ "q22_2_question": {
+  "file": "tcf/audio/q22_2_question.wav",
+  "duration": 14.928,
+  "marks": [
+   8.57,
+   10.179,
+   10.898,
+   13.066
+  ]
+ },
+ "q22_3_reponse": {
+  "file": "tcf/audio/q22_3_reponse.wav",
+  "duration": 7.44
+ },
+ "q23_1_document": {
+  "file": "tcf/audio/q23_1_document.wav",
+  "duration": 10.02,
+  "marks": [
+   0.0,
+   4.968,
+   8.115
+  ]
+ },
+ "q23_2_question": {
+  "file": "tcf/audio/q23_2_question.wav",
+  "duration": 18.816,
+  "marks": [
+   5.79,
+   9.316,
+   12.053,
+   15.388
+  ]
+ },
+ "q23_3_reponse": {
+  "file": "tcf/audio/q23_3_reponse.wav",
+  "duration": 8.856
+ },
+ "q24_1_document": {
+  "file": "tcf/audio/q24_1_document.wav",
+  "duration": 7.026,
+  "marks": [
+   0.0,
+   1.479
+  ]
+ },
+ "q24_2_question": {
+  "file": "tcf/audio/q24_2_question.wav",
+  "duration": 14.784,
+  "marks": [
+   4.903,
+   7.623,
+   10.399,
+   12.179
+  ]
+ },
+ "q24_3_reponse": {
+  "file": "tcf/audio/q24_3_reponse.wav",
+  "duration": 6.12
+ },
+ "q25_1_document": {
+  "file": "tcf/audio/q25_1_document.wav",
+  "duration": 9.288
+ },
+ "q25_2_question": {
+  "file": "tcf/audio/q25_2_question.wav",
+  "duration": 15.624,
+  "marks": [
+   5.508,
+   8.326,
+   11.168,
+   13.06
+  ]
+ },
+ "q25_3_reponse": {
+  "file": "tcf/audio/q25_3_reponse.wav",
+  "duration": 9.744
+ },
+ "q26_1_document": {
+  "file": "tcf/audio/q26_1_document.wav",
+  "duration": 5.922,
+  "marks": [
+   0.0,
+   3.842
+  ]
+ },
+ "q26_2_question": {
+  "file": "tcf/audio/q26_2_question.wav",
+  "duration": 16.344,
+  "marks": [
+   6.403,
+   8.986,
+   11.563,
+   13.587
+  ]
+ },
+ "q26_3_reponse": {
+  "file": "tcf/audio/q26_3_reponse.wav",
+  "duration": 3.912
+ },
+ "q27_1_document": {
+  "file": "tcf/audio/q27_1_document.wav",
+  "duration": 8.562,
+  "marks": [
+   0.0,
+   2.548
+  ]
+ },
+ "q27_2_question": {
+  "file": "tcf/audio/q27_2_question.wav",
+  "duration": 17.184,
+  "marks": [
+   4.465,
+   8.017,
+   11.364,
+   14.769
+  ]
+ },
+ "q27_3_reponse": {
+  "file": "tcf/audio/q27_3_reponse.wav",
+  "duration": 8.664
+ },
+ "q28_1_document": {
+  "file": "tcf/audio/q28_1_document.wav",
+  "duration": 4.872
+ },
+ "q28_2_question": {
+  "file": "tcf/audio/q28_2_question.wav",
+  "duration": 16.104,
+  "marks": [
+   8.116,
+   9.828,
+   11.547,
+   14.119
+  ]
+ },
+ "q28_3_reponse": {
+  "file": "tcf/audio/q28_3_reponse.wav",
+  "duration": 6.528
+ },
+ "q29_1_document": {
+  "file": "tcf/audio/q29_1_document.wav",
+  "duration": 8.538,
+  "marks": [
+   0.0,
+   3.231
+  ]
+ },
+ "q29_2_question": {
+  "file": "tcf/audio/q29_2_question.wav",
+  "duration": 14.184,
+  "marks": [
+   5.087,
+   7.306,
+   9.805,
+   11.495
+  ]
+ },
+ "q29_3_reponse": {
+  "file": "tcf/audio/q29_3_reponse.wav",
+  "duration": 7.2
+ },
+ "q30_1_document": {
+  "file": "tcf/audio/q30_1_document.wav",
+  "duration": 7.458,
+  "marks": [
+   0.0,
+   4.691
+  ]
+ },
+ "q30_2_question": {
+  "file": "tcf/audio/q30_2_question.wav",
+  "duration": 16.992,
+  "marks": [
+   4.473,
+   8.033,
+   11.806,
+   14.537
+  ]
+ },
+ "q30_3_reponse": {
+  "file": "tcf/audio/q30_3_reponse.wav",
+  "duration": 4.992
+ },
+ "section_04": {
+  "file": "tcf/audio/section_04.wav",
+  "duration": 15.48
+ },
+ "q31_1_document": {
+  "file": "tcf/audio/q31_1_document.wav",
+  "duration": 7.152
+ },
+ "q31_2_question": {
+  "file": "tcf/audio/q31_2_question.wav",
+  "duration": 15.528,
+  "marks": [
+   7.803,
+   8.49,
+   11.171,
+   13.666
+  ]
+ },
+ "q31_3_reponse": {
+  "file": "tcf/audio/q31_3_reponse.wav",
+  "duration": 3.528
+ },
+ "q32_1_document": {
+  "file": "tcf/audio/q32_1_document.wav",
+  "duration": 9.384
+ },
+ "q32_2_question": {
+  "file": "tcf/audio/q32_2_question.wav",
+  "duration": 16.536,
+  "marks": [
+   6.142,
+   8.678,
+   11.565,
+   13.661
+  ]
+ },
+ "q32_3_reponse": {
+  "file": "tcf/audio/q32_3_reponse.wav",
+  "duration": 7.392
+ },
+ "q33_1_document": {
+  "file": "tcf/audio/q33_1_document.wav",
+  "duration": 6.696
+ },
+ "q33_2_question": {
+  "file": "tcf/audio/q33_2_question.wav",
+  "duration": 14.448,
+  "marks": [
+   5.253,
+   7.613,
+   10.343,
+   12.009
+  ]
+ },
+ "q33_3_reponse": {
+  "file": "tcf/audio/q33_3_reponse.wav",
+  "duration": 7.344
+ },
+ "q34_1_document": {
+  "file": "tcf/audio/q34_1_document.wav",
+  "duration": 7.656
+ },
+ "q34_2_question": {
+  "file": "tcf/audio/q34_2_question.wav",
+  "duration": 16.008,
+  "marks": [
+   6.237,
+   8.145,
+   11.094,
+   13.06
+  ]
+ },
+ "q34_3_reponse": {
+  "file": "tcf/audio/q34_3_reponse.wav",
+  "duration": 9.864
+ },
+ "q35_1_document": {
+  "file": "tcf/audio/q35_1_document.wav",
+  "duration": 7.224
+ },
+ "q35_2_question": {
+  "file": "tcf/audio/q35_2_question.wav",
+  "duration": 16.272,
+  "marks": [
+   5.297,
+   8.38,
+   10.481,
+   13.214
+  ]
+ },
+ "q35_3_reponse": {
+  "file": "tcf/audio/q35_3_reponse.wav",
+  "duration": 6.36
+ },
+ "q36_1_document": {
+  "file": "tcf/audio/q36_1_document.wav",
+  "duration": 11.664
+ },
+ "q36_2_question": {
+  "file": "tcf/audio/q36_2_question.wav",
+  "duration": 18.6,
+  "marks": [
+   5.181,
+   8.659,
+   11.575,
+   15.004
+  ]
+ },
+ "q36_3_reponse": {
+  "file": "tcf/audio/q36_3_reponse.wav",
+  "duration": 8.568
+ },
+ "q37_1_document": {
+  "file": "tcf/audio/q37_1_document.wav",
+  "duration": 5.568
+ },
+ "q37_2_question": {
+  "file": "tcf/audio/q37_2_question.wav",
+  "duration": 17.928,
+  "marks": [
+   4.622,
+   7.915,
+   11.362,
+   14.579
+  ]
+ },
+ "q37_3_reponse": {
+  "file": "tcf/audio/q37_3_reponse.wav",
+  "duration": 8.688
+ },
+ "q38_1_document": {
+  "file": "tcf/audio/q38_1_document.wav",
+  "duration": 9.024
+ },
+ "q38_2_question": {
+  "file": "tcf/audio/q38_2_question.wav",
+  "duration": 16.176,
+  "marks": [
+   4.592,
+   7.32,
+   10.168,
+   14.084
+  ]
+ },
+ "q38_3_reponse": {
+  "file": "tcf/audio/q38_3_reponse.wav",
+  "duration": 8.52
+ },
+ "q39_1_document": {
+  "file": "tcf/audio/q39_1_document.wav",
+  "duration": 9.528
+ },
+ "q39_2_question": {
+  "file": "tcf/audio/q39_2_question.wav",
+  "duration": 14.328,
+  "marks": [
+   6.951,
+   7.559,
+   10.108,
+   12.446
+  ]
+ },
+ "q39_3_reponse": {
+  "file": "tcf/audio/q39_3_reponse.wav",
+  "duration": 7.8
+ },
+ "q40_1_document": {
+  "file": "tcf/audio/q40_1_document.wav",
+  "duration": 15.3,
+  "marks": [
+   0.0,
+   6.924,
+   12.187
+  ]
+ },
+ "q40_2_question": {
+  "file": "tcf/audio/q40_2_question.wav",
+  "duration": 16.512,
+  "marks": [
+   7.252,
+   9.193,
+   12.008,
+   13.941
+  ]
+ },
+ "q40_3_reponse": {
+  "file": "tcf/audio/q40_3_reponse.wav",
+  "duration": 7.272
+ },
+ "outro_01": {
+  "file": "tcf/audio/outro_01.wav",
+  "duration": 22.152
+ },
+ "outro_02": {
+  "file": "tcf/audio/outro_02.wav",
+  "duration": 14.232
+ }
+}

@@ -1,8 +1,8 @@
 """Generate the 130 TCF voice files from the TTS script.
 
 usage:
-  GEMINI_API_KEY=... python3 scripts/generate_tcf_audio.py gemini [--only q01,q02] [--force]
-  python3 scripts/generate_tcf_audio.py edge [--only intro]          (pip install edge-tts)
+  GEMINI_API_KEY=... python3 scripts/generate_tcf_audio.py gemini [--only=q01,q02] [--force]
+  python3 scripts/generate_tcf_audio.py edge [--only=intro]         (pip install edge-tts)
 
 Files land in public/tcf/audio/<block_id>.wav, named exactly like the script blocks.
 Then run: npm run tcf:audio && npm run tcf:build
