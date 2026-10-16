@@ -1,0 +1,23 @@
+{
+  "name": "videoyoutube",
+  "version": "1.0.0",
+  "private": true,
+  "description": "مشروع مونتاج فيديوهات يوتيوب باستخدام Remotion",
+  "scripts": {
+    "dev": "remotion studio",
+    "build": "remotion render HelloWorld out/video.mp4",
+    "upgrade": "remotion upgrade",
+    "lint": "tsc"
+  },
+  "license": "UNLICENSED",
+  "dependencies": {
+    "@remotion/cli": "4.0.535",
+    "react": "19.2.0",
+    "react-dom": "19.2.0",
+    "remotion": "4.0.535"
+  },
+  "devDependencies": {
+    "@types/react": "19.3.0",
+    "typescript": "7.0.2"
+  }
+}
