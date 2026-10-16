@@ -2,6 +2,7 @@ import { Composition, Still } from "remotion";
 import { HelloWorld } from "./HelloWorld";
 import { FrenchLesson } from "./french/FrenchLesson";
 import { Thumbnail } from "./french/Thumbnail";
+import { TCF_DURATION_S, TcfVideo } from "./tcf/TcfVideo";
 import { DURATION_S, FPS } from "./french/theme";
 
 export const RemotionRoot: React.FC = () => {
@@ -16,6 +17,15 @@ export const RemotionRoot: React.FC = () => {
         width={1920}
         height={1080}
         defaultProps={{ showArabic: true }}
+      />
+      {/* TCF Canada — compréhension orale A1, partie 1 (Q1–40). Audio : public/tcf/audio/ */}
+      <Composition
+        id="TcfA1Partie1"
+        component={TcfVideo}
+        durationInFrames={Math.round(TCF_DURATION_S * FPS)}
+        fps={FPS}
+        width={1920}
+        height={1080}
       />
       {/* الصورة المصغّرة ليوتيوب */}
       <Still id="MiniatureCours01" component={Thumbnail} width={1280} height={720} />

@@ -1,0 +1,1718 @@
+{
+ "sections": {
+  "1": {
+   "title": "Se présenter et saluer",
+   "from": 1,
+   "to": 10
+  },
+  "2": {
+   "title": "Les nombres, l'heure et les prix",
+   "from": 11,
+   "to": 20
+  },
+  "3": {
+   "title": "Les lieux et les transports",
+   "from": 21,
+   "to": 30
+  },
+  "4": {
+   "title": "Messages et annonces",
+   "from": 31,
+   "to": 40
+  }
+ },
+ "questions": [
+  {
+   "n": 1,
+   "answer": "B",
+   "docType": "dialogue",
+   "voice": "both",
+   "lines": [
+    {
+     "who": "Paul",
+     "text": "Bonjour ! Je m'appelle Paul. Et vous ?"
+    },
+    {
+     "who": "Sophie",
+     "text": "Bonjour Paul. Moi, c'est Sophie. J'habite à Montréal."
+    }
+   ],
+   "prompt": "Où habite Sophie ?",
+   "choices": [
+    "à Québec",
+    "à Montréal",
+    "à Toronto",
+    "à Ottawa"
+   ],
+   "explanation": "Sophie dit : « J'habite à Montréal. »"
+  },
+  {
+   "n": 2,
+   "answer": "A",
+   "docType": "dialogue",
+   "voice": "both",
+   "lines": [
+    {
+     "who": "Sophie",
+     "text": "Paul, tu as quel âge ?"
+    },
+    {
+     "who": "Paul",
+     "text": "J'ai trente-deux ans. Et toi ?"
+    },
+    {
+     "who": "Sophie",
+     "text": "Moi, j'ai vingt-huit ans."
+    }
+   ],
+   "prompt": "Quel âge a Paul ?",
+   "choices": [
+    "trente-deux ans",
+    "vingt-huit ans",
+    "vingt-deux ans",
+    "trente-huit ans"
+   ],
+   "explanation": "Attention : vingt-huit ans, c'est l'âge de Sophie !"
+  },
+  {
+   "n": 3,
+   "answer": "D",
+   "docType": "annonce",
+   "voice": "PAUL",
+   "lines": [
+    {
+     "who": "Paul",
+     "text": "Bonjour, je m'appelle Karim. Je suis infirmier. Je travaille à l'hôpital, à Ottawa."
+    }
+   ],
+   "prompt": "Quel est le métier de Karim ?",
+   "choices": [
+    "professeur",
+    "cuisinier",
+    "chauffeur",
+    "infirmier"
+   ],
+   "explanation": "Karim dit : « Je suis infirmier. Je travaille à l'hôpital. »"
+  },
+  {
+   "n": 4,
+   "answer": "C",
+   "docType": "dialogue",
+   "voice": "both",
+   "lines": [
+    {
+     "who": "Paul",
+     "text": "Vous êtes française ?"
+    },
+    {
+     "who": "Sophie",
+     "text": "Non, je suis canadienne. Mais ma mère est française."
+    }
+   ],
+   "prompt": "Quelle est la nationalité de la femme ?",
+   "choices": [
+    "française",
+    "belge",
+    "canadienne",
+    "suisse"
+   ],
+   "explanation": "C'est sa mère qui est française. Pas elle !"
+  },
+  {
+   "n": 5,
+   "answer": "A",
+   "docType": "dialogue",
+   "voice": "both",
+   "lines": [
+    {
+     "who": "Sophie",
+     "text": "Comment ça va, Paul ?"
+    },
+    {
+     "who": "Paul",
+     "text": "Pas très bien. Je suis fatigué. Je travaille beaucoup."
+    }
+   ],
+   "prompt": "Comment va Paul ?",
+   "choices": [
+    "il est fatigué",
+    "il est content",
+    "il est malade",
+    "il est en vacances"
+   ],
+   "explanation": "Paul dit : « Je suis fatigué. Je travaille beaucoup. »"
+  },
+  {
+   "n": 6,
+   "answer": "C",
+   "docType": "annonce",
+   "voice": "SOPHIE",
+   "lines": [
+    {
+     "who": "Sophie",
+     "text": "Dans ma famille, nous sommes cinq : mon mari, mes deux filles, mon fils et moi."
+    }
+   ],
+   "prompt": "Combien d'enfants a la femme ?",
+   "choices": [
+    "un",
+    "deux",
+    "trois",
+    "cinq"
+   ],
+   "explanation": "Deux filles, plus un fils… ça fait trois enfants. Cinq, c'est toute la famille !"
+  },
+  {
+   "n": 7,
+   "answer": "B",
+   "docType": "dialogue",
+   "voice": "both",
+   "lines": [
+    {
+     "who": "Paul",
+     "text": "Tu parles anglais ?"
+    },
+    {
+     "who": "Sophie",
+     "text": "Oui, je parle anglais et français. Et j'apprends l'espagnol !"
+    }
+   ],
+   "prompt": "Quelle langue est-ce que la femme apprend ?",
+   "choices": [
+    "l'anglais",
+    "l'espagnol",
+    "le français",
+    "l'italien"
+   ],
+   "explanation": "Elle parle déjà anglais et français. Elle apprend l'espagnol."
+  },
+  {
+   "n": 8,
+   "answer": "D",
+   "docType": "annonce",
+   "voice": "PAUL",
+   "lines": [
+    {
+     "who": "Paul",
+     "text": "Salut ! Je m'appelle Thomas. J'aime le sport. Le samedi, je joue au hockey avec mes amis."
+    }
+   ],
+   "prompt": "Qu'est-ce que Thomas fait le samedi ?",
+   "choices": [
+    "il nage",
+    "il joue au soccer",
+    "il court",
+    "il joue au hockey"
+   ],
+   "explanation": "Le hockey, c'est un sport très populaire au Canada !"
+  },
+  {
+   "n": 9,
+   "answer": "C",
+   "docType": "dialogue",
+   "voice": "both",
+   "lines": [
+    {
+     "who": "Sophie",
+     "text": "Bonsoir, monsieur."
+    },
+    {
+     "who": "Paul",
+     "text": "Bonsoir, madame. Bonne soirée !"
+    }
+   ],
+   "prompt": "À quel moment de la journée est-ce qu'ils parlent ?",
+   "choices": [
+    "le matin",
+    "à midi",
+    "le soir",
+    "l'après-midi"
+   ],
+   "explanation": "On dit « bonjour » pendant la journée, et « bonsoir » le soir."
+  },
+  {
+   "n": 10,
+   "answer": "A",
+   "docType": "dialogue",
+   "voice": "both",
+   "lines": [
+    {
+     "who": "Paul",
+     "text": "Quelle est ton adresse ?"
+    },
+    {
+     "who": "Sophie",
+     "text": "J'habite au douze, rue Saint-Denis."
+    }
+   ],
+   "prompt": "Quel est le numéro de la maison ?",
+   "choices": [
+    "douze",
+    "deux",
+    "vingt",
+    "vingt-deux"
+   ],
+   "explanation": "Attention aux nombres : deux, douze, vingt… ils se ressemblent !"
+  },
+  {
+   "n": 11,
+   "answer": "D",
+   "docType": "dialogue",
+   "voice": "both",
+   "lines": [
+    {
+     "who": "Sophie",
+     "text": "Bonjour, combien coûte ce pain ?"
+    },
+    {
+     "who": "Paul",
+     "text": "Il coûte trois dollars cinquante."
+    }
+   ],
+   "prompt": "Combien coûte le pain ?",
+   "choices": [
+    "trois dollars quinze",
+    "treize dollars cinquante",
+    "deux dollars cinquante",
+    "trois dollars cinquante"
+   ],
+   "explanation": ""
+  },
+  {
+   "n": 12,
+   "answer": "B",
+   "docType": "dialogue",
+   "voice": "both",
+   "lines": [
+    {
+     "who": "Paul",
+     "text": "Excuse-moi, il est quelle heure ?"
+    },
+    {
+     "who": "Sophie",
+     "text": "Il est huit heures et quart."
+    }
+   ],
+   "prompt": "Quelle heure est-il ?",
+   "choices": [
+    "huit heures",
+    "huit heures quinze",
+    "huit heures trente",
+    "sept heures quarante-cinq"
+   ],
+   "explanation": "« Et quart », ça veut dire quinze minutes. Et « et demie », ça veut dire trente minutes."
+  },
+  {
+   "n": 13,
+   "answer": "A",
+   "docType": "annonce",
+   "voice": "SOPHIE",
+   "lines": [
+    {
+     "who": "Sophie",
+     "text": "Bonjour ! Le magasin ouvre à neuf heures et ferme à dix-huit heures, du lundi au samedi."
+    }
+   ],
+   "prompt": "À quelle heure est-ce que le magasin ferme ?",
+   "choices": [
+    "dix-huit heures",
+    "dix-neuf heures",
+    "neuf heures",
+    "seize heures"
+   ],
+   "explanation": "Neuf heures, c'est l'heure de l'ouverture."
+  },
+  {
+   "n": 14,
+   "answer": "C",
+   "docType": "dialogue",
+   "voice": "both",
+   "lines": [
+    {
+     "who": "Sophie",
+     "text": "Le cours de français commence quand ?"
+    },
+    {
+     "who": "Paul",
+     "text": "Le lundi, à dix-neuf heures."
+    }
+   ],
+   "prompt": "Quel jour est le cours de français ?",
+   "choices": [
+    "le mardi",
+    "le samedi",
+    "le lundi",
+    "le jeudi"
+   ],
+   "explanation": ""
+  },
+  {
+   "n": 15,
+   "answer": "D",
+   "docType": "dialogue",
+   "voice": "both",
+   "lines": [
+    {
+     "who": "Paul",
+     "text": "Un café et un croissant, s'il vous plaît."
+    },
+    {
+     "who": "Sophie",
+     "text": "Ça fait six dollars."
+    },
+    {
+     "who": "Paul",
+     "text": "Voilà dix dollars."
+    }
+   ],
+   "prompt": "Combien d'argent est-ce que l'homme donne ?",
+   "choices": [
+    "six dollars",
+    "quatre dollars",
+    "seize dollars",
+    "dix dollars"
+   ],
+   "explanation": "Le prix, c'est six dollars, mais il donne dix dollars. Lisez bien la question !"
+  },
+  {
+   "n": 16,
+   "answer": "B",
+   "docType": "annonce",
+   "voice": "PAUL",
+   "lines": [
+    {
+     "who": "Paul",
+     "text": "Mon anniversaire, c'est le quatorze février. Le jour de la Saint-Valentin !"
+    }
+   ],
+   "prompt": "Quelle est la date de son anniversaire ?",
+   "choices": [
+    "le quatre février",
+    "le quatorze février",
+    "le quatorze décembre",
+    "le vingt-quatre février"
+   ],
+   "explanation": ""
+  },
+  {
+   "n": 17,
+   "answer": "C",
+   "docType": "dialogue",
+   "voice": "both",
+   "lines": [
+    {
+     "who": "Paul",
+     "text": "Bonjour, je voudrais des pommes, s'il vous plaît."
+    },
+    {
+     "who": "Sophie",
+     "text": "Combien ?"
+    },
+    {
+     "who": "Paul",
+     "text": "Un kilo."
+    },
+    {
+     "who": "Sophie",
+     "text": "Voilà ! C'est deux dollars."
+    }
+   ],
+   "prompt": "Qu'est-ce que l'homme achète ?",
+   "choices": [
+    "des oranges",
+    "des bananes",
+    "des pommes",
+    "des tomates"
+   ],
+   "explanation": "Il achète un kilo de pommes, pour deux dollars."
+  },
+  {
+   "n": 18,
+   "answer": "A",
+   "docType": "dialogue",
+   "voice": "both",
+   "lines": [
+    {
+     "who": "Paul",
+     "text": "On se retrouve à quelle heure ?"
+    },
+    {
+     "who": "Sophie",
+     "text": "À midi, devant le cinéma !"
+    }
+   ],
+   "prompt": "À quelle heure est le rendez-vous ?",
+   "choices": [
+    "douze heures",
+    "dix heures",
+    "quatorze heures",
+    "minuit"
+   ],
+   "explanation": "Midi, c'est douze heures. Minuit, c'est la nuit !"
+  },
+  {
+   "n": 19,
+   "answer": "B",
+   "docType": "annonce",
+   "voice": "SOPHIE",
+   "lines": [
+    {
+     "who": "Sophie",
+     "text": "J'habite au troisième étage. Et il n'y a pas d'ascenseur !"
+    }
+   ],
+   "prompt": "À quel étage habite la femme ?",
+   "choices": [
+    "au premier étage",
+    "au troisième étage",
+    "au deuxième étage",
+    "au treizième étage"
+   ],
+   "explanation": ""
+  },
+  {
+   "n": 20,
+   "answer": "D",
+   "docType": "dialogue",
+   "voice": "both",
+   "lines": [
+    {
+     "who": "Sophie",
+     "text": "Le t-shirt bleu coûte combien ?"
+    },
+    {
+     "who": "Paul",
+     "text": "Quinze dollars. Et le rouge coûte vingt dollars."
+    },
+    {
+     "who": "Sophie",
+     "text": "Je prends le bleu !"
+    }
+   ],
+   "prompt": "Combien est-ce que la femme paie ?",
+   "choices": [
+    "vingt dollars",
+    "trente-cinq dollars",
+    "cinquante dollars",
+    "quinze dollars"
+   ],
+   "explanation": "Elle prend le t-shirt bleu, et le bleu coûte quinze dollars."
+  },
+  {
+   "n": 21,
+   "answer": "A",
+   "docType": "dialogue",
+   "voice": "both",
+   "lines": [
+    {
+     "who": "Paul",
+     "text": "Pardon, madame, où est la pharmacie ?"
+    },
+    {
+     "who": "Sophie",
+     "text": "C'est à côté de la banque."
+    }
+   ],
+   "prompt": "Où est la pharmacie ?",
+   "choices": [
+    "à côté de la banque",
+    "en face de la banque",
+    "derrière l'école",
+    "près de la gare"
+   ],
+   "explanation": ""
+  },
+  {
+   "n": 22,
+   "answer": "D",
+   "docType": "annonce",
+   "voice": "PAUL",
+   "lines": [
+    {
+     "who": "Paul",
+     "text": "Le matin, je vais au travail en autobus. Le soir, je rentre à pied."
+    }
+   ],
+   "prompt": "Comment est-ce que l'homme va au travail le matin ?",
+   "choices": [
+    "en voiture",
+    "à vélo",
+    "à pied",
+    "en autobus"
+   ],
+   "explanation": "Attention : à pied, c'est le soir !"
+  },
+  {
+   "n": 23,
+   "answer": "C",
+   "docType": "dialogue",
+   "voice": "both",
+   "lines": [
+    {
+     "who": "Sophie",
+     "text": "Bonjour, un billet pour Québec, s'il vous plaît."
+    },
+    {
+     "who": "Paul",
+     "text": "Aller simple ou aller-retour ?"
+    },
+    {
+     "who": "Sophie",
+     "text": "Aller-retour."
+    }
+   ],
+   "prompt": "Quel billet est-ce que la femme achète ?",
+   "choices": [
+    "un aller simple pour Montréal",
+    "un aller simple pour Québec",
+    "un aller-retour pour Québec",
+    "un aller-retour pour Montréal"
+   ],
+   "explanation": "Un aller-retour, c'est pour aller… et revenir."
+  },
+  {
+   "n": 24,
+   "answer": "B",
+   "docType": "dialogue",
+   "voice": "both",
+   "lines": [
+    {
+     "who": "Paul",
+     "text": "Tu vas où ?"
+    },
+    {
+     "who": "Sophie",
+     "text": "Je vais au supermarché. Je n'ai plus de lait."
+    }
+   ],
+   "prompt": "Où va la femme ?",
+   "choices": [
+    "à la boulangerie",
+    "au supermarché",
+    "à la poste",
+    "à la pharmacie"
+   ],
+   "explanation": "Elle va acheter du lait."
+  },
+  {
+   "n": 25,
+   "answer": "B",
+   "docType": "annonce",
+   "voice": "SOPHIE",
+   "lines": [
+    {
+     "who": "Sophie",
+     "text": "Pour aller à la bibliothèque, c'est simple. D'abord, tournez à gauche. Puis, allez tout droit."
+    }
+   ],
+   "prompt": "Qu'est-ce qu'il faut faire d'abord ?",
+   "choices": [
+    "tourner à droite",
+    "tourner à gauche",
+    "aller tout droit",
+    "traverser le pont"
+   ],
+   "explanation": "« D'abord », c'est la première action. « Puis », c'est la deuxième."
+  },
+  {
+   "n": 26,
+   "answer": "C",
+   "docType": "dialogue",
+   "voice": "both",
+   "lines": [
+    {
+     "who": "Paul",
+     "text": "Le métro arrive dans combien de minutes ?"
+    },
+    {
+     "who": "Sophie",
+     "text": "Dans cinq minutes."
+    }
+   ],
+   "prompt": "Le métro arrive dans combien de minutes ?",
+   "choices": [
+    "quinze minutes",
+    "deux minutes",
+    "cinq minutes",
+    "cinquante minutes"
+   ],
+   "explanation": ""
+  },
+  {
+   "n": 27,
+   "answer": "A",
+   "docType": "dialogue",
+   "voice": "both",
+   "lines": [
+    {
+     "who": "Sophie",
+     "text": "Tu habites où ?"
+    },
+    {
+     "who": "Paul",
+     "text": "Dans un appartement, au centre-ville. C'est petit, mais c'est pratique."
+    }
+   ],
+   "prompt": "Où habite l'homme ?",
+   "choices": [
+    "dans un appartement au centre-ville",
+    "dans une maison à la campagne",
+    "dans une grande maison en ville",
+    "chez ses parents"
+   ],
+   "explanation": "Il dit : « C'est petit, mais c'est pratique. »"
+  },
+  {
+   "n": 28,
+   "answer": "D",
+   "docType": "annonce",
+   "voice": "PAUL",
+   "lines": [
+    {
+     "who": "Paul",
+     "text": "Ce week-end, je vais à Toronto en train, avec ma sœur."
+    }
+   ],
+   "prompt": "Avec qui est-ce que l'homme va à Toronto ?",
+   "choices": [
+    "avec son frère",
+    "avec sa mère",
+    "avec un ami",
+    "avec sa sœur"
+   ],
+   "explanation": "Il va à Toronto en train."
+  },
+  {
+   "n": 29,
+   "answer": "C",
+   "docType": "dialogue",
+   "voice": "both",
+   "lines": [
+    {
+     "who": "Paul",
+     "text": "Il fait quel temps aujourd'hui ?"
+    },
+    {
+     "who": "Sophie",
+     "text": "Il neige, et il fait très froid. Moins quinze degrés !"
+    }
+   ],
+   "prompt": "Quel temps fait-il ?",
+   "choices": [
+    "il pleut",
+    "il fait chaud",
+    "il neige",
+    "il y a du soleil"
+   ],
+   "explanation": "Moins quinze degrés… c'est l'hiver au Canada !"
+  },
+  {
+   "n": 30,
+   "answer": "B",
+   "docType": "dialogue",
+   "voice": "both",
+   "lines": [
+    {
+     "who": "Sophie",
+     "text": "Excusez-moi, les toilettes, s'il vous plaît ?"
+    },
+    {
+     "who": "Paul",
+     "text": "Au fond du couloir, à droite."
+    }
+   ],
+   "prompt": "Où sont les toilettes ?",
+   "choices": [
+    "au fond du couloir, à gauche",
+    "au fond du couloir, à droite",
+    "au premier étage",
+    "près de l'entrée"
+   ],
+   "explanation": ""
+  },
+  {
+   "n": 31,
+   "answer": "D",
+   "docType": "annonce",
+   "voice": "SOPHIE",
+   "lines": [
+    {
+     "who": "Sophie",
+     "text": "Chers clients, le magasin ferme dans dix minutes. Merci de passer à la caisse."
+    }
+   ],
+   "prompt": "Le magasin ferme dans combien de temps ?",
+   "choices": [
+    "une heure",
+    "trente minutes",
+    "deux minutes",
+    "dix minutes"
+   ],
+   "explanation": ""
+  },
+  {
+   "n": 32,
+   "answer": "A",
+   "docType": "message",
+   "voice": "PAUL",
+   "lines": [
+    {
+     "who": "Paul",
+     "text": "Bonjour, c'est Marc. Je suis malade aujourd'hui. Je ne viens pas au bureau. À demain !"
+    }
+   ],
+   "prompt": "Pourquoi est-ce que Marc ne vient pas au bureau ?",
+   "choices": [
+    "il est malade",
+    "il est en vacances",
+    "il a un rendez-vous",
+    "son enfant est malade"
+   ],
+   "explanation": "Marc dit : « Je suis malade aujourd'hui. »"
+  },
+  {
+   "n": 33,
+   "answer": "D",
+   "docType": "annonce",
+   "voice": "SOPHIE",
+   "lines": [
+    {
+     "who": "Sophie",
+     "text": "Attention, s'il vous plaît. Le train pour Ottawa part du quai numéro quatre."
+    }
+   ],
+   "prompt": "De quel quai part le train ?",
+   "choices": [
+    "le quai un",
+    "le quai quatorze",
+    "le quai deux",
+    "le quai quatre"
+   ],
+   "explanation": "Le quai, c'est l'endroit où on prend le train."
+  },
+  {
+   "n": 34,
+   "answer": "A",
+   "docType": "message",
+   "voice": "SOPHIE",
+   "lines": [
+    {
+     "who": "Sophie",
+     "text": "Salut Paul, c'est Julie ! On mange ensemble ce soir ? Rappelle-moi !"
+    }
+   ],
+   "prompt": "Qu'est-ce que Julie demande à Paul ?",
+   "choices": [
+    "de la rappeler",
+    "de venir au bureau",
+    "d'acheter du pain",
+    "d'envoyer un courriel"
+   ],
+   "explanation": "Julie dit : « Rappelle-moi ! » Rappeler, c'est téléphoner encore."
+  },
+  {
+   "n": 35,
+   "answer": "C",
+   "docType": "annonce",
+   "voice": "PAUL",
+   "lines": [
+    {
+     "who": "Paul",
+     "text": "Bonjour à tous. Demain, il n'y a pas de cours. L'école est fermée."
+    }
+   ],
+   "prompt": "Qu'est-ce qui se passe demain ?",
+   "choices": [
+    "le cours commence plus tôt",
+    "il y a un examen",
+    "l'école est fermée",
+    "le professeur est absent"
+   ],
+   "explanation": "Il n'y a pas de cours demain."
+  },
+  {
+   "n": 36,
+   "answer": "B",
+   "docType": "message",
+   "voice": "SOPHIE",
+   "lines": [
+    {
+     "who": "Sophie",
+     "text": "Bonjour, madame Tremblay. C'est la clinique. Votre rendez-vous avec le docteur est jeudi, à quatorze heures. Merci !"
+    }
+   ],
+   "prompt": "Quand est le rendez-vous ?",
+   "choices": [
+    "mardi, à quatorze heures",
+    "jeudi, à quatorze heures",
+    "jeudi, à quatre heures",
+    "vendredi, à quatorze heures"
+   ],
+   "explanation": "Quatorze heures, c'est deux heures de l'après-midi."
+  },
+  {
+   "n": 37,
+   "answer": "A",
+   "docType": "annonce",
+   "voice": "PAUL",
+   "lines": [
+    {
+     "who": "Paul",
+     "text": "Aujourd'hui seulement, grande promotion : deux bouteilles d'eau pour le prix d'une !"
+    }
+   ],
+   "prompt": "Quelle est la promotion ?",
+   "choices": [
+    "deux bouteilles d'eau pour le prix d'une",
+    "deux bouteilles de jus gratuites",
+    "l'eau à moitié prix demain",
+    "trois bouteilles pour deux dollars"
+   ],
+   "explanation": "Vous achetez une bouteille… et vous avez deux bouteilles !"
+  },
+  {
+   "n": 38,
+   "answer": "C",
+   "docType": "annonce",
+   "voice": "SOPHIE",
+   "lines": [
+    {
+     "who": "Sophie",
+     "text": "Mesdames et messieurs, le vol A C huit cent soixante-dix pour Paris a une heure de retard. Merci de votre patience."
+    }
+   ],
+   "prompt": "Quel est le problème ?",
+   "choices": [
+    "le vol est annulé",
+    "le vol part plus tôt",
+    "le vol a une heure de retard",
+    "la porte change"
+   ],
+   "explanation": "« En retard », c'est le contraire de « à l'heure »."
+  },
+  {
+   "n": 39,
+   "answer": "D",
+   "docType": "message",
+   "voice": "PAUL",
+   "lines": [
+    {
+     "who": "Paul",
+     "text": "Bonjour, c'est votre voisin, au numéro huit. J'ai votre colis. Je suis chez moi après dix-sept heures."
+    }
+   ],
+   "prompt": "Qu'est-ce que le voisin a ?",
+   "choices": [
+    "vos clés",
+    "votre lettre",
+    "votre chat",
+    "votre colis"
+   ],
+   "explanation": "Un colis, c'est un paquet envoyé par la poste."
+  },
+  {
+   "n": 40,
+   "answer": "B",
+   "docType": "dialogue",
+   "voice": "both",
+   "lines": [
+    {
+     "who": "Sophie",
+     "text": "Allô, bonjour ! Je voudrais réserver une table pour ce soir."
+    },
+    {
+     "who": "Paul",
+     "text": "Oui, bien sûr. Pour combien de personnes ?"
+    },
+    {
+     "who": "Sophie",
+     "text": "Pour quatre personnes, à vingt heures."
+    }
+   ],
+   "prompt": "La réservation est pour combien de personnes ?",
+   "choices": [
+    "deux personnes",
+    "quatre personnes",
+    "huit personnes",
+    "vingt personnes"
+   ],
+   "explanation": "Vingt, c'est l'heure : vingt heures !"
+  }
+ ],
+ "segments": [
+  {
+   "id": "intro_01",
+   "text": "Bonjour et bienvenue ! Aujourd'hui, on prépare ensemble le TCF Canada. On travaille la compréhension orale, au niveau A1 : le niveau débutant.",
+   "kind": "intro"
+  },
+  {
+   "id": "intro_02",
+   "text": "Le TCF Canada, c'est un test de français. Il est important pour immigrer au Canada. Dans l'épreuve de compréhension orale, il y a trente-neuf questions. Vous écoutez un document… une seule fois ! Ensuite, vous choisissez une réponse : A, B, C ou D.",
+   "kind": "intro"
+  },
+  {
+   "id": "intro_03",
+   "text": "Dans cette série, il y a deux cents questions, avec les réponses. Aujourd'hui, c'est la partie un : les questions un à quarante. La méthode est simple. Vous écoutez. Vous lisez la question. Vous choisissez votre réponse. Ensuite, je vous donne la bonne réponse et une petite explication. Prenez un papier et un stylo, et comptez vos points. Vous êtes prêts ? On commence !",
+   "kind": "intro"
+  },
+  {
+   "id": "section_01",
+   "text": "Section un : se présenter et saluer. Écoutez bien !",
+   "kind": "section",
+   "section": 1
+  },
+  {
+   "id": "q01_1_document",
+   "text": "Paul: Bonjour ! Je m'appelle Paul. Et vous ?\nSophie: Bonjour Paul. Moi, c'est Sophie. J'habite à Montréal.",
+   "q": 1,
+   "kind": "document"
+  },
+  {
+   "id": "q01_2_question",
+   "text": "Question un. Où habite Sophie ? A : à Québec. B : à Montréal. C : à Toronto. D : à Ottawa.",
+   "q": 1,
+   "kind": "question"
+  },
+  {
+   "id": "q01_3_reponse",
+   "text": "La bonne réponse est B : à Montréal. Sophie dit : « J'habite à Montréal. »",
+   "q": 1,
+   "kind": "answer"
+  },
+  {
+   "id": "q02_1_document",
+   "text": "Sophie: Paul, tu as quel âge ?\nPaul: J'ai trente-deux ans. Et toi ?\nSophie: Moi, j'ai vingt-huit ans.",
+   "q": 2,
+   "kind": "document"
+  },
+  {
+   "id": "q02_2_question",
+   "text": "Question deux. Quel âge a Paul ? A : trente-deux ans. B : vingt-huit ans. C : vingt-deux ans. D : trente-huit ans.",
+   "q": 2,
+   "kind": "question"
+  },
+  {
+   "id": "q02_3_reponse",
+   "text": "La bonne réponse est A : trente-deux ans. Attention : vingt-huit ans, c'est l'âge de Sophie !",
+   "q": 2,
+   "kind": "answer"
+  },
+  {
+   "id": "q03_1_document",
+   "text": "Bonjour, je m'appelle Karim. Je suis infirmier. Je travaille à l'hôpital, à Ottawa.",
+   "q": 3,
+   "kind": "document"
+  },
+  {
+   "id": "q03_2_question",
+   "text": "Question trois. Quel est le métier de Karim ? A : professeur. B : cuisinier. C : chauffeur. D : infirmier.",
+   "q": 3,
+   "kind": "question"
+  },
+  {
+   "id": "q03_3_reponse",
+   "text": "La bonne réponse est D : infirmier. Karim dit : « Je suis infirmier. Je travaille à l'hôpital. »",
+   "q": 3,
+   "kind": "answer"
+  },
+  {
+   "id": "q04_1_document",
+   "text": "Paul: Vous êtes française ?\nSophie: Non, je suis canadienne. Mais ma mère est française.",
+   "q": 4,
+   "kind": "document"
+  },
+  {
+   "id": "q04_2_question",
+   "text": "Question quatre. Quelle est la nationalité de la femme ? A : française. B : belge. C : canadienne. D : suisse.",
+   "q": 4,
+   "kind": "question"
+  },
+  {
+   "id": "q04_3_reponse",
+   "text": "La bonne réponse est C : canadienne. C'est sa mère qui est française. Pas elle !",
+   "q": 4,
+   "kind": "answer"
+  },
+  {
+   "id": "q05_1_document",
+   "text": "Sophie: Comment ça va, Paul ?\nPaul: Pas très bien. Je suis fatigué. Je travaille beaucoup.",
+   "q": 5,
+   "kind": "document"
+  },
+  {
+   "id": "q05_2_question",
+   "text": "Question cinq. Comment va Paul ? A : il est fatigué. B : il est content. C : il est malade. D : il est en vacances.",
+   "q": 5,
+   "kind": "question"
+  },
+  {
+   "id": "q05_3_reponse",
+   "text": "La bonne réponse est A : il est fatigué. Paul dit : « Je suis fatigué. Je travaille beaucoup. »",
+   "q": 5,
+   "kind": "answer"
+  },
+  {
+   "id": "q06_1_document",
+   "text": "Dans ma famille, nous sommes cinq : mon mari, mes deux filles, mon fils et moi.",
+   "q": 6,
+   "kind": "document"
+  },
+  {
+   "id": "q06_2_question",
+   "text": "Question six. Combien d'enfants a la femme ? A : un. B : deux. C : trois. D : cinq.",
+   "q": 6,
+   "kind": "question"
+  },
+  {
+   "id": "q06_3_reponse",
+   "text": "La bonne réponse est C : trois. Deux filles, plus un fils… ça fait trois enfants. Cinq, c'est toute la famille !",
+   "q": 6,
+   "kind": "answer"
+  },
+  {
+   "id": "q07_1_document",
+   "text": "Paul: Tu parles anglais ?\nSophie: Oui, je parle anglais et français. Et j'apprends l'espagnol !",
+   "q": 7,
+   "kind": "document"
+  },
+  {
+   "id": "q07_2_question",
+   "text": "Question sept. Quelle langue est-ce que la femme apprend ? A : l'anglais. B : l'espagnol. C : le français. D : l'italien.",
+   "q": 7,
+   "kind": "question"
+  },
+  {
+   "id": "q07_3_reponse",
+   "text": "La bonne réponse est B : l'espagnol. Elle parle déjà anglais et français. Elle apprend l'espagnol.",
+   "q": 7,
+   "kind": "answer"
+  },
+  {
+   "id": "q08_1_document",
+   "text": "Salut ! Je m'appelle Thomas. J'aime le sport. Le samedi, je joue au hockey avec mes amis.",
+   "q": 8,
+   "kind": "document"
+  },
+  {
+   "id": "q08_2_question",
+   "text": "Question huit. Qu'est-ce que Thomas fait le samedi ? A : il nage. B : il joue au soccer. C : il court. D : il joue au hockey.",
+   "q": 8,
+   "kind": "question"
+  },
+  {
+   "id": "q08_3_reponse",
+   "text": "La bonne réponse est D : il joue au hockey. Le hockey, c'est un sport très populaire au Canada !",
+   "q": 8,
+   "kind": "answer"
+  },
+  {
+   "id": "q09_1_document",
+   "text": "Sophie: Bonsoir, monsieur.\nPaul: Bonsoir, madame. Bonne soirée !",
+   "q": 9,
+   "kind": "document"
+  },
+  {
+   "id": "q09_2_question",
+   "text": "Question neuf. À quel moment de la journée est-ce qu'ils parlent ? A : le matin. B : à midi. C : le soir. D : l'après-midi.",
+   "q": 9,
+   "kind": "question"
+  },
+  {
+   "id": "q09_3_reponse",
+   "text": "La bonne réponse est C : le soir. On dit « bonjour » pendant la journée, et « bonsoir » le soir.",
+   "q": 9,
+   "kind": "answer"
+  },
+  {
+   "id": "q10_1_document",
+   "text": "Paul: Quelle est ton adresse ?\nSophie: J'habite au douze, rue Saint-Denis.",
+   "q": 10,
+   "kind": "document"
+  },
+  {
+   "id": "q10_2_question",
+   "text": "Question dix. Quel est le numéro de la maison ? A : douze. B : deux. C : vingt. D : vingt-deux.",
+   "q": 10,
+   "kind": "question"
+  },
+  {
+   "id": "q10_3_reponse",
+   "text": "La bonne réponse est A : douze. Attention aux nombres : deux, douze, vingt… ils se ressemblent !",
+   "q": 10,
+   "kind": "answer"
+  },
+  {
+   "id": "section_02",
+   "text": "Bravo, vous avez fini la section un ! Section deux : les nombres, l'heure et les prix. Concentrez-vous bien sur les chiffres !",
+   "kind": "section",
+   "section": 2
+  },
+  {
+   "id": "q11_1_document",
+   "text": "Sophie: Bonjour, combien coûte ce pain ?\nPaul: Il coûte trois dollars cinquante.",
+   "q": 11,
+   "kind": "document"
+  },
+  {
+   "id": "q11_2_question",
+   "text": "Question onze. Combien coûte le pain ? A : trois dollars quinze. B : treize dollars cinquante. C : deux dollars cinquante. D : trois dollars cinquante.",
+   "q": 11,
+   "kind": "question"
+  },
+  {
+   "id": "q11_3_reponse",
+   "text": "La bonne réponse est D : trois dollars cinquante.",
+   "q": 11,
+   "kind": "answer"
+  },
+  {
+   "id": "q12_1_document",
+   "text": "Paul: Excuse-moi, il est quelle heure ?\nSophie: Il est huit heures et quart.",
+   "q": 12,
+   "kind": "document"
+  },
+  {
+   "id": "q12_2_question",
+   "text": "Question douze. Quelle heure est-il ? A : huit heures. B : huit heures quinze. C : huit heures trente. D : sept heures quarante-cinq.",
+   "q": 12,
+   "kind": "question"
+  },
+  {
+   "id": "q12_3_reponse",
+   "text": "La bonne réponse est B : huit heures quinze. « Et quart », ça veut dire quinze minutes. Et « et demie », ça veut dire trente minutes.",
+   "q": 12,
+   "kind": "answer"
+  },
+  {
+   "id": "q13_1_document",
+   "text": "Bonjour ! Le magasin ouvre à neuf heures et ferme à dix-huit heures, du lundi au samedi.",
+   "q": 13,
+   "kind": "document"
+  },
+  {
+   "id": "q13_2_question",
+   "text": "Question treize. À quelle heure est-ce que le magasin ferme ? A : dix-huit heures. B : dix-neuf heures. C : neuf heures. D : seize heures.",
+   "q": 13,
+   "kind": "question"
+  },
+  {
+   "id": "q13_3_reponse",
+   "text": "La bonne réponse est A : dix-huit heures. Neuf heures, c'est l'heure de l'ouverture.",
+   "q": 13,
+   "kind": "answer"
+  },
+  {
+   "id": "q14_1_document",
+   "text": "Sophie: Le cours de français commence quand ?\nPaul: Le lundi, à dix-neuf heures.",
+   "q": 14,
+   "kind": "document"
+  },
+  {
+   "id": "q14_2_question",
+   "text": "Question quatorze. Quel jour est le cours de français ? A : le mardi. B : le samedi. C : le lundi. D : le jeudi.",
+   "q": 14,
+   "kind": "question"
+  },
+  {
+   "id": "q14_3_reponse",
+   "text": "La bonne réponse est C : le lundi, à dix-neuf heures.",
+   "q": 14,
+   "kind": "answer"
+  },
+  {
+   "id": "q15_1_document",
+   "text": "Paul: Un café et un croissant, s'il vous plaît.\nSophie: Ça fait six dollars.\nPaul: Voilà dix dollars.",
+   "q": 15,
+   "kind": "document"
+  },
+  {
+   "id": "q15_2_question",
+   "text": "Question quinze. Combien d'argent est-ce que l'homme donne ? A : six dollars. B : quatre dollars. C : seize dollars. D : dix dollars.",
+   "q": 15,
+   "kind": "question"
+  },
+  {
+   "id": "q15_3_reponse",
+   "text": "La bonne réponse est D : dix dollars. Le prix, c'est six dollars, mais il donne dix dollars. Lisez bien la question !",
+   "q": 15,
+   "kind": "answer"
+  },
+  {
+   "id": "q16_1_document",
+   "text": "Mon anniversaire, c'est le quatorze février. Le jour de la Saint-Valentin !",
+   "q": 16,
+   "kind": "document"
+  },
+  {
+   "id": "q16_2_question",
+   "text": "Question seize. Quelle est la date de son anniversaire ? A : le quatre février. B : le quatorze février. C : le quatorze décembre. D : le vingt-quatre février.",
+   "q": 16,
+   "kind": "question"
+  },
+  {
+   "id": "q16_3_reponse",
+   "text": "La bonne réponse est B : le quatorze février.",
+   "q": 16,
+   "kind": "answer"
+  },
+  {
+   "id": "q17_1_document",
+   "text": "Paul: Bonjour, je voudrais des pommes, s'il vous plaît.\nSophie: Combien ?\nPaul: Un kilo.\nSophie: Voilà ! C'est deux dollars.",
+   "q": 17,
+   "kind": "document"
+  },
+  {
+   "id": "q17_2_question",
+   "text": "Question dix-sept. Qu'est-ce que l'homme achète ? A : des oranges. B : des bananes. C : des pommes. D : des tomates.",
+   "q": 17,
+   "kind": "question"
+  },
+  {
+   "id": "q17_3_reponse",
+   "text": "La bonne réponse est C : des pommes. Il achète un kilo de pommes, pour deux dollars.",
+   "q": 17,
+   "kind": "answer"
+  },
+  {
+   "id": "q18_1_document",
+   "text": "Paul: On se retrouve à quelle heure ?\nSophie: À midi, devant le cinéma !",
+   "q": 18,
+   "kind": "document"
+  },
+  {
+   "id": "q18_2_question",
+   "text": "Question dix-huit. À quelle heure est le rendez-vous ? A : douze heures. B : dix heures. C : quatorze heures. D : minuit.",
+   "q": 18,
+   "kind": "question"
+  },
+  {
+   "id": "q18_3_reponse",
+   "text": "La bonne réponse est A : douze heures. Midi, c'est douze heures. Minuit, c'est la nuit !",
+   "q": 18,
+   "kind": "answer"
+  },
+  {
+   "id": "q19_1_document",
+   "text": "J'habite au troisième étage. Et il n'y a pas d'ascenseur !",
+   "q": 19,
+   "kind": "document"
+  },
+  {
+   "id": "q19_2_question",
+   "text": "Question dix-neuf. À quel étage habite la femme ? A : au premier étage. B : au troisième étage. C : au deuxième étage. D : au treizième étage.",
+   "q": 19,
+   "kind": "question"
+  },
+  {
+   "id": "q19_3_reponse",
+   "text": "La bonne réponse est B : au troisième étage.",
+   "q": 19,
+   "kind": "answer"
+  },
+  {
+   "id": "q20_1_document",
+   "text": "Sophie: Le t-shirt bleu coûte combien ?\nPaul: Quinze dollars. Et le rouge coûte vingt dollars.\nSophie: Je prends le bleu !",
+   "q": 20,
+   "kind": "document"
+  },
+  {
+   "id": "q20_2_question",
+   "text": "Question vingt. Combien est-ce que la femme paie ? A : vingt dollars. B : trente-cinq dollars. C : cinquante dollars. D : quinze dollars.",
+   "q": 20,
+   "kind": "question"
+  },
+  {
+   "id": "q20_3_reponse",
+   "text": "La bonne réponse est D : quinze dollars. Elle prend le t-shirt bleu, et le bleu coûte quinze dollars.",
+   "q": 20,
+   "kind": "answer"
+  },
+  {
+   "id": "pause_milieu",
+   "text": "Super ! Vous êtes à la moitié ! Comptez vos points : combien de bonnes réponses sur vingt ? Si c'est difficile, ce n'est pas grave. Vous pouvez réécouter la vidéo. On continue !",
+   "kind": "pause"
+  },
+  {
+   "id": "section_03",
+   "text": "Section trois : les lieux et les transports. Écoutez bien les directions : à gauche, à droite, à côté…",
+   "kind": "section",
+   "section": 3
+  },
+  {
+   "id": "q21_1_document",
+   "text": "Paul: Pardon, madame, où est la pharmacie ?\nSophie: C'est à côté de la banque.",
+   "q": 21,
+   "kind": "document"
+  },
+  {
+   "id": "q21_2_question",
+   "text": "Question vingt et un. Où est la pharmacie ? A : à côté de la banque. B : en face de la banque. C : derrière l'école. D : près de la gare.",
+   "q": 21,
+   "kind": "question"
+  },
+  {
+   "id": "q21_3_reponse",
+   "text": "La bonne réponse est A : à côté de la banque.",
+   "q": 21,
+   "kind": "answer"
+  },
+  {
+   "id": "q22_1_document",
+   "text": "Le matin, je vais au travail en autobus. Le soir, je rentre à pied.",
+   "q": 22,
+   "kind": "document"
+  },
+  {
+   "id": "q22_2_question",
+   "text": "Question vingt-deux. Comment est-ce que l'homme va au travail le matin ? A : en voiture. B : à vélo. C : à pied. D : en autobus.",
+   "q": 22,
+   "kind": "question"
+  },
+  {
+   "id": "q22_3_reponse",
+   "text": "La bonne réponse est D : en autobus. Attention : à pied, c'est le soir !",
+   "q": 22,
+   "kind": "answer"
+  },
+  {
+   "id": "q23_1_document",
+   "text": "Sophie: Bonjour, un billet pour Québec, s'il vous plaît.\nPaul: Aller simple ou aller-retour ?\nSophie: Aller-retour.",
+   "q": 23,
+   "kind": "document"
+  },
+  {
+   "id": "q23_2_question",
+   "text": "Question vingt-trois. Quel billet est-ce que la femme achète ? A : un aller simple pour Montréal. B : un aller simple pour Québec. C : un aller-retour pour Québec. D : un aller-retour pour Montréal.",
+   "q": 23,
+   "kind": "question"
+  },
+  {
+   "id": "q23_3_reponse",
+   "text": "La bonne réponse est C : un aller-retour pour Québec. Un aller-retour, c'est pour aller… et revenir.",
+   "q": 23,
+   "kind": "answer"
+  },
+  {
+   "id": "q24_1_document",
+   "text": "Paul: Tu vas où ?\nSophie: Je vais au supermarché. Je n'ai plus de lait.",
+   "q": 24,
+   "kind": "document"
+  },
+  {
+   "id": "q24_2_question",
+   "text": "Question vingt-quatre. Où va la femme ? A : à la boulangerie. B : au supermarché. C : à la poste. D : à la pharmacie.",
+   "q": 24,
+   "kind": "question"
+  },
+  {
+   "id": "q24_3_reponse",
+   "text": "La bonne réponse est B : au supermarché. Elle va acheter du lait.",
+   "q": 24,
+   "kind": "answer"
+  },
+  {
+   "id": "q25_1_document",
+   "text": "Pour aller à la bibliothèque, c'est simple. D'abord, tournez à gauche. Puis, allez tout droit.",
+   "q": 25,
+   "kind": "document"
+  },
+  {
+   "id": "q25_2_question",
+   "text": "Question vingt-cinq. Qu'est-ce qu'il faut faire d'abord ? A : tourner à droite. B : tourner à gauche. C : aller tout droit. D : traverser le pont.",
+   "q": 25,
+   "kind": "question"
+  },
+  {
+   "id": "q25_3_reponse",
+   "text": "La bonne réponse est B : tourner à gauche. « D'abord », c'est la première action. « Puis », c'est la deuxième.",
+   "q": 25,
+   "kind": "answer"
+  },
+  {
+   "id": "q26_1_document",
+   "text": "Paul: Le métro arrive dans combien de minutes ?\nSophie: Dans cinq minutes.",
+   "q": 26,
+   "kind": "document"
+  },
+  {
+   "id": "q26_2_question",
+   "text": "Question vingt-six. Le métro arrive dans combien de minutes ? A : quinze minutes. B : deux minutes. C : cinq minutes. D : cinquante minutes.",
+   "q": 26,
+   "kind": "question"
+  },
+  {
+   "id": "q26_3_reponse",
+   "text": "La bonne réponse est C : cinq minutes.",
+   "q": 26,
+   "kind": "answer"
+  },
+  {
+   "id": "q27_1_document",
+   "text": "Sophie: Tu habites où ?\nPaul: Dans un appartement, au centre-ville. C'est petit, mais c'est pratique.",
+   "q": 27,
+   "kind": "document"
+  },
+  {
+   "id": "q27_2_question",
+   "text": "Question vingt-sept. Où habite l'homme ? A : dans un appartement au centre-ville. B : dans une maison à la campagne. C : dans une grande maison en ville. D : chez ses parents.",
+   "q": 27,
+   "kind": "question"
+  },
+  {
+   "id": "q27_3_reponse",
+   "text": "La bonne réponse est A : dans un appartement au centre-ville. Il dit : « C'est petit, mais c'est pratique. »",
+   "q": 27,
+   "kind": "answer"
+  },
+  {
+   "id": "q28_1_document",
+   "text": "Ce week-end, je vais à Toronto en train, avec ma sœur.",
+   "q": 28,
+   "kind": "document"
+  },
+  {
+   "id": "q28_2_question",
+   "text": "Question vingt-huit. Avec qui est-ce que l'homme va à Toronto ? A : avec son frère. B : avec sa mère. C : avec un ami. D : avec sa sœur.",
+   "q": 28,
+   "kind": "question"
+  },
+  {
+   "id": "q28_3_reponse",
+   "text": "La bonne réponse est D : avec sa sœur. Il va à Toronto en train.",
+   "q": 28,
+   "kind": "answer"
+  },
+  {
+   "id": "q29_1_document",
+   "text": "Paul: Il fait quel temps aujourd'hui ?\nSophie: Il neige, et il fait très froid. Moins quinze degrés !",
+   "q": 29,
+   "kind": "document"
+  },
+  {
+   "id": "q29_2_question",
+   "text": "Question vingt-neuf. Quel temps fait-il ? A : il pleut. B : il fait chaud. C : il neige. D : il y a du soleil.",
+   "q": 29,
+   "kind": "question"
+  },
+  {
+   "id": "q29_3_reponse",
+   "text": "La bonne réponse est C : il neige. Moins quinze degrés… c'est l'hiver au Canada !",
+   "q": 29,
+   "kind": "answer"
+  },
+  {
+   "id": "q30_1_document",
+   "text": "Sophie: Excusez-moi, les toilettes, s'il vous plaît ?\nPaul: Au fond du couloir, à droite.",
+   "q": 30,
+   "kind": "document"
+  },
+  {
+   "id": "q30_2_question",
+   "text": "Question trente. Où sont les toilettes ? A : au fond du couloir, à gauche. B : au fond du couloir, à droite. C : au premier étage. D : près de l'entrée.",
+   "q": 30,
+   "kind": "question"
+  },
+  {
+   "id": "q30_3_reponse",
+   "text": "La bonne réponse est B : au fond du couloir, à droite.",
+   "q": 30,
+   "kind": "answer"
+  },
+  {
+   "id": "section_04",
+   "text": "Dernière section ! Section quatre : les messages et les annonces. Au TCF, il y a souvent des annonces dans une gare, un magasin ou un aéroport. Écoutez l'information importante.",
+   "kind": "section",
+   "section": 4
+  },
+  {
+   "id": "q31_1_document",
+   "text": "Chers clients, le magasin ferme dans dix minutes. Merci de passer à la caisse.",
+   "q": 31,
+   "kind": "document"
+  },
+  {
+   "id": "q31_2_question",
+   "text": "Question trente et un. Le magasin ferme dans combien de temps ? A : une heure. B : trente minutes. C : deux minutes. D : dix minutes.",
+   "q": 31,
+   "kind": "question"
+  },
+  {
+   "id": "q31_3_reponse",
+   "text": "La bonne réponse est D : dix minutes.",
+   "q": 31,
+   "kind": "answer"
+  },
+  {
+   "id": "q32_1_document",
+   "text": "Bonjour, c'est Marc. Je suis malade aujourd'hui. Je ne viens pas au bureau. À demain !",
+   "q": 32,
+   "kind": "document"
+  },
+  {
+   "id": "q32_2_question",
+   "text": "Question trente-deux. Pourquoi est-ce que Marc ne vient pas au bureau ? A : il est malade. B : il est en vacances. C : il a un rendez-vous. D : son enfant est malade.",
+   "q": 32,
+   "kind": "question"
+  },
+  {
+   "id": "q32_3_reponse",
+   "text": "La bonne réponse est A : il est malade. Marc dit : « Je suis malade aujourd'hui. »",
+   "q": 32,
+   "kind": "answer"
+  },
+  {
+   "id": "q33_1_document",
+   "text": "Attention, s'il vous plaît. Le train pour Ottawa part du quai numéro quatre.",
+   "q": 33,
+   "kind": "document"
+  },
+  {
+   "id": "q33_2_question",
+   "text": "Question trente-trois. De quel quai part le train ? A : le quai un. B : le quai quatorze. C : le quai deux. D : le quai quatre.",
+   "q": 33,
+   "kind": "question"
+  },
+  {
+   "id": "q33_3_reponse",
+   "text": "La bonne réponse est D : le quai quatre. Le quai, c'est l'endroit où on prend le train.",
+   "q": 33,
+   "kind": "answer"
+  },
+  {
+   "id": "q34_1_document",
+   "text": "Salut Paul, c'est Julie ! On mange ensemble ce soir ? Rappelle-moi !",
+   "q": 34,
+   "kind": "document"
+  },
+  {
+   "id": "q34_2_question",
+   "text": "Question trente-quatre. Qu'est-ce que Julie demande à Paul ? A : de la rappeler. B : de venir au bureau. C : d'acheter du pain. D : d'envoyer un courriel.",
+   "q": 34,
+   "kind": "question"
+  },
+  {
+   "id": "q34_3_reponse",
+   "text": "La bonne réponse est A : de la rappeler. Julie dit : « Rappelle-moi ! » Rappeler, c'est téléphoner encore.",
+   "q": 34,
+   "kind": "answer"
+  },
+  {
+   "id": "q35_1_document",
+   "text": "Bonjour à tous. Demain, il n'y a pas de cours. L'école est fermée.",
+   "q": 35,
+   "kind": "document"
+  },
+  {
+   "id": "q35_2_question",
+   "text": "Question trente-cinq. Qu'est-ce qui se passe demain ? A : le cours commence plus tôt. B : il y a un examen. C : l'école est fermée. D : le professeur est absent.",
+   "q": 35,
+   "kind": "question"
+  },
+  {
+   "id": "q35_3_reponse",
+   "text": "La bonne réponse est C : l'école est fermée. Il n'y a pas de cours demain.",
+   "q": 35,
+   "kind": "answer"
+  },
+  {
+   "id": "q36_1_document",
+   "text": "Bonjour, madame Tremblay. C'est la clinique. Votre rendez-vous avec le docteur est jeudi, à quatorze heures. Merci !",
+   "q": 36,
+   "kind": "document"
+  },
+  {
+   "id": "q36_2_question",
+   "text": "Question trente-six. Quand est le rendez-vous ? A : mardi, à quatorze heures. B : jeudi, à quatorze heures. C : jeudi, à quatre heures. D : vendredi, à quatorze heures.",
+   "q": 36,
+   "kind": "question"
+  },
+  {
+   "id": "q36_3_reponse",
+   "text": "La bonne réponse est B : jeudi, à quatorze heures. Quatorze heures, c'est deux heures de l'après-midi.",
+   "q": 36,
+   "kind": "answer"
+  },
+  {
+   "id": "q37_1_document",
+   "text": "Aujourd'hui seulement, grande promotion : deux bouteilles d'eau pour le prix d'une !",
+   "q": 37,
+   "kind": "document"
+  },
+  {
+   "id": "q37_2_question",
+   "text": "Question trente-sept. Quelle est la promotion ? A : deux bouteilles d'eau pour le prix d'une. B : deux bouteilles de jus gratuites. C : l'eau à moitié prix demain. D : trois bouteilles pour deux dollars.",
+   "q": 37,
+   "kind": "question"
+  },
+  {
+   "id": "q37_3_reponse",
+   "text": "La bonne réponse est A : deux bouteilles d'eau pour le prix d'une. Vous achetez une bouteille… et vous avez deux bouteilles !",
+   "q": 37,
+   "kind": "answer"
+  },
+  {
+   "id": "q38_1_document",
+   "text": "Mesdames et messieurs, le vol A C huit cent soixante-dix pour Paris a une heure de retard. Merci de votre patience.",
+   "q": 38,
+   "kind": "document"
+  },
+  {
+   "id": "q38_2_question",
+   "text": "Question trente-huit. Quel est le problème ? A : le vol est annulé. B : le vol part plus tôt. C : le vol a une heure de retard. D : la porte change.",
+   "q": 38,
+   "kind": "question"
+  },
+  {
+   "id": "q38_3_reponse",
+   "text": "La bonne réponse est C : le vol a une heure de retard. « En retard », c'est le contraire de « à l'heure ».",
+   "q": 38,
+   "kind": "answer"
+  },
+  {
+   "id": "q39_1_document",
+   "text": "Bonjour, c'est votre voisin, au numéro huit. J'ai votre colis. Je suis chez moi après dix-sept heures.",
+   "q": 39,
+   "kind": "document"
+  },
+  {
+   "id": "q39_2_question",
+   "text": "Question trente-neuf. Qu'est-ce que le voisin a ? A : vos clés. B : votre lettre. C : votre chat. D : votre colis.",
+   "q": 39,
+   "kind": "question"
+  },
+  {
+   "id": "q39_3_reponse",
+   "text": "La bonne réponse est D : votre colis. Un colis, c'est un paquet envoyé par la poste.",
+   "q": 39,
+   "kind": "answer"
+  },
+  {
+   "id": "q40_1_document",
+   "text": "Sophie: Allô, bonjour ! Je voudrais réserver une table pour ce soir.\nPaul: Oui, bien sûr. Pour combien de personnes ?\nSophie: Pour quatre personnes, à vingt heures.",
+   "q": 40,
+   "kind": "document"
+  },
+  {
+   "id": "q40_2_question",
+   "text": "Question quarante. La réservation est pour combien de personnes ? A : deux personnes. B : quatre personnes. C : huit personnes. D : vingt personnes.",
+   "q": 40,
+   "kind": "question"
+  },
+  {
+   "id": "q40_3_reponse",
+   "text": "La bonne réponse est B : quatre personnes. Vingt, c'est l'heure : vingt heures !",
+   "q": 40,
+   "kind": "answer"
+  },
+  {
+   "id": "outro_01",
+   "text": "Félicitations ! Vous avez fini les quarante questions ! Maintenant, comptez vos points. Trente bonnes réponses ou plus ? Bravo, votre niveau A1 est très bon ! Moins de trente ? Pas de problème. Réécoutez la vidéo et essayez encore.",
+   "kind": "outro"
+  },
+  {
+   "id": "outro_02",
+   "text": "Écrivez votre score dans les commentaires ! Et abonnez-vous pour la partie deux : les questions quarante et un à quatre-vingts. Merci et à bientôt. Bon courage pour le TCF Canada !",
+   "kind": "outro"
+  }
+ ]
+}
