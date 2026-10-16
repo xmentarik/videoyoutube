@@ -5,13 +5,18 @@
   "description": "مشروع مونتاج فيديوهات يوتيوب باستخدام Remotion",
   "scripts": {
     "dev": "remotion studio",
-    "build": "remotion render HelloWorld out/video.mp4",
+    "build": "remotion render CoursFrancais01 out/cours-francais-01.mp4",
     "upgrade": "remotion upgrade",
     "lint": "tsc"
   },
   "license": "UNLICENSED",
   "dependencies": {
+    "@fontsource/cairo": "^5.3.0",
+    "@fontsource/noto-sans": "^5.3.0",
+    "@fontsource/outfit": "^5.3.0",
+    "@fontsource/playfair-display": "^5.3.0",
     "@remotion/cli": "4.0.535",
+    "@remotion/media-utils": "4.0.535",
     "react": "19.2.0",
     "react-dom": "19.2.0",
     "remotion": "4.0.535"
