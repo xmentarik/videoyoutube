@@ -20,6 +20,12 @@ const SCENES: Record<string, React.FC<{ t: number; it: Item }>> = {
   p2_pause_milieu: Halfway,
   p2_outro_01: Outro1,
   p2_outro_02: Outro2,
+  p3_intro_01: Intro1,
+  p3_intro_02: Recap,
+  p3_intro_03: Ready,
+  p3_pause_milieu: Halfway,
+  p3_outro_01: Outro1,
+  p3_outro_02: Outro2,
 };
 
 type Sfx = { t: number; src: string; v: number };

@@ -1,0 +1,1726 @@
+{
+ "sections": {
+  "1": {
+   "title": "Les achats et les services",
+   "from": 81,
+   "to": 90
+  },
+  "2": {
+   "title": "Le logement et la maison",
+   "from": 91,
+   "to": 100
+  },
+  "3": {
+   "title": "Les voyages et les vacances",
+   "from": 101,
+   "to": 110
+  },
+  "4": {
+   "title": "Le téléphone et les démarches",
+   "from": 111,
+   "to": 120
+  }
+ },
+ "questions": [
+  {
+   "n": 81,
+   "answer": "D",
+   "docType": "dialogue",
+   "voice": "both",
+   "lines": [
+    {
+     "who": "Sophie",
+     "text": "Bonjour, je voudrais envoyer cette lettre en France, s'il vous plaît."
+    },
+    {
+     "who": "Paul",
+     "text": "Oui, madame. Ça fait trois dollars."
+    }
+   ],
+   "prompt": "Où est-ce que la femme envoie sa lettre ?",
+   "choices": [
+    "en Belgique",
+    "au Maroc",
+    "aux États-Unis",
+    "en France"
+   ],
+   "explanation": "Pour envoyer une lettre, on va à la poste."
+  },
+  {
+   "n": 82,
+   "answer": "B",
+   "docType": "dialogue",
+   "voice": "both",
+   "lines": [
+    {
+     "who": "Paul",
+     "text": "Alors, je coupe court ?"
+    },
+    {
+     "who": "Sophie",
+     "text": "Non, pas trop court, s'il vous plaît ! Juste un peu."
+    }
+   ],
+   "prompt": "Qu'est-ce que la femme veut ?",
+   "choices": [
+    "des cheveux très courts",
+    "couper juste un peu",
+    "changer de couleur",
+    "ne pas couper"
+   ],
+   "explanation": "Elle dit : « Pas trop court. Juste un peu. »"
+  },
+  {
+   "n": 83,
+   "answer": "A",
+   "docType": "annonce",
+   "voice": "PAUL",
+   "lines": [
+    {
+     "who": "Paul",
+     "text": "Les fraises du Québec ! Bonnes fraises ! Cinq dollars la boîte !"
+    }
+   ],
+   "prompt": "Qu'est-ce que l'homme vend ?",
+   "choices": [
+    "des fraises",
+    "des pommes",
+    "des cerises",
+    "des tomates"
+   ],
+   "explanation": "Cinq dollars la boîte."
+  },
+  {
+   "n": 84,
+   "answer": "C",
+   "docType": "dialogue",
+   "voice": "both",
+   "lines": [
+    {
+     "who": "Sophie",
+     "text": "Je peux payer par carte ?"
+    },
+    {
+     "who": "Paul",
+     "text": "Non, désolé. Seulement en argent comptant."
+    }
+   ],
+   "prompt": "Comment est-ce que la femme doit payer ?",
+   "choices": [
+    "par carte",
+    "par chèque",
+    "en argent comptant",
+    "avec son téléphone"
+   ],
+   "explanation": "Au Québec, « argent comptant », ça veut dire : en billets et en pièces."
+  },
+  {
+   "n": 85,
+   "answer": "C",
+   "docType": "dialogue",
+   "voice": "both",
+   "lines": [
+    {
+     "who": "Paul",
+     "text": "Cette chemise existe en noir ?"
+    },
+    {
+     "who": "Sophie",
+     "text": "Non, désolée. Seulement en blanc et en gris."
+    }
+   ],
+   "prompt": "En quelles couleurs existe la chemise ?",
+   "choices": [
+    "en noir et en blanc",
+    "en noir et en gris",
+    "en blanc et en gris",
+    "en bleu et en blanc"
+   ],
+   "explanation": "Le noir, il n'y en a pas !"
+  },
+  {
+   "n": 86,
+   "answer": "A",
+   "docType": "annonce",
+   "voice": "SOPHIE",
+   "lines": [
+    {
+     "who": "Sophie",
+     "text": "Chers clients, aujourd'hui seulement, tous les manteaux sont à moins cinquante pour cent !"
+    }
+   ],
+   "prompt": "Qu'est-ce qui est moins cher aujourd'hui ?",
+   "choices": [
+    "les manteaux",
+    "les chaussures",
+    "les pantalons",
+    "les robes"
+   ],
+   "explanation": "Moins cinquante pour cent : c'est la moitié du prix !"
+  },
+  {
+   "n": 87,
+   "answer": "D",
+   "docType": "dialogue",
+   "voice": "both",
+   "lines": [
+    {
+     "who": "Sophie",
+     "text": "C'est combien, ces chaussures ?"
+    },
+    {
+     "who": "Paul",
+     "text": "Quatre-vingt-dix dollars."
+    },
+    {
+     "who": "Sophie",
+     "text": "Oh ! C'est trop cher !"
+    }
+   ],
+   "prompt": "Qu'est-ce que la femme pense des chaussures ?",
+   "choices": [
+    "elles sont belles",
+    "elles sont petites",
+    "elles ne sont pas chères",
+    "elles sont trop chères"
+   ],
+   "explanation": "Quatre-vingt-dix dollars, pour elle, c'est trop !"
+  },
+  {
+   "n": 88,
+   "answer": "B",
+   "docType": "dialogue",
+   "voice": "both",
+   "lines": [
+    {
+     "who": "Paul",
+     "text": "Vous avez des sacs ?"
+    },
+    {
+     "who": "Sophie",
+     "text": "Oui. Dix sous le sac."
+    }
+   ],
+   "prompt": "Combien coûte un sac ?",
+   "choices": [
+    "il est gratuit",
+    "dix sous",
+    "un dollar",
+    "cinq sous"
+   ],
+   "explanation": "Au Québec, on dit souvent « sous » pour les cents."
+  },
+  {
+   "n": 89,
+   "answer": "A",
+   "docType": "annonce",
+   "voice": "PAUL",
+   "lines": [
+    {
+     "who": "Paul",
+     "text": "Je vais au marché le samedi matin. J'achète des légumes et du fromage."
+    }
+   ],
+   "prompt": "Quand est-ce que l'homme va au marché ?",
+   "choices": [
+    "le samedi matin",
+    "le dimanche matin",
+    "le samedi soir",
+    "tous les jours"
+   ],
+   "explanation": ""
+  },
+  {
+   "n": 90,
+   "answer": "D",
+   "docType": "dialogue",
+   "voice": "both",
+   "lines": [
+    {
+     "who": "Sophie",
+     "text": "Bonjour, je voudrais rendre ce pull. Il est trop petit."
+    },
+    {
+     "who": "Paul",
+     "text": "Vous avez le reçu ?"
+    },
+    {
+     "who": "Sophie",
+     "text": "Oui, voilà."
+    }
+   ],
+   "prompt": "Pourquoi est-ce que la femme rend le pull ?",
+   "choices": [
+    "il est trop grand",
+    "elle n'aime pas la couleur",
+    "il est abîmé",
+    "il est trop petit"
+   ],
+   "explanation": "Le reçu, c'est le papier qu'on reçoit quand on paie."
+  },
+  {
+   "n": 91,
+   "answer": "B",
+   "docType": "dialogue",
+   "voice": "both",
+   "lines": [
+    {
+     "who": "Paul",
+     "text": "Ton appartement a combien de chambres ?"
+    },
+    {
+     "who": "Sophie",
+     "text": "Deux chambres, une cuisine et un salon."
+    }
+   ],
+   "prompt": "Combien de chambres a l'appartement ?",
+   "choices": [
+    "une",
+    "deux",
+    "trois",
+    "quatre"
+   ],
+   "explanation": "La cuisine et le salon ne sont pas des chambres !"
+  },
+  {
+   "n": 92,
+   "answer": "D",
+   "docType": "annonce",
+   "voice": "SOPHIE",
+   "lines": [
+    {
+     "who": "Sophie",
+     "text": "Dans ma cuisine, il y a une grande table et quatre chaises."
+    }
+   ],
+   "prompt": "Combien de chaises il y a dans la cuisine ?",
+   "choices": [
+    "deux",
+    "trois",
+    "six",
+    "quatre"
+   ],
+   "explanation": ""
+  },
+  {
+   "n": 93,
+   "answer": "C",
+   "docType": "message",
+   "voice": "PAUL",
+   "lines": [
+    {
+     "who": "Paul",
+     "text": "Bonjour, c'est le concierge. Demain, il n'y a pas d'eau chaude, de neuf heures à midi. Merci de votre compréhension."
+    }
+   ],
+   "prompt": "Quel est le problème demain ?",
+   "choices": [
+    "il n'y a pas d'électricité",
+    "il n'y a pas d'internet",
+    "il n'y a pas d'eau chaude",
+    "il n'y a pas de chauffage"
+   ],
+   "explanation": "Le concierge s'occupe de l'immeuble."
+  },
+  {
+   "n": 94,
+   "answer": "A",
+   "docType": "dialogue",
+   "voice": "both",
+   "lines": [
+    {
+     "who": "Sophie",
+     "text": "Les clés sont où ?"
+    },
+    {
+     "who": "Paul",
+     "text": "Sur la table, dans l'entrée."
+    }
+   ],
+   "prompt": "Où sont les clés ?",
+   "choices": [
+    "sur la table, dans l'entrée",
+    "dans la cuisine",
+    "dans le sac",
+    "sous la table"
+   ],
+   "explanation": "Attention : « sur » et « sous », c'est le contraire !"
+  },
+  {
+   "n": 95,
+   "answer": "B",
+   "docType": "dialogue",
+   "voice": "both",
+   "lines": [
+    {
+     "who": "Paul",
+     "text": "Tu aimes ton quartier ?"
+    },
+    {
+     "who": "Sophie",
+     "text": "Oui ! C'est calme, et il y a un grand parc."
+    }
+   ],
+   "prompt": "Comment est le quartier de la femme ?",
+   "choices": [
+    "bruyant",
+    "calme",
+    "dangereux",
+    "loin de tout"
+   ],
+   "explanation": "Le contraire de calme, c'est bruyant."
+  },
+  {
+   "n": 96,
+   "answer": "C",
+   "docType": "annonce",
+   "voice": "PAUL",
+   "lines": [
+    {
+     "who": "Paul",
+     "text": "Je cherche un appartement près du métro. Mon budget, c'est neuf cents dollars par mois."
+    }
+   ],
+   "prompt": "Où est-ce que l'homme veut habiter ?",
+   "choices": [
+    "au centre-ville",
+    "près de l'école",
+    "près du métro",
+    "à la campagne"
+   ],
+   "explanation": ""
+  },
+  {
+   "n": 97,
+   "answer": "A",
+   "docType": "dialogue",
+   "voice": "both",
+   "lines": [
+    {
+     "who": "Sophie",
+     "text": "Tu peux m'aider ? Je déménage samedi."
+    },
+    {
+     "who": "Paul",
+     "text": "Oui, bien sûr ! À quelle heure ?"
+    },
+    {
+     "who": "Sophie",
+     "text": "À huit heures. Merci !"
+    }
+   ],
+   "prompt": "Qu'est-ce que la femme fait samedi ?",
+   "choices": [
+    "elle déménage",
+    "elle fait une fête",
+    "elle voyage",
+    "elle travaille"
+   ],
+   "explanation": "Déménager, c'est changer de logement."
+  },
+  {
+   "n": 98,
+   "answer": "D",
+   "docType": "annonce",
+   "voice": "SOPHIE",
+   "lines": [
+    {
+     "who": "Sophie",
+     "text": "Information pour les locataires : le camion des poubelles passe le mardi matin."
+    }
+   ],
+   "prompt": "Quel jour passe le camion des poubelles ?",
+   "choices": [
+    "le lundi",
+    "le mercredi",
+    "le jeudi",
+    "le mardi"
+   ],
+   "explanation": ""
+  },
+  {
+   "n": 99,
+   "answer": "B",
+   "docType": "dialogue",
+   "voice": "both",
+   "lines": [
+    {
+     "who": "Paul",
+     "text": "Il fait froid dans l'appartement !"
+    },
+    {
+     "who": "Sophie",
+     "text": "Oui, le chauffage ne marche pas. J'appelle le propriétaire."
+    }
+   ],
+   "prompt": "Qui est-ce que la femme va appeler ?",
+   "choices": [
+    "le plombier",
+    "le propriétaire",
+    "le voisin",
+    "la police"
+   ],
+   "explanation": "Le chauffage ne marche pas, alors elle appelle le propriétaire."
+  },
+  {
+   "n": 100,
+   "answer": "C",
+   "docType": "annonce",
+   "voice": "PAUL",
+   "lines": [
+    {
+     "who": "Paul",
+     "text": "Ma chambre est petite, mais elle a une grande fenêtre. Le matin, il y a beaucoup de soleil."
+    }
+   ],
+   "prompt": "Comment est la chambre de l'homme ?",
+   "choices": [
+    "grande et sombre",
+    "petite, sans fenêtre",
+    "petite, avec une grande fenêtre",
+    "grande, avec une petite fenêtre"
+   ],
+   "explanation": "Et bravo : vous avez fait cent questions depuis le début de la série !"
+  },
+  {
+   "n": 101,
+   "answer": "A",
+   "docType": "dialogue",
+   "voice": "both",
+   "lines": [
+    {
+     "who": "Sophie",
+     "text": "Tu pars en vacances quand ?"
+    },
+    {
+     "who": "Paul",
+     "text": "En juillet. Je vais au Mexique !"
+    }
+   ],
+   "prompt": "Où va l'homme en vacances ?",
+   "choices": [
+    "au Mexique",
+    "en France",
+    "au Maroc",
+    "en Espagne"
+   ],
+   "explanation": ""
+  },
+  {
+   "n": 102,
+   "answer": "C",
+   "docType": "dialogue",
+   "voice": "both",
+   "lines": [
+    {
+     "who": "Sophie",
+     "text": "Bonjour, j'ai une réservation au nom de Dubois."
+    },
+    {
+     "who": "Paul",
+     "text": "Oui, madame Dubois. Une chambre pour trois nuits."
+    }
+   ],
+   "prompt": "Combien de nuits la femme reste à l'hôtel ?",
+   "choices": [
+    "une nuit",
+    "deux nuits",
+    "trois nuits",
+    "quatre nuits"
+   ],
+   "explanation": ""
+  },
+  {
+   "n": 103,
+   "answer": "B",
+   "docType": "annonce",
+   "voice": "PAUL",
+   "lines": [
+    {
+     "who": "Paul",
+     "text": "Bienvenue à l'hôtel ! Le petit-déjeuner est servi de sept heures à dix heures, au restaurant du rez-de-chaussée."
+    }
+   ],
+   "prompt": "Où est servi le petit-déjeuner ?",
+   "choices": [
+    "dans la chambre",
+    "au restaurant du rez-de-chaussée",
+    "au premier étage",
+    "sur la terrasse"
+   ],
+   "explanation": "Le rez-de-chaussée, c'est le niveau de la rue."
+  },
+  {
+   "n": 104,
+   "answer": "D",
+   "docType": "dialogue",
+   "voice": "both",
+   "lines": [
+    {
+     "who": "Paul",
+     "text": "Votre passeport, s'il vous plaît."
+    },
+    {
+     "who": "Sophie",
+     "text": "Voilà."
+    },
+    {
+     "who": "Paul",
+     "text": "Merci. Vous restez combien de temps au Canada ?"
+    },
+    {
+     "who": "Sophie",
+     "text": "Deux semaines."
+    }
+   ],
+   "prompt": "Combien de temps la femme reste au Canada ?",
+   "choices": [
+    "deux jours",
+    "un mois",
+    "deux mois",
+    "deux semaines"
+   ],
+   "explanation": ""
+  },
+  {
+   "n": 105,
+   "answer": "A",
+   "docType": "message",
+   "voice": "SOPHIE",
+   "lines": [
+    {
+     "who": "Sophie",
+     "text": "Coucou ! Je suis à Vancouver. Il fait beau, et la ville est magnifique ! Je rentre dimanche. Bisous !"
+    }
+   ],
+   "prompt": "Quand est-ce que la femme rentre ?",
+   "choices": [
+    "dimanche",
+    "samedi",
+    "lundi",
+    "vendredi"
+   ],
+   "explanation": "« Je rentre », ça veut dire : je reviens à la maison."
+  },
+  {
+   "n": 106,
+   "answer": "D",
+   "docType": "dialogue",
+   "voice": "both",
+   "lines": [
+    {
+     "who": "Paul",
+     "text": "On prend le train ou l'avion pour aller à Halifax ?"
+    },
+    {
+     "who": "Sophie",
+     "text": "L'avion. C'est plus rapide."
+    }
+   ],
+   "prompt": "Pourquoi est-ce qu'ils prennent l'avion ?",
+   "choices": [
+    "c'est moins cher",
+    "c'est plus confortable",
+    "il n'y a pas de train",
+    "c'est plus rapide"
+   ],
+   "explanation": ""
+  },
+  {
+   "n": 107,
+   "answer": "C",
+   "docType": "annonce",
+   "voice": "SOPHIE",
+   "lines": [
+    {
+     "who": "Sophie",
+     "text": "Les passagers du vol pour Calgary : embarquement immédiat, porte douze."
+    }
+   ],
+   "prompt": "À quelle porte est l'embarquement ?",
+   "choices": [
+    "la porte deux",
+    "la porte vingt",
+    "la porte douze",
+    "la porte vingt-deux"
+   ],
+   "explanation": "L'embarquement, c'est le moment où on monte dans l'avion."
+  },
+  {
+   "n": 108,
+   "answer": "B",
+   "docType": "dialogue",
+   "voice": "both",
+   "lines": [
+    {
+     "who": "Sophie",
+     "text": "Tu as ta valise ?"
+    },
+    {
+     "who": "Paul",
+     "text": "Oui… Oh non ! J'ai oublié mon sac à dos dans le taxi !"
+    }
+   ],
+   "prompt": "Qu'est-ce que l'homme a oublié ?",
+   "choices": [
+    "sa valise",
+    "son sac à dos",
+    "son passeport",
+    "son téléphone"
+   ],
+   "explanation": "Il a sa valise, mais son sac à dos est dans le taxi."
+  },
+  {
+   "n": 109,
+   "answer": "C",
+   "docType": "annonce",
+   "voice": "PAUL",
+   "lines": [
+    {
+     "who": "Paul",
+     "text": "Pendant les vacances, je visite des musées et je mange au restaurant. Mais je ne vais pas à la plage."
+    }
+   ],
+   "prompt": "Qu'est-ce que l'homme ne fait pas pendant les vacances ?",
+   "choices": [
+    "il visite des musées",
+    "il mange au restaurant",
+    "il va à la plage",
+    "il fait des photos"
+   ],
+   "explanation": "Lisez bien la question : elle demande ce qu'il ne fait pas !"
+  },
+  {
+   "n": 110,
+   "answer": "A",
+   "docType": "dialogue",
+   "voice": "both",
+   "lines": [
+    {
+     "who": "Sophie",
+     "text": "Bonjour, je voudrais louer une voiture pour le week-end."
+    },
+    {
+     "who": "Paul",
+     "text": "Une petite ou une grande ?"
+    },
+    {
+     "who": "Sophie",
+     "text": "Une petite, s'il vous plaît."
+    }
+   ],
+   "prompt": "Qu'est-ce que la femme veut ?",
+   "choices": [
+    "louer une petite voiture pour le week-end",
+    "acheter une voiture",
+    "louer une grande voiture",
+    "louer un vélo"
+   ],
+   "explanation": "Louer, c'est payer pour utiliser, pas pour acheter."
+  },
+  {
+   "n": 111,
+   "answer": "C",
+   "docType": "message",
+   "voice": "SOPHIE",
+   "lines": [
+    {
+     "who": "Sophie",
+     "text": "Bonjour, ici le bureau des inscriptions. Pour votre dossier, apportez une photo et votre passeport, mercredi matin. Merci."
+    }
+   ],
+   "prompt": "Qu'est-ce qu'il faut apporter ?",
+   "choices": [
+    "un permis de conduire et une photo",
+    "un passeport et une facture",
+    "une photo et un passeport",
+    "deux photos"
+   ],
+   "explanation": ""
+  },
+  {
+   "n": 112,
+   "answer": "A",
+   "docType": "dialogue",
+   "voice": "both",
+   "lines": [
+    {
+     "who": "Paul",
+     "text": "Allô, bonjour. Je voudrais parler à madame Roy, s'il vous plaît."
+    },
+    {
+     "who": "Sophie",
+     "text": "Désolée, elle n'est pas là. Vous pouvez rappeler demain ?"
+    }
+   ],
+   "prompt": "Qu'est-ce que la femme propose ?",
+   "choices": [
+    "de rappeler demain",
+    "de laisser un message",
+    "de venir au bureau",
+    "d'envoyer un courriel"
+   ],
+   "explanation": "Madame Roy n'est pas là aujourd'hui."
+  },
+  {
+   "n": 113,
+   "answer": "D",
+   "docType": "dialogue",
+   "voice": "both",
+   "lines": [
+    {
+     "who": "Sophie",
+     "text": "Quel est votre nom de famille ?"
+    },
+    {
+     "who": "Paul",
+     "text": "Benali. B… E… N… A… L… I."
+    }
+   ],
+   "prompt": "Comment s'écrit le nom de l'homme ?",
+   "choices": [
+    "B, E, N, A, L, Y",
+    "B, A, N, A, L, I",
+    "B, E, N, N, A, L, I",
+    "B, E, N, A, L, I"
+   ],
+   "explanation": "Au TCF, il faut bien connaître l'alphabet !"
+  },
+  {
+   "n": 114,
+   "answer": "B",
+   "docType": "dialogue",
+   "voice": "both",
+   "lines": [
+    {
+     "who": "Paul",
+     "text": "Quelle est votre date de naissance ?"
+    },
+    {
+     "who": "Sophie",
+     "text": "Le trois mai mille neuf cent quatre-vingt-quinze."
+    }
+   ],
+   "prompt": "Quelle est la date de naissance de la femme ?",
+   "choices": [
+    "le trois mars mille neuf cent quatre-vingt-quinze",
+    "le trois mai mille neuf cent quatre-vingt-quinze",
+    "le treize mai mille neuf cent quatre-vingt-quinze",
+    "le trois mai mille neuf cent quatre-vingt-cinq"
+   ],
+   "explanation": "Attention : « mai » et « mars » se ressemblent !"
+  },
+  {
+   "n": 115,
+   "answer": "D",
+   "docType": "message",
+   "voice": "PAUL",
+   "lines": [
+    {
+     "who": "Paul",
+     "text": "Bonjour, c'est Ahmed. Désolé, je suis en retard. Il y a beaucoup de trafic. J'arrive dans vingt minutes."
+    }
+   ],
+   "prompt": "Ahmed arrive dans combien de minutes ?",
+   "choices": [
+    "dix minutes",
+    "deux minutes",
+    "trente minutes",
+    "vingt minutes"
+   ],
+   "explanation": "Il est en retard à cause du trafic."
+  },
+  {
+   "n": 116,
+   "answer": "B",
+   "docType": "annonce",
+   "voice": "SOPHIE",
+   "lines": [
+    {
+     "who": "Sophie",
+     "text": "Bonjour. Notre bureau est fermé. Nos heures d'ouverture : du lundi au vendredi, de huit heures trente à seize heures trente."
+    }
+   ],
+   "prompt": "À quelle heure est-ce que le bureau ouvre ?",
+   "choices": [
+    "huit heures",
+    "huit heures trente",
+    "seize heures trente",
+    "neuf heures trente"
+   ],
+   "explanation": "Seize heures trente, c'est la fermeture."
+  },
+  {
+   "n": 117,
+   "answer": "C",
+   "docType": "dialogue",
+   "voice": "both",
+   "lines": [
+    {
+     "who": "Sophie",
+     "text": "Remplissez ce formulaire, et signez en bas, s'il vous plaît."
+    },
+    {
+     "who": "Paul",
+     "text": "Avec un stylo bleu ?"
+    },
+    {
+     "who": "Sophie",
+     "text": "Oui, bleu ou noir."
+    }
+   ],
+   "prompt": "Où est-ce qu'il faut signer ?",
+   "choices": [
+    "en haut",
+    "au milieu",
+    "en bas",
+    "au dos de la feuille"
+   ],
+   "explanation": "« Signez en bas » : c'est à la fin de la feuille."
+  },
+  {
+   "n": 118,
+   "answer": "A",
+   "docType": "message",
+   "voice": "PAUL",
+   "lines": [
+    {
+     "who": "Paul",
+     "text": "Bonjour, ici votre banque. Votre nouvelle carte bancaire est arrivée. Vous pouvez venir la chercher à partir de lundi."
+    }
+   ],
+   "prompt": "Qu'est-ce qui est arrivé à la banque ?",
+   "choices": [
+    "une carte bancaire",
+    "un passeport",
+    "une lettre",
+    "un chèque"
+   ],
+   "explanation": "On peut aller la chercher à partir de lundi."
+  },
+  {
+   "n": 119,
+   "answer": "D",
+   "docType": "dialogue",
+   "voice": "both",
+   "lines": [
+    {
+     "who": "Paul",
+     "text": "Pardon, madame. C'est quel bureau pour le permis de conduire ?"
+    },
+    {
+     "who": "Sophie",
+     "text": "Le bureau numéro sept, au deuxième étage."
+    }
+   ],
+   "prompt": "Où faut-il aller pour le permis de conduire ?",
+   "choices": [
+    "au bureau deux, au septième étage",
+    "au bureau dix-sept",
+    "au bureau sept, au premier étage",
+    "au bureau sept, au deuxième étage"
+   ],
+   "explanation": "Attention à ne pas inverser les deux nombres !"
+  },
+  {
+   "n": 120,
+   "answer": "B",
+   "docType": "dialogue",
+   "voice": "both",
+   "lines": [
+    {
+     "who": "Sophie",
+     "text": "Vous êtes au Canada depuis combien de temps ?"
+    },
+    {
+     "who": "Paul",
+     "text": "Depuis six mois. Je suis arrivé en avril."
+    }
+   ],
+   "prompt": "Depuis combien de temps l'homme est au Canada ?",
+   "choices": [
+    "depuis six ans",
+    "depuis six mois",
+    "depuis six semaines",
+    "depuis dix mois"
+   ],
+   "explanation": "Il est arrivé en avril."
+  }
+ ],
+ "segments": [
+  {
+   "id": "p3_intro_01",
+   "text": "Bonjour et bienvenue dans la partie trois ! On continue la préparation au TCF Canada : la compréhension orale, niveau A1.",
+   "kind": "intro"
+  },
+  {
+   "id": "p3_intro_02",
+   "text": "Aujourd'hui : les questions quatre-vingt-un à cent vingt. Rappel de la méthode : vous écoutez le document une seule fois. Vous lisez la question. Vous choisissez : A, B, C ou D. Ensuite, je donne la réponse et une explication.",
+   "kind": "intro"
+  },
+  {
+   "id": "p3_intro_03",
+   "text": "Les parties un et deux sont dans la description. Prenez un papier et un stylo, et comptez vos points. On commence !",
+   "kind": "intro"
+  },
+  {
+   "id": "p3_section_01",
+   "text": "Section un : les achats et les services. Le magasin, le marché, la poste… Écoutez bien !",
+   "kind": "section",
+   "section": 1
+  },
+  {
+   "id": "q81_1_document",
+   "text": "Sophie: Bonjour, je voudrais envoyer cette lettre en France, s'il vous plaît.\nPaul: Oui, madame. Ça fait trois dollars.",
+   "q": 81,
+   "kind": "document"
+  },
+  {
+   "id": "q81_2_question",
+   "text": "Question quatre-vingt-un. Où est-ce que la femme envoie sa lettre ? A : en Belgique. B : au Maroc. C : aux États-Unis. D : en France.",
+   "q": 81,
+   "kind": "question"
+  },
+  {
+   "id": "q81_3_reponse",
+   "text": "La bonne réponse est D : en France. Pour envoyer une lettre, on va à la poste.",
+   "q": 81,
+   "kind": "answer"
+  },
+  {
+   "id": "q82_1_document",
+   "text": "Paul: Alors, je coupe court ?\nSophie: Non, pas trop court, s'il vous plaît ! Juste un peu.",
+   "q": 82,
+   "kind": "document"
+  },
+  {
+   "id": "q82_2_question",
+   "text": "Question quatre-vingt-deux. Qu'est-ce que la femme veut ? A : des cheveux très courts. B : couper juste un peu. C : changer de couleur. D : ne pas couper.",
+   "q": 82,
+   "kind": "question"
+  },
+  {
+   "id": "q82_3_reponse",
+   "text": "La bonne réponse est B : couper juste un peu. Elle dit : « Pas trop court. Juste un peu. »",
+   "q": 82,
+   "kind": "answer"
+  },
+  {
+   "id": "q83_1_document",
+   "text": "Les fraises du Québec ! Bonnes fraises ! Cinq dollars la boîte !",
+   "q": 83,
+   "kind": "document"
+  },
+  {
+   "id": "q83_2_question",
+   "text": "Question quatre-vingt-trois. Qu'est-ce que l'homme vend ? A : des fraises. B : des pommes. C : des cerises. D : des tomates.",
+   "q": 83,
+   "kind": "question"
+  },
+  {
+   "id": "q83_3_reponse",
+   "text": "La bonne réponse est A : des fraises. Cinq dollars la boîte.",
+   "q": 83,
+   "kind": "answer"
+  },
+  {
+   "id": "q84_1_document",
+   "text": "Sophie: Je peux payer par carte ?\nPaul: Non, désolé. Seulement en argent comptant.",
+   "q": 84,
+   "kind": "document"
+  },
+  {
+   "id": "q84_2_question",
+   "text": "Question quatre-vingt-quatre. Comment est-ce que la femme doit payer ? A : par carte. B : par chèque. C : en argent comptant. D : avec son téléphone.",
+   "q": 84,
+   "kind": "question"
+  },
+  {
+   "id": "q84_3_reponse",
+   "text": "La bonne réponse est C : en argent comptant. Au Québec, « argent comptant », ça veut dire : en billets et en pièces.",
+   "q": 84,
+   "kind": "answer"
+  },
+  {
+   "id": "q85_1_document",
+   "text": "Paul: Cette chemise existe en noir ?\nSophie: Non, désolée. Seulement en blanc et en gris.",
+   "q": 85,
+   "kind": "document"
+  },
+  {
+   "id": "q85_2_question",
+   "text": "Question quatre-vingt-cinq. En quelles couleurs existe la chemise ? A : en noir et en blanc. B : en noir et en gris. C : en blanc et en gris. D : en bleu et en blanc.",
+   "q": 85,
+   "kind": "question"
+  },
+  {
+   "id": "q85_3_reponse",
+   "text": "La bonne réponse est C : en blanc et en gris. Le noir, il n'y en a pas !",
+   "q": 85,
+   "kind": "answer"
+  },
+  {
+   "id": "q86_1_document",
+   "text": "Chers clients, aujourd'hui seulement, tous les manteaux sont à moins cinquante pour cent !",
+   "q": 86,
+   "kind": "document"
+  },
+  {
+   "id": "q86_2_question",
+   "text": "Question quatre-vingt-six. Qu'est-ce qui est moins cher aujourd'hui ? A : les manteaux. B : les chaussures. C : les pantalons. D : les robes.",
+   "q": 86,
+   "kind": "question"
+  },
+  {
+   "id": "q86_3_reponse",
+   "text": "La bonne réponse est A : les manteaux. Moins cinquante pour cent : c'est la moitié du prix !",
+   "q": 86,
+   "kind": "answer"
+  },
+  {
+   "id": "q87_1_document",
+   "text": "Sophie: C'est combien, ces chaussures ?\nPaul: Quatre-vingt-dix dollars.\nSophie: Oh ! C'est trop cher !",
+   "q": 87,
+   "kind": "document"
+  },
+  {
+   "id": "q87_2_question",
+   "text": "Question quatre-vingt-sept. Qu'est-ce que la femme pense des chaussures ? A : elles sont belles. B : elles sont petites. C : elles ne sont pas chères. D : elles sont trop chères.",
+   "q": 87,
+   "kind": "question"
+  },
+  {
+   "id": "q87_3_reponse",
+   "text": "La bonne réponse est D : elles sont trop chères. Quatre-vingt-dix dollars, pour elle, c'est trop !",
+   "q": 87,
+   "kind": "answer"
+  },
+  {
+   "id": "q88_1_document",
+   "text": "Paul: Vous avez des sacs ?\nSophie: Oui. Dix sous le sac.",
+   "q": 88,
+   "kind": "document"
+  },
+  {
+   "id": "q88_2_question",
+   "text": "Question quatre-vingt-huit. Combien coûte un sac ? A : il est gratuit. B : dix sous. C : un dollar. D : cinq sous.",
+   "q": 88,
+   "kind": "question"
+  },
+  {
+   "id": "q88_3_reponse",
+   "text": "La bonne réponse est B : dix sous. Au Québec, on dit souvent « sous » pour les cents.",
+   "q": 88,
+   "kind": "answer"
+  },
+  {
+   "id": "q89_1_document",
+   "text": "Je vais au marché le samedi matin. J'achète des légumes et du fromage.",
+   "q": 89,
+   "kind": "document"
+  },
+  {
+   "id": "q89_2_question",
+   "text": "Question quatre-vingt-neuf. Quand est-ce que l'homme va au marché ? A : le samedi matin. B : le dimanche matin. C : le samedi soir. D : tous les jours.",
+   "q": 89,
+   "kind": "question"
+  },
+  {
+   "id": "q89_3_reponse",
+   "text": "La bonne réponse est A : le samedi matin.",
+   "q": 89,
+   "kind": "answer"
+  },
+  {
+   "id": "q90_1_document",
+   "text": "Sophie: Bonjour, je voudrais rendre ce pull. Il est trop petit.\nPaul: Vous avez le reçu ?\nSophie: Oui, voilà.",
+   "q": 90,
+   "kind": "document"
+  },
+  {
+   "id": "q90_2_question",
+   "text": "Question quatre-vingt-dix. Pourquoi est-ce que la femme rend le pull ? A : il est trop grand. B : elle n'aime pas la couleur. C : il est abîmé. D : il est trop petit.",
+   "q": 90,
+   "kind": "question"
+  },
+  {
+   "id": "q90_3_reponse",
+   "text": "La bonne réponse est D : il est trop petit. Le reçu, c'est le papier qu'on reçoit quand on paie.",
+   "q": 90,
+   "kind": "answer"
+  },
+  {
+   "id": "p3_section_02",
+   "text": "Bravo ! Section deux : le logement et la maison. La chambre, la cuisine, le quartier… On y va !",
+   "kind": "section",
+   "section": 2
+  },
+  {
+   "id": "q91_1_document",
+   "text": "Paul: Ton appartement a combien de chambres ?\nSophie: Deux chambres, une cuisine et un salon.",
+   "q": 91,
+   "kind": "document"
+  },
+  {
+   "id": "q91_2_question",
+   "text": "Question quatre-vingt-onze. Combien de chambres a l'appartement ? A : une. B : deux. C : trois. D : quatre.",
+   "q": 91,
+   "kind": "question"
+  },
+  {
+   "id": "q91_3_reponse",
+   "text": "La bonne réponse est B : deux chambres. La cuisine et le salon ne sont pas des chambres !",
+   "q": 91,
+   "kind": "answer"
+  },
+  {
+   "id": "q92_1_document",
+   "text": "Dans ma cuisine, il y a une grande table et quatre chaises.",
+   "q": 92,
+   "kind": "document"
+  },
+  {
+   "id": "q92_2_question",
+   "text": "Question quatre-vingt-douze. Combien de chaises il y a dans la cuisine ? A : deux. B : trois. C : six. D : quatre.",
+   "q": 92,
+   "kind": "question"
+  },
+  {
+   "id": "q92_3_reponse",
+   "text": "La bonne réponse est D : quatre chaises.",
+   "q": 92,
+   "kind": "answer"
+  },
+  {
+   "id": "q93_1_document",
+   "text": "Bonjour, c'est le concierge. Demain, il n'y a pas d'eau chaude, de neuf heures à midi. Merci de votre compréhension.",
+   "q": 93,
+   "kind": "document"
+  },
+  {
+   "id": "q93_2_question",
+   "text": "Question quatre-vingt-treize. Quel est le problème demain ? A : il n'y a pas d'électricité. B : il n'y a pas d'internet. C : il n'y a pas d'eau chaude. D : il n'y a pas de chauffage.",
+   "q": 93,
+   "kind": "question"
+  },
+  {
+   "id": "q93_3_reponse",
+   "text": "La bonne réponse est C : il n'y a pas d'eau chaude. Le concierge s'occupe de l'immeuble.",
+   "q": 93,
+   "kind": "answer"
+  },
+  {
+   "id": "q94_1_document",
+   "text": "Sophie: Les clés sont où ?\nPaul: Sur la table, dans l'entrée.",
+   "q": 94,
+   "kind": "document"
+  },
+  {
+   "id": "q94_2_question",
+   "text": "Question quatre-vingt-quatorze. Où sont les clés ? A : sur la table, dans l'entrée. B : dans la cuisine. C : dans le sac. D : sous la table.",
+   "q": 94,
+   "kind": "question"
+  },
+  {
+   "id": "q94_3_reponse",
+   "text": "La bonne réponse est A : sur la table, dans l'entrée. Attention : « sur » et « sous », c'est le contraire !",
+   "q": 94,
+   "kind": "answer"
+  },
+  {
+   "id": "q95_1_document",
+   "text": "Paul: Tu aimes ton quartier ?\nSophie: Oui ! C'est calme, et il y a un grand parc.",
+   "q": 95,
+   "kind": "document"
+  },
+  {
+   "id": "q95_2_question",
+   "text": "Question quatre-vingt-quinze. Comment est le quartier de la femme ? A : bruyant. B : calme. C : dangereux. D : loin de tout.",
+   "q": 95,
+   "kind": "question"
+  },
+  {
+   "id": "q95_3_reponse",
+   "text": "La bonne réponse est B : calme. Le contraire de calme, c'est bruyant.",
+   "q": 95,
+   "kind": "answer"
+  },
+  {
+   "id": "q96_1_document",
+   "text": "Je cherche un appartement près du métro. Mon budget, c'est neuf cents dollars par mois.",
+   "q": 96,
+   "kind": "document"
+  },
+  {
+   "id": "q96_2_question",
+   "text": "Question quatre-vingt-seize. Où est-ce que l'homme veut habiter ? A : au centre-ville. B : près de l'école. C : près du métro. D : à la campagne.",
+   "q": 96,
+   "kind": "question"
+  },
+  {
+   "id": "q96_3_reponse",
+   "text": "La bonne réponse est C : près du métro.",
+   "q": 96,
+   "kind": "answer"
+  },
+  {
+   "id": "q97_1_document",
+   "text": "Sophie: Tu peux m'aider ? Je déménage samedi.\nPaul: Oui, bien sûr ! À quelle heure ?\nSophie: À huit heures. Merci !",
+   "q": 97,
+   "kind": "document"
+  },
+  {
+   "id": "q97_2_question",
+   "text": "Question quatre-vingt-dix-sept. Qu'est-ce que la femme fait samedi ? A : elle déménage. B : elle fait une fête. C : elle voyage. D : elle travaille.",
+   "q": 97,
+   "kind": "question"
+  },
+  {
+   "id": "q97_3_reponse",
+   "text": "La bonne réponse est A : elle déménage. Déménager, c'est changer de logement.",
+   "q": 97,
+   "kind": "answer"
+  },
+  {
+   "id": "q98_1_document",
+   "text": "Information pour les locataires : le camion des poubelles passe le mardi matin.",
+   "q": 98,
+   "kind": "document"
+  },
+  {
+   "id": "q98_2_question",
+   "text": "Question quatre-vingt-dix-huit. Quel jour passe le camion des poubelles ? A : le lundi. B : le mercredi. C : le jeudi. D : le mardi.",
+   "q": 98,
+   "kind": "question"
+  },
+  {
+   "id": "q98_3_reponse",
+   "text": "La bonne réponse est D : le mardi matin.",
+   "q": 98,
+   "kind": "answer"
+  },
+  {
+   "id": "q99_1_document",
+   "text": "Paul: Il fait froid dans l'appartement !\nSophie: Oui, le chauffage ne marche pas. J'appelle le propriétaire.",
+   "q": 99,
+   "kind": "document"
+  },
+  {
+   "id": "q99_2_question",
+   "text": "Question quatre-vingt-dix-neuf. Qui est-ce que la femme va appeler ? A : le plombier. B : le propriétaire. C : le voisin. D : la police.",
+   "q": 99,
+   "kind": "question"
+  },
+  {
+   "id": "q99_3_reponse",
+   "text": "La bonne réponse est B : le propriétaire. Le chauffage ne marche pas, alors elle appelle le propriétaire.",
+   "q": 99,
+   "kind": "answer"
+  },
+  {
+   "id": "q100_1_document",
+   "text": "Ma chambre est petite, mais elle a une grande fenêtre. Le matin, il y a beaucoup de soleil.",
+   "q": 100,
+   "kind": "document"
+  },
+  {
+   "id": "q100_2_question",
+   "text": "Question cent. Comment est la chambre de l'homme ? A : grande et sombre. B : petite, sans fenêtre. C : petite, avec une grande fenêtre. D : grande, avec une petite fenêtre.",
+   "q": 100,
+   "kind": "question"
+  },
+  {
+   "id": "q100_3_reponse",
+   "text": "La bonne réponse est C : petite, avec une grande fenêtre. Et bravo : vous avez fait cent questions depuis le début de la série !",
+   "q": 100,
+   "kind": "answer"
+  },
+  {
+   "id": "p3_pause_milieu",
+   "text": "Super ! Vous êtes à la moitié de la partie trois ! Combien de bonnes réponses sur vingt ? Respirez un peu… et on continue avec les voyages !",
+   "kind": "pause"
+  },
+  {
+   "id": "p3_section_03",
+   "text": "Section trois : les voyages et les vacances. L'hôtel, l'aéroport, la valise… Bon voyage !",
+   "kind": "section",
+   "section": 3
+  },
+  {
+   "id": "q101_1_document",
+   "text": "Sophie: Tu pars en vacances quand ?\nPaul: En juillet. Je vais au Mexique !",
+   "q": 101,
+   "kind": "document"
+  },
+  {
+   "id": "q101_2_question",
+   "text": "Question cent un. Où va l'homme en vacances ? A : au Mexique. B : en France. C : au Maroc. D : en Espagne.",
+   "q": 101,
+   "kind": "question"
+  },
+  {
+   "id": "q101_3_reponse",
+   "text": "La bonne réponse est A : au Mexique, en juillet.",
+   "q": 101,
+   "kind": "answer"
+  },
+  {
+   "id": "q102_1_document",
+   "text": "Sophie: Bonjour, j'ai une réservation au nom de Dubois.\nPaul: Oui, madame Dubois. Une chambre pour trois nuits.",
+   "q": 102,
+   "kind": "document"
+  },
+  {
+   "id": "q102_2_question",
+   "text": "Question cent deux. Combien de nuits la femme reste à l'hôtel ? A : une nuit. B : deux nuits. C : trois nuits. D : quatre nuits.",
+   "q": 102,
+   "kind": "question"
+  },
+  {
+   "id": "q102_3_reponse",
+   "text": "La bonne réponse est C : trois nuits.",
+   "q": 102,
+   "kind": "answer"
+  },
+  {
+   "id": "q103_1_document",
+   "text": "Bienvenue à l'hôtel ! Le petit-déjeuner est servi de sept heures à dix heures, au restaurant du rez-de-chaussée.",
+   "q": 103,
+   "kind": "document"
+  },
+  {
+   "id": "q103_2_question",
+   "text": "Question cent trois. Où est servi le petit-déjeuner ? A : dans la chambre. B : au restaurant du rez-de-chaussée. C : au premier étage. D : sur la terrasse.",
+   "q": 103,
+   "kind": "question"
+  },
+  {
+   "id": "q103_3_reponse",
+   "text": "La bonne réponse est B : au restaurant du rez-de-chaussée. Le rez-de-chaussée, c'est le niveau de la rue.",
+   "q": 103,
+   "kind": "answer"
+  },
+  {
+   "id": "q104_1_document",
+   "text": "Paul: Votre passeport, s'il vous plaît.\nSophie: Voilà.\nPaul: Merci. Vous restez combien de temps au Canada ?\nSophie: Deux semaines.",
+   "q": 104,
+   "kind": "document"
+  },
+  {
+   "id": "q104_2_question",
+   "text": "Question cent quatre. Combien de temps la femme reste au Canada ? A : deux jours. B : un mois. C : deux mois. D : deux semaines.",
+   "q": 104,
+   "kind": "question"
+  },
+  {
+   "id": "q104_3_reponse",
+   "text": "La bonne réponse est D : deux semaines.",
+   "q": 104,
+   "kind": "answer"
+  },
+  {
+   "id": "q105_1_document",
+   "text": "Coucou ! Je suis à Vancouver. Il fait beau, et la ville est magnifique ! Je rentre dimanche. Bisous !",
+   "q": 105,
+   "kind": "document"
+  },
+  {
+   "id": "q105_2_question",
+   "text": "Question cent cinq. Quand est-ce que la femme rentre ? A : dimanche. B : samedi. C : lundi. D : vendredi.",
+   "q": 105,
+   "kind": "question"
+  },
+  {
+   "id": "q105_3_reponse",
+   "text": "La bonne réponse est A : dimanche. « Je rentre », ça veut dire : je reviens à la maison.",
+   "q": 105,
+   "kind": "answer"
+  },
+  {
+   "id": "q106_1_document",
+   "text": "Paul: On prend le train ou l'avion pour aller à Halifax ?\nSophie: L'avion. C'est plus rapide.",
+   "q": 106,
+   "kind": "document"
+  },
+  {
+   "id": "q106_2_question",
+   "text": "Question cent six. Pourquoi est-ce qu'ils prennent l'avion ? A : c'est moins cher. B : c'est plus confortable. C : il n'y a pas de train. D : c'est plus rapide.",
+   "q": 106,
+   "kind": "question"
+  },
+  {
+   "id": "q106_3_reponse",
+   "text": "La bonne réponse est D : c'est plus rapide.",
+   "q": 106,
+   "kind": "answer"
+  },
+  {
+   "id": "q107_1_document",
+   "text": "Les passagers du vol pour Calgary : embarquement immédiat, porte douze.",
+   "q": 107,
+   "kind": "document"
+  },
+  {
+   "id": "q107_2_question",
+   "text": "Question cent sept. À quelle porte est l'embarquement ? A : la porte deux. B : la porte vingt. C : la porte douze. D : la porte vingt-deux.",
+   "q": 107,
+   "kind": "question"
+  },
+  {
+   "id": "q107_3_reponse",
+   "text": "La bonne réponse est C : la porte douze. L'embarquement, c'est le moment où on monte dans l'avion.",
+   "q": 107,
+   "kind": "answer"
+  },
+  {
+   "id": "q108_1_document",
+   "text": "Sophie: Tu as ta valise ?\nPaul: Oui… Oh non ! J'ai oublié mon sac à dos dans le taxi !",
+   "q": 108,
+   "kind": "document"
+  },
+  {
+   "id": "q108_2_question",
+   "text": "Question cent huit. Qu'est-ce que l'homme a oublié ? A : sa valise. B : son sac à dos. C : son passeport. D : son téléphone.",
+   "q": 108,
+   "kind": "question"
+  },
+  {
+   "id": "q108_3_reponse",
+   "text": "La bonne réponse est B : son sac à dos. Il a sa valise, mais son sac à dos est dans le taxi.",
+   "q": 108,
+   "kind": "answer"
+  },
+  {
+   "id": "q109_1_document",
+   "text": "Pendant les vacances, je visite des musées et je mange au restaurant. Mais je ne vais pas à la plage.",
+   "q": 109,
+   "kind": "document"
+  },
+  {
+   "id": "q109_2_question",
+   "text": "Question cent neuf. Qu'est-ce que l'homme ne fait pas pendant les vacances ? A : il visite des musées. B : il mange au restaurant. C : il va à la plage. D : il fait des photos.",
+   "q": 109,
+   "kind": "question"
+  },
+  {
+   "id": "q109_3_reponse",
+   "text": "La bonne réponse est C : il va à la plage. Lisez bien la question : elle demande ce qu'il ne fait pas !",
+   "q": 109,
+   "kind": "answer"
+  },
+  {
+   "id": "q110_1_document",
+   "text": "Sophie: Bonjour, je voudrais louer une voiture pour le week-end.\nPaul: Une petite ou une grande ?\nSophie: Une petite, s'il vous plaît.",
+   "q": 110,
+   "kind": "document"
+  },
+  {
+   "id": "q110_2_question",
+   "text": "Question cent dix. Qu'est-ce que la femme veut ? A : louer une petite voiture pour le week-end. B : acheter une voiture. C : louer une grande voiture. D : louer un vélo.",
+   "q": 110,
+   "kind": "question"
+  },
+  {
+   "id": "q110_3_reponse",
+   "text": "La bonne réponse est A : louer une petite voiture pour le week-end. Louer, c'est payer pour utiliser, pas pour acheter.",
+   "q": 110,
+   "kind": "answer"
+  },
+  {
+   "id": "p3_section_04",
+   "text": "Dernière section ! Section quatre : le téléphone et les démarches. Les formulaires, les bureaux, les rendez-vous… C'est très utile pour la vie au Canada !",
+   "kind": "section",
+   "section": 4
+  },
+  {
+   "id": "q111_1_document",
+   "text": "Bonjour, ici le bureau des inscriptions. Pour votre dossier, apportez une photo et votre passeport, mercredi matin. Merci.",
+   "q": 111,
+   "kind": "document"
+  },
+  {
+   "id": "q111_2_question",
+   "text": "Question cent onze. Qu'est-ce qu'il faut apporter ? A : un permis de conduire et une photo. B : un passeport et une facture. C : une photo et un passeport. D : deux photos.",
+   "q": 111,
+   "kind": "question"
+  },
+  {
+   "id": "q111_3_reponse",
+   "text": "La bonne réponse est C : une photo et un passeport.",
+   "q": 111,
+   "kind": "answer"
+  },
+  {
+   "id": "q112_1_document",
+   "text": "Paul: Allô, bonjour. Je voudrais parler à madame Roy, s'il vous plaît.\nSophie: Désolée, elle n'est pas là. Vous pouvez rappeler demain ?",
+   "q": 112,
+   "kind": "document"
+  },
+  {
+   "id": "q112_2_question",
+   "text": "Question cent douze. Qu'est-ce que la femme propose ? A : de rappeler demain. B : de laisser un message. C : de venir au bureau. D : d'envoyer un courriel.",
+   "q": 112,
+   "kind": "question"
+  },
+  {
+   "id": "q112_3_reponse",
+   "text": "La bonne réponse est A : de rappeler demain. Madame Roy n'est pas là aujourd'hui.",
+   "q": 112,
+   "kind": "answer"
+  },
+  {
+   "id": "q113_1_document",
+   "text": "Sophie: Quel est votre nom de famille ?\nPaul: Benali. B… E… N… A… L… I.",
+   "q": 113,
+   "kind": "document"
+  },
+  {
+   "id": "q113_2_question",
+   "text": "Question cent treize. Comment s'écrit le nom de l'homme ? A : B, E, N, A, L, Y. B : B, A, N, A, L, I. C : B, E, N, N, A, L, I. D : B, E, N, A, L, I.",
+   "q": 113,
+   "kind": "question"
+  },
+  {
+   "id": "q113_3_reponse",
+   "text": "La bonne réponse est D : B, E, N, A, L, I. Au TCF, il faut bien connaître l'alphabet !",
+   "q": 113,
+   "kind": "answer"
+  },
+  {
+   "id": "q114_1_document",
+   "text": "Paul: Quelle est votre date de naissance ?\nSophie: Le trois mai mille neuf cent quatre-vingt-quinze.",
+   "q": 114,
+   "kind": "document"
+  },
+  {
+   "id": "q114_2_question",
+   "text": "Question cent quatorze. Quelle est la date de naissance de la femme ? A : le trois mars mille neuf cent quatre-vingt-quinze. B : le trois mai mille neuf cent quatre-vingt-quinze. C : le treize mai mille neuf cent quatre-vingt-quinze. D : le trois mai mille neuf cent quatre-vingt-cinq.",
+   "q": 114,
+   "kind": "question"
+  },
+  {
+   "id": "q114_3_reponse",
+   "text": "La bonne réponse est B : le trois mai mille neuf cent quatre-vingt-quinze. Attention : « mai » et « mars » se ressemblent !",
+   "q": 114,
+   "kind": "answer"
+  },
+  {
+   "id": "q115_1_document",
+   "text": "Bonjour, c'est Ahmed. Désolé, je suis en retard. Il y a beaucoup de trafic. J'arrive dans vingt minutes.",
+   "q": 115,
+   "kind": "document"
+  },
+  {
+   "id": "q115_2_question",
+   "text": "Question cent quinze. Ahmed arrive dans combien de minutes ? A : dix minutes. B : deux minutes. C : trente minutes. D : vingt minutes.",
+   "q": 115,
+   "kind": "question"
+  },
+  {
+   "id": "q115_3_reponse",
+   "text": "La bonne réponse est D : vingt minutes. Il est en retard à cause du trafic.",
+   "q": 115,
+   "kind": "answer"
+  },
+  {
+   "id": "q116_1_document",
+   "text": "Bonjour. Notre bureau est fermé. Nos heures d'ouverture : du lundi au vendredi, de huit heures trente à seize heures trente.",
+   "q": 116,
+   "kind": "document"
+  },
+  {
+   "id": "q116_2_question",
+   "text": "Question cent seize. À quelle heure est-ce que le bureau ouvre ? A : huit heures. B : huit heures trente. C : seize heures trente. D : neuf heures trente.",
+   "q": 116,
+   "kind": "question"
+  },
+  {
+   "id": "q116_3_reponse",
+   "text": "La bonne réponse est B : huit heures trente. Seize heures trente, c'est la fermeture.",
+   "q": 116,
+   "kind": "answer"
+  },
+  {
+   "id": "q117_1_document",
+   "text": "Sophie: Remplissez ce formulaire, et signez en bas, s'il vous plaît.\nPaul: Avec un stylo bleu ?\nSophie: Oui, bleu ou noir.",
+   "q": 117,
+   "kind": "document"
+  },
+  {
+   "id": "q117_2_question",
+   "text": "Question cent dix-sept. Où est-ce qu'il faut signer ? A : en haut. B : au milieu. C : en bas. D : au dos de la feuille.",
+   "q": 117,
+   "kind": "question"
+  },
+  {
+   "id": "q117_3_reponse",
+   "text": "La bonne réponse est C : en bas. « Signez en bas » : c'est à la fin de la feuille.",
+   "q": 117,
+   "kind": "answer"
+  },
+  {
+   "id": "q118_1_document",
+   "text": "Bonjour, ici votre banque. Votre nouvelle carte bancaire est arrivée. Vous pouvez venir la chercher à partir de lundi.",
+   "q": 118,
+   "kind": "document"
+  },
+  {
+   "id": "q118_2_question",
+   "text": "Question cent dix-huit. Qu'est-ce qui est arrivé à la banque ? A : une carte bancaire. B : un passeport. C : une lettre. D : un chèque.",
+   "q": 118,
+   "kind": "question"
+  },
+  {
+   "id": "q118_3_reponse",
+   "text": "La bonne réponse est A : une carte bancaire. On peut aller la chercher à partir de lundi.",
+   "q": 118,
+   "kind": "answer"
+  },
+  {
+   "id": "q119_1_document",
+   "text": "Paul: Pardon, madame. C'est quel bureau pour le permis de conduire ?\nSophie: Le bureau numéro sept, au deuxième étage.",
+   "q": 119,
+   "kind": "document"
+  },
+  {
+   "id": "q119_2_question",
+   "text": "Question cent dix-neuf. Où faut-il aller pour le permis de conduire ? A : au bureau deux, au septième étage. B : au bureau dix-sept. C : au bureau sept, au premier étage. D : au bureau sept, au deuxième étage.",
+   "q": 119,
+   "kind": "question"
+  },
+  {
+   "id": "q119_3_reponse",
+   "text": "La bonne réponse est D : au bureau sept, au deuxième étage. Attention à ne pas inverser les deux nombres !",
+   "q": 119,
+   "kind": "answer"
+  },
+  {
+   "id": "q120_1_document",
+   "text": "Sophie: Vous êtes au Canada depuis combien de temps ?\nPaul: Depuis six mois. Je suis arrivé en avril.",
+   "q": 120,
+   "kind": "document"
+  },
+  {
+   "id": "q120_2_question",
+   "text": "Question cent vingt. Depuis combien de temps l'homme est au Canada ? A : depuis six ans. B : depuis six mois. C : depuis six semaines. D : depuis dix mois.",
+   "q": 120,
+   "kind": "question"
+  },
+  {
+   "id": "q120_3_reponse",
+   "text": "La bonne réponse est B : depuis six mois. Il est arrivé en avril.",
+   "q": 120,
+   "kind": "answer"
+  },
+  {
+   "id": "p3_outro_01",
+   "text": "Félicitations ! Vous avez fini la partie trois ! Cent vingt questions déjà ! Comptez vos points. Trente bonnes réponses ou plus sur quarante ? Excellent travail ! Moins de trente ? Réécoutez les questions difficiles. Vous allez progresser.",
+   "kind": "outro"
+  },
+  {
+   "id": "p3_outro_02",
+   "text": "Écrivez votre score dans les commentaires ! Et abonnez-vous pour la partie quatre : les questions cent vingt et un à cent soixante. Merci et à bientôt. Bon courage pour le TCF Canada !",
+   "kind": "outro"
+  }
+ ]
+}

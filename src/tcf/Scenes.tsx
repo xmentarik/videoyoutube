@@ -8,6 +8,25 @@ const at = (it: Item, frac: number) => it.audioStart + it.dur * frac;
 // Cue where a phrase starts in the spoken text (proportional estimate).
 const cue = (it: Item, phrase: string) => at(it, Math.max(0, it.text.indexOf(phrase)) / Math.max(1, it.text.length));
 
+// On-screen lines that follow each part's script (halfway pause and score cards).
+const COPY: Record<number, { halfway: string; good: string; low: string }> = {
+  1: {
+    halfway: "Difficile ? Ce n'est pas grave : réécoutez la vidéo.",
+    good: "Bravo, votre niveau A1 est très bon !",
+    low: "Pas de problème : réécoutez et essayez encore.",
+  },
+  2: {
+    halfway: "Continuez comme ça. On passe à la suite !",
+    good: "Excellent ! Votre niveau A1 progresse.",
+    low: "Réécoutez la vidéo : c'est comme ça qu'on progresse.",
+  },
+  3: {
+    halfway: "Respirez un peu… et on continue avec les voyages !",
+    good: "Excellent travail ! Votre niveau A1 progresse.",
+    low: "Réécoutez les questions difficiles : vous allez progresser.",
+  },
+};
+
 const Shell: React.FC<{ t: number; it: Item; children: React.ReactNode }> = ({ t, it, children }) => {
   if (t < it.start || t > it.end) return null;
   const pin = prog(t, it.start, 0.45);
@@ -156,22 +175,37 @@ export const Recap: React.FC<{ t: number; it: Item }> = ({ t, it }) => (
   </Shell>
 );
 
-/* Later parts: link to the previous part, then go. */
+/* Later parts: link to the previous part(s), then go. */
 export const Ready: React.FC<{ t: number; it: Item }> = ({ t, it }) => {
   const part = usePart();
-  const prev = PARTS[part.n - 1];
+  const prevs = Object.values(PARTS).filter((p) => p.n < part.n);
+  const one = prevs.length === 1;
+  const names = prevs.map((p) => p.n).join(", ").replace(/, (\d+)$/, " et $1");
   return (
     <Shell t={t} it={it}>
       <div style={{ position: "absolute", top: 200, left: 0, right: 0, display: "flex", flexDirection: "column", alignItems: "center", gap: 40 }}>
         <div style={{ fontFamily: F.serif, fontStyle: "italic", fontWeight: 800, fontSize: 92, color: K.ink, ...rise(t, it.audioStart) }}>
-          Vous n'avez pas vu la partie {prev.n} ?
+          {one ? `Vous n'avez pas vu la partie ${names} ?` : `Les parties ${names}`}
         </div>
-        <Card style={{ display: "flex", alignItems: "center", gap: 34, padding: "30px 46px", ...pop(t, cue(it, "Le lien")) }}>
-          <Chip bg={K.ink} size={36}>
-            PARTIE {prev.n} · Q{prev.first} → Q{prev.last}
-          </Chip>
+        <Card
+          style={{
+            display: "flex",
+            flexDirection: one ? "row" : "column",
+            alignItems: "center",
+            gap: one ? 34 : 22,
+            padding: "30px 46px",
+            ...pop(t, cue(it, one ? "Le lien" : "dans la description")),
+          }}
+        >
+          <div style={{ display: "flex", gap: 18 }}>
+            {prevs.map((p) => (
+              <Chip key={p.n} bg={K.ink} size={36}>
+                PARTIE {p.n} · Q{p.first} → Q{p.last}
+              </Chip>
+            ))}
+          </div>
           <div style={{ fontFamily: F.display, fontWeight: 800, fontSize: 44, color: K.ink }}>
-            Le lien est dans la <span style={{ color: K.red }}>description</span> ↓
+            {one ? "Le lien est" : "Les liens sont"} dans la <span style={{ color: K.red }}>description</span> ↓
           </div>
         </Card>
       </div>
@@ -232,7 +266,7 @@ export const SectionCard: React.FC<{ t: number; it: Item }> = ({ t, it }) => {
 /* ---------------- mi-parcours ---------------- */
 
 export const Halfway: React.FC<{ t: number; it: Item }> = ({ t, it }) => {
-  const first = usePart().n === 1;
+  const copy = COPY[usePart().n];
   return (
     <Shell t={t} it={it}>
       <div style={{ position: "absolute", top: 170, left: 0, right: 0, display: "flex", flexDirection: "column", alignItems: "center" }}>
@@ -248,7 +282,7 @@ export const Halfway: React.FC<{ t: number; it: Item }> = ({ t, it }) => {
           <div style={{ fontFamily: F.display, fontWeight: 700, fontSize: 40, color: K.inkSoft, maxWidth: 560 }}>Combien de bonnes réponses ?</div>
         </Card>
         <div style={{ fontFamily: F.display, fontWeight: 700, fontSize: 40, color: K.inkSoft, marginTop: 50, ...rise(t, at(it, 0.55)) }}>
-          {first ? "Difficile ? Ce n'est pas grave : réécoutez la vidéo." : "Continuez comme ça. On passe à la suite !"}
+          {copy.halfway}
         </div>
       </div>
     </Shell>
@@ -260,6 +294,7 @@ export const Halfway: React.FC<{ t: number; it: Item }> = ({ t, it }) => {
 export const Outro1: React.FC<{ t: number; it: Item }> = ({ t, it }) => {
   const part = usePart();
   const first = part.n === 1;
+  const copy = COPY[part.n];
   const [tGood, tLow] = first ? [at(it, 0.38), at(it, 0.66)] : [cue(it, "Trente"), cue(it, "Moins de trente")];
   return (
     <Shell t={t} it={it}>
@@ -274,13 +309,13 @@ export const Outro1: React.FC<{ t: number; it: Item }> = ({ t, it }) => {
           <Card style={{ borderLeft: `14px solid ${K.green}`, ...pop(t, tGood) }}>
             <div style={{ fontFamily: F.display, fontWeight: 900, fontSize: 64, color: K.green }}>30 ou plus</div>
             <div style={{ fontFamily: F.display, fontWeight: 700, fontSize: 38, color: K.ink }}>
-              {first ? "Bravo, votre niveau A1 est très bon !" : "Excellent ! Votre niveau A1 progresse."}
+              {copy.good}
             </div>
           </Card>
           <Card style={{ borderLeft: `14px solid ${K.gold}`, ...pop(t, tLow) }}>
             <div style={{ fontFamily: F.display, fontWeight: 900, fontSize: 64, color: "#C98A0B" }}>Moins de 30</div>
             <div style={{ fontFamily: F.display, fontWeight: 700, fontSize: 38, color: K.ink }}>
-              {first ? "Pas de problème : réécoutez et essayez encore." : "Réécoutez la vidéo : c'est comme ça qu'on progresse."}
+              {copy.low}
             </div>
           </Card>
         </div>

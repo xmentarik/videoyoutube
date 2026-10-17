@@ -1,8 +1,10 @@
 import { createContext, useContext } from "react";
 import audioP1 from "./audio_p1.json";
 import audioP2 from "./audio_p2.json";
+import audioP3 from "./audio_p3.json";
 import scriptP1 from "./script_p1.json";
 import scriptP2 from "./script_p2.json";
+import scriptP3 from "./script_p3.json";
 
 // Une vidéo par partie de la série (40 questions chacune) :
 // script_pN.json  ← scripts/parse_tcf_script.py  (texte, questions, réponses)
@@ -128,6 +130,7 @@ export type Part = ReturnType<typeof makePart>;
 export const PARTS: Record<number, Part> = {
   1: makePart(1, scriptP1, audioP1),
   2: makePart(2, scriptP2, audioP2),
+  3: makePart(3, scriptP3, audioP3),
 };
 
 export const PartContext = createContext<Part>(PARTS[1]);

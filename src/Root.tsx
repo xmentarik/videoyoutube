@@ -19,8 +19,8 @@ export const RemotionRoot: React.FC = () => {
         height={1080}
         defaultProps={{ showArabic: true }}
       />
-      {/* TCF Canada — compréhension orale A1, partie 1 (Q1–40) et partie 2 (Q41–80). Audio : public/tcf/audio/ */}
-      {[1, 2].map((part) => (
+      {/* TCF Canada — compréhension orale A1, parties 1 à 3 (Q1–120). Audio : public/tcf/audio/ */}
+      {[1, 2, 3].map((part) => (
         <Composition
           key={part}
           id={`TcfA1Partie${part}`}
@@ -36,6 +36,7 @@ export const RemotionRoot: React.FC = () => {
       <Still id="MiniatureCours01" component={Thumbnail} width={1280} height={720} />
       <Still id="MiniatureTcfA1Partie1" component={TcfThumbnail} width={1280} height={720} defaultProps={{ part: 1, sample: 1 }} />
       <Still id="MiniatureTcfA1Partie2" component={TcfThumbnail} width={1280} height={720} defaultProps={{ part: 2, sample: 80 }} />
+      <Still id="MiniatureTcfA1Partie3" component={TcfThumbnail} width={1280} height={720} defaultProps={{ part: 3, sample: 101 }} />
       {/* فيديو تجريبي: 1920x1080 بمعدل 30 إطاراً في الثانية، مدته 5 ثوانٍ */}
       <Composition
         id="HelloWorld"

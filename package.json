@@ -15,6 +15,10 @@
     "tcf2:audio": "python3 scripts/measure_tcf_audio.py --part=2",
     "tcf2:build": "remotion render TcfA1Partie2 out/tcf-canada-a1-partie2.mp4",
     "tcf2:thumbnail": "remotion still MiniatureTcfA1Partie2 out/miniature-tcf-a1-partie2.png",
+    "tcf3:voices": "python3 scripts/generate_tcf_audio.py gemini --part=3",
+    "tcf3:audio": "python3 scripts/measure_tcf_audio.py --part=3",
+    "tcf3:build": "remotion render TcfA1Partie3 out/tcf-canada-a1-partie3.mp4",
+    "tcf3:thumbnail": "remotion still MiniatureTcfA1Partie3 out/miniature-tcf-a1-partie3.png",
     "upgrade": "remotion upgrade",
     "lint": "tsc"
   },
