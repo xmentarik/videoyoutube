@@ -40,6 +40,7 @@ npm install
 - الصوت: ضع الملفات الـ 130 في `public/tcf/audio/` بأسمائها (`intro_01.wav`، `q01_1_document.wav`…)، ثم شغّل
   `npm run tcf:audio` لقياس المدد وكتابة `src/tcf/audio.json`، ثم `npm run tcf:build`.
 - قبل وصول الصوت، المدد تُقدَّر من النص، فيمكن معاينة الفيديو (بدون صوت) في Studio.
+- الصورة المصغّرة: `npm run tcf:thumbnail` ← `out/miniature-tcf-a1-partie1.png`. العنوان والوصف والوسوم (SEO) في `scripts/TCF_Canada_CO_A1_Partie1_youtube.md`.
 
 ## مثال: إضافة مقطع فيديو
 

@@ -10,6 +10,7 @@
     "tcf:audio": "python3 scripts/measure_tcf_audio.py",
     "tcf:build": "remotion render TcfA1Partie1 out/tcf-canada-a1-partie1.mp4",
     "thumbnail": "remotion still MiniatureCours01 out/miniature-cours-01.png",
+    "tcf:thumbnail": "remotion still MiniatureTcfA1Partie1 out/miniature-tcf-a1-partie1.png",
     "upgrade": "remotion upgrade",
     "lint": "tsc"
   },
