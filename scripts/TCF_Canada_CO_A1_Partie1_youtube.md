@@ -31,6 +31,7 @@ TCF Canada 2026 : Compréhension Orale A1 – 40 Questions avec Réponses (Parti
 📚 SÉRIE « TCF Canada – 200 questions »
 ▶️ Partie 1 : questions 1 à 40 (cette vidéo)
 ▶️ Partie 2 : questions 41 à 80 👉 [LIEN PARTIE 2]
+▶️ Partie 3 : questions 81 à 120 👉 [LIEN PARTIE 3]
 
 ℹ️ Questions d'entraînement originales, conçues sur le modèle de l'épreuve officielle du TCF Canada (France Éducation international). Ce ne sont pas des questions officielles.
 

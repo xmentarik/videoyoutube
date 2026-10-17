@@ -34,7 +34,7 @@ npm install
 
 ## فيديوهات TCF Canada — الفهم الشفهي A1 (سلسلة 200 سؤال، 40 سؤالاً لكل جزء)
 
-الجزء 1 (Q1–40) والجزء 2 (Q41–80) يشتركان في نفس الكود؛ الأوامر `tcf:*` للجزء 1 و`tcf2:*` للجزء 2.
+الأجزاء 1 (Q1–40) و2 (Q41–80) و3 (Q81–120) تشترك في نفس الكود؛ الأوامر `tcf:*` للجزء 1 و`tcf2:*` و`tcf3:*` للجزأين 2 و3.
 
 - النص: `scripts/TCF_Canada_CO_A1_PartieN_script_TTS.md` ← يُحوَّل إلى `src/tcf/script_pN.json` بالأمر
   `python3 scripts/parse_tcf_script.py scripts/TCF_Canada_CO_A1_Partie2_script_TTS.md src/tcf/script_p2.json`
