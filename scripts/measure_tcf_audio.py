@@ -1,6 +1,6 @@
-"""Measure the TCF voice files and write src/tcf/audio.json.
+"""Measure the TCF voice files and write src/tcf/audio_pN.json.
 
-usage: python3 scripts/measure_tcf_audio.py [audio_dir]   (default: public/tcf/audio)
+usage: python3 scripts/measure_tcf_audio.py [--part=2] [audio_dir]   (default: part 1, public/tcf/audio)
 
 Each file must be named after its script block: intro_01.wav, q01_1_document.wav,
 q01_2_question.mp3, ... For every file we store its duration and, for questions and
@@ -14,9 +14,11 @@ import subprocess
 import sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-audio_dir = sys.argv[1] if len(sys.argv) > 1 else os.path.join(ROOT, "public", "tcf", "audio")
+part = next((a.split("=", 1)[1] for a in sys.argv[1:] if a.startswith("--part=")), "1")
+args = [a for a in sys.argv[1:] if not a.startswith("--")]
+audio_dir = args[0] if args else os.path.join(ROOT, "public", "tcf", "audio")
 public = os.path.join(ROOT, "public")
-script = json.load(open(os.path.join(ROOT, "src", "tcf", "script.json"), encoding="utf-8"))
+script = json.load(open(os.path.join(ROOT, "src", "tcf", f"script_p{part}.json"), encoding="utf-8"))
 questions = {q["n"]: q for q in script["questions"]}
 
 
@@ -78,7 +80,7 @@ for seg in script["segments"]:
         entry["marks"] = snap(est, onsets(path))
     result[seg["id"]] = entry
 
-json.dump(result, open(os.path.join(ROOT, "src", "tcf", "audio.json"), "w"), indent=1)
+json.dump(result, open(os.path.join(ROOT, "src", "tcf", f"audio_p{part}.json"), "w"), indent=1)
 total = sum(e["duration"] for e in result.values())
 print(f"{len(result)} fichiers mesurés ({total / 60:.1f} min de voix), {len(missing)} manquants")
 if missing:

@@ -1,10 +1,12 @@
 import React from "react";
 import { AbsoluteFill } from "remotion";
-import { Item, LETTERS, SCRIPT } from "./data";
+import { Item, LETTERS, PARTS, usePart } from "./data";
 import { CheckMark, Chip, F, K, MapleLeaf, SH, pop, prog, rise, spr } from "./ui";
 
 // Cue at a fraction of a segment's audio (used where the script gives no finer timing).
 const at = (it: Item, frac: number) => it.audioStart + it.dur * frac;
+// Cue where a phrase starts in the spoken text (proportional estimate).
+const cue = (it: Item, phrase: string) => at(it, Math.max(0, it.text.indexOf(phrase)) / Math.max(1, it.text.length));
 
 const Shell: React.FC<{ t: number; it: Item; children: React.ReactNode }> = ({ t, it, children }) => {
   if (t < it.start || t > it.end) return null;
@@ -19,29 +21,34 @@ const Card: React.FC<{ children: React.ReactNode; style?: React.CSSProperties }>
 
 /* ---------------- intro ---------------- */
 
-export const Intro1: React.FC<{ t: number; it: Item }> = ({ t, it }) => (
-  <Shell t={t} it={it}>
-    <div style={{ position: "absolute", top: 170, left: 0, right: 0, display: "flex", flexDirection: "column", alignItems: "center" }}>
-      <div style={{ ...pop(t, it.start + 0.2, 0.3, 0), transform: `${pop(t, it.start + 0.2, 0.3, 0).transform} rotate(${(1 - spr(t, it.start + 0.2)) * -40}deg)` }}>
-        <MapleLeaf size={150} />
-      </div>
-      <div style={{ fontFamily: F.serif, fontStyle: "italic", fontWeight: 800, fontSize: 120, color: K.ink, marginTop: 10, ...rise(t, it.audioStart) }}>
-        Bonjour et bienvenue !
-      </div>
-      <div style={{ fontFamily: F.display, fontWeight: 900, fontSize: 150, lineHeight: 1, color: K.ink, letterSpacing: -2, ...pop(t, at(it, 0.32)) }}>
-        TCF <span style={{ color: K.red }}>CANADA</span> 2026
-      </div>
-      <div style={{ display: "flex", gap: 22, marginTop: 40 }}>
-        <div style={pop(t, at(it, 0.62))}>
-          <Chip bg={K.ink} size={32}>COMPRÉHENSION ORALE</Chip>
+export const Intro1: React.FC<{ t: number; it: Item }> = ({ t, it }) => {
+  const part = usePart();
+  const first = part.n === 1;
+  const [tTcf, tOral, tLevel] = first ? [at(it, 0.32), at(it, 0.62), at(it, 0.82)] : [cue(it, "TCF"), cue(it, "compréhension"), cue(it, "niveau")];
+  return (
+    <Shell t={t} it={it}>
+      <div style={{ position: "absolute", top: 170, left: 0, right: 0, display: "flex", flexDirection: "column", alignItems: "center" }}>
+        <div style={{ ...pop(t, it.start + 0.2, 0.3, 0), transform: `${pop(t, it.start + 0.2, 0.3, 0).transform} rotate(${(1 - spr(t, it.start + 0.2)) * -40}deg)` }}>
+          <MapleLeaf size={150} />
         </div>
-        <div style={pop(t, at(it, 0.82))}>
-          <Chip bg={K.red} size={32}>NIVEAU A1 · DÉBUTANT</Chip>
+        <div style={{ fontFamily: F.serif, fontStyle: "italic", fontWeight: 800, fontSize: 120, color: K.ink, marginTop: 10, ...rise(t, it.audioStart) }}>
+          {first ? "Bonjour et bienvenue !" : `Bienvenue dans la partie ${part.n} !`}
+        </div>
+        <div style={{ fontFamily: F.display, fontWeight: 900, fontSize: 150, lineHeight: 1, color: K.ink, letterSpacing: -2, ...pop(t, tTcf) }}>
+          TCF <span style={{ color: K.red }}>CANADA</span> 2026
+        </div>
+        <div style={{ display: "flex", gap: 22, marginTop: 40 }}>
+          <div style={pop(t, tOral)}>
+            <Chip bg={K.ink} size={32}>COMPRÉHENSION ORALE</Chip>
+          </div>
+          <div style={pop(t, tLevel)}>
+            <Chip bg={K.red} size={32}>NIVEAU A1 · DÉBUTANT</Chip>
+          </div>
         </div>
       </div>
-    </div>
-  </Shell>
-);
+    </Shell>
+  );
+};
 
 export const Intro2: React.FC<{ t: number; it: Item }> = ({ t, it }) => {
   const facts = [
@@ -67,31 +74,35 @@ export const Intro2: React.FC<{ t: number; it: Item }> = ({ t, it }) => {
   );
 };
 
-export const Intro3: React.FC<{ t: number; it: Item }> = ({ t, it }) => {
-  const steps = [
-    { n: "1", s: "Écoutez", f: 0.36 },
-    { n: "2", s: "Lisez la question", f: 0.42 },
-    { n: "3", s: "Choisissez", f: 0.48 },
-    { n: "4", s: "Vérifiez la réponse", f: 0.56 },
-  ];
+const SeriesChips: React.FC<{ t: number; at0: number; at1: number }> = ({ t, at0, at1 }) => {
+  const part = usePart();
   return (
-    <Shell t={t} it={it}>
-      <div style={{ position: "absolute", top: 160, left: 0, right: 0, display: "flex", justifyContent: "center", gap: 30 }}>
-        <div style={pop(t, at(it, 0.0))}>
-          <Chip bg={K.ink} size={30}>200 QUESTIONS AVEC RÉPONSES</Chip>
-        </div>
-        <div style={pop(t, at(it, 0.14))}>
-          <Chip bg={K.red} size={30}>PARTIE 1 · Q1 → Q40</Chip>
-        </div>
+    <div style={{ position: "absolute", top: 160, left: 0, right: 0, display: "flex", justifyContent: "center", gap: 30 }}>
+      <div style={pop(t, at0)}>
+        <Chip bg={K.ink} size={30}>200 QUESTIONS AVEC RÉPONSES</Chip>
       </div>
-      <div style={{ position: "absolute", top: 260, left: 0, right: 0, textAlign: "center", fontFamily: F.serif, fontStyle: "italic", fontWeight: 800, fontSize: 96, color: K.ink, ...rise(t, at(it, 0.3)) }}>
-        La méthode
+      <div style={pop(t, at1)}>
+        <Chip bg={K.red} size={30}>
+          PARTIE {part.n} · Q{part.first} → Q{part.last}
+        </Chip>
       </div>
-      <div style={{ position: "absolute", top: 420, left: 120, right: 120, display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-        {steps.map((x, i) => (
-          <React.Fragment key={x.n}>
-            {i > 0 && <div style={{ fontFamily: F.display, fontWeight: 900, fontSize: 60, color: K.muted, opacity: prog(t, at(it, x.f), 0.3) }}>→</div>}
-            <Card style={{ width: 330, textAlign: "center", padding: "30px 20px", ...pop(t, at(it, x.f)) }}>
+    </div>
+  );
+};
+
+const STEPS = ["Écoutez", "Lisez la question", "Choisissez", "Vérifiez la réponse"];
+
+// "La méthode": title + 4 steps; `cues` = title time then one time per step.
+const Method: React.FC<{ t: number; cues: number[] }> = ({ t, cues }) => (
+  <>
+    <div style={{ position: "absolute", top: 260, left: 0, right: 0, textAlign: "center", fontFamily: F.serif, fontStyle: "italic", fontWeight: 800, fontSize: 96, color: K.ink, ...rise(t, cues[0]) }}>
+      La méthode
+    </div>
+    <div style={{ position: "absolute", top: 420, left: 120, right: 120, display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+      {STEPS.map((s, i) => (
+        <React.Fragment key={s}>
+          {i > 0 && <div style={{ fontFamily: F.display, fontWeight: 900, fontSize: 60, color: K.muted, opacity: prog(t, cues[i + 1], 0.3) }}>→</div>}
+          <Card style={{ width: 330, textAlign: "center", padding: "30px 20px", ...pop(t, cues[i + 1]) }}>
               <div
                 style={{
                   width: 84,
@@ -108,21 +119,63 @@ export const Intro3: React.FC<{ t: number; it: Item }> = ({ t, it }) => {
                   justifyContent: "center",
                 }}
               >
-                {x.n}
+                {i + 1}
               </div>
-              <div style={{ fontFamily: F.display, fontWeight: 800, fontSize: 38, color: K.ink, marginTop: 16 }}>{x.s}</div>
+              <div style={{ fontFamily: F.display, fontWeight: 800, fontSize: 38, color: K.ink, marginTop: 16 }}>{s}</div>
             </Card>
           </React.Fragment>
-        ))}
-      </div>
-      <div style={{ position: "absolute", top: 720, left: 0, right: 0, display: "flex", flexDirection: "column", alignItems: "center", gap: 24 }}>
-        <div style={{ fontFamily: F.display, fontWeight: 700, fontSize: 44, color: K.inkSoft, ...rise(t, at(it, 0.68)) }}>
-          Prenez un papier et un stylo, et <b style={{ color: K.ink }}>comptez vos points</b>.
+      ))}
+    </div>
+  </>
+);
+
+const ReadyRow: React.FC<{ t: number; top: number; atPaper: number; atGo: number }> = ({ t, top, atPaper, atGo }) => (
+  <div style={{ position: "absolute", top, left: 0, right: 0, display: "flex", flexDirection: "column", alignItems: "center", gap: 24 }}>
+    <div style={{ fontFamily: F.display, fontWeight: 700, fontSize: 44, color: K.inkSoft, ...rise(t, atPaper) }}>
+      Prenez un papier et un stylo, et <b style={{ color: K.ink }}>comptez vos points</b>.
+    </div>
+    <div style={pop(t, atGo)}>
+      <Chip bg={K.red} size={44}>On commence !</Chip>
+    </div>
+  </div>
+);
+
+export const Intro3: React.FC<{ t: number; it: Item }> = ({ t, it }) => (
+  <Shell t={t} it={it}>
+    <SeriesChips t={t} at0={at(it, 0.0)} at1={at(it, 0.14)} />
+    <Method t={t} cues={[0.3, 0.36, 0.42, 0.48, 0.56].map((f) => at(it, f))} />
+    <ReadyRow t={t} top={720} atPaper={at(it, 0.68)} atGo={at(it, 0.9)} />
+  </Shell>
+);
+
+/* Later parts: "today, questions X to Y" + a reminder of the method. */
+export const Recap: React.FC<{ t: number; it: Item }> = ({ t, it }) => (
+  <Shell t={t} it={it}>
+    <SeriesChips t={t} at0={it.audioStart} at1={cue(it, "les questions")} />
+    <Method t={t} cues={[cue(it, "Rappel"), cue(it, "vous écoutez"), cue(it, "Vous lisez"), cue(it, "Vous choisissez"), cue(it, "Ensuite")]} />
+  </Shell>
+);
+
+/* Later parts: link to the previous part, then go. */
+export const Ready: React.FC<{ t: number; it: Item }> = ({ t, it }) => {
+  const part = usePart();
+  const prev = PARTS[part.n - 1];
+  return (
+    <Shell t={t} it={it}>
+      <div style={{ position: "absolute", top: 200, left: 0, right: 0, display: "flex", flexDirection: "column", alignItems: "center", gap: 40 }}>
+        <div style={{ fontFamily: F.serif, fontStyle: "italic", fontWeight: 800, fontSize: 92, color: K.ink, ...rise(t, it.audioStart) }}>
+          Vous n'avez pas vu la partie {prev.n} ?
         </div>
-        <div style={pop(t, at(it, 0.9))}>
-          <Chip bg={K.red} size={44}>On commence !</Chip>
-        </div>
+        <Card style={{ display: "flex", alignItems: "center", gap: 34, padding: "30px 46px", ...pop(t, cue(it, "Le lien")) }}>
+          <Chip bg={K.ink} size={36}>
+            PARTIE {prev.n} · Q{prev.first} → Q{prev.last}
+          </Chip>
+          <div style={{ fontFamily: F.display, fontWeight: 800, fontSize: 44, color: K.ink }}>
+            Le lien est dans la <span style={{ color: K.red }}>description</span> ↓
+          </div>
+        </Card>
       </div>
+      <ReadyRow t={t} top={640} atPaper={cue(it, "Prenez")} atGo={cue(it, "On commence")} />
     </Shell>
   );
 };
@@ -130,7 +183,7 @@ export const Intro3: React.FC<{ t: number; it: Item }> = ({ t, it }) => {
 /* ---------------- section card ---------------- */
 
 export const SectionCard: React.FC<{ t: number; it: Item }> = ({ t, it }) => {
-  const s = SCRIPT.sections[String(it.section)];
+  const s = usePart().script.sections[String(it.section)];
   const bravo = it.text.startsWith("Bravo");
   const titleT = bravo ? at(it, 0.35) : it.audioStart;
   return (
@@ -178,105 +231,124 @@ export const SectionCard: React.FC<{ t: number; it: Item }> = ({ t, it }) => {
 
 /* ---------------- mi-parcours ---------------- */
 
-export const Halfway: React.FC<{ t: number; it: Item }> = ({ t, it }) => (
-  <Shell t={t} it={it}>
-    <div style={{ position: "absolute", top: 170, left: 0, right: 0, display: "flex", flexDirection: "column", alignItems: "center" }}>
-      <div style={{ fontFamily: F.serif, fontStyle: "italic", fontWeight: 800, fontSize: 130, color: K.ink, ...pop(t, it.audioStart) }}>Super !</div>
-      <div style={{ fontFamily: F.display, fontWeight: 800, fontSize: 56, color: K.red, ...rise(t, at(it, 0.08)) }}>Vous êtes à la moitié</div>
-      <div style={{ width: 1100, height: 28, borderRadius: 14, background: `${K.ink}14`, marginTop: 40, overflow: "hidden", ...rise(t, at(it, 0.1)) }}>
-        <div style={{ width: `${50 * prog(t, at(it, 0.1), 1.2)}%`, height: "100%", background: K.red, borderRadius: 14 }} />
-      </div>
-      <Card style={{ marginTop: 60, display: "flex", alignItems: "center", gap: 40, ...pop(t, at(it, 0.25)) }}>
-        <div style={{ fontFamily: F.display, fontWeight: 900, fontSize: 120, color: K.ink }}>
-          ?<span style={{ color: K.muted }}> / 20</span>
+export const Halfway: React.FC<{ t: number; it: Item }> = ({ t, it }) => {
+  const first = usePart().n === 1;
+  return (
+    <Shell t={t} it={it}>
+      <div style={{ position: "absolute", top: 170, left: 0, right: 0, display: "flex", flexDirection: "column", alignItems: "center" }}>
+        <div style={{ fontFamily: F.serif, fontStyle: "italic", fontWeight: 800, fontSize: 130, color: K.ink, ...pop(t, it.audioStart) }}>Super !</div>
+        <div style={{ fontFamily: F.display, fontWeight: 800, fontSize: 56, color: K.red, ...rise(t, at(it, 0.08)) }}>Vous êtes à la moitié</div>
+        <div style={{ width: 1100, height: 28, borderRadius: 14, background: `${K.ink}14`, marginTop: 40, overflow: "hidden", ...rise(t, at(it, 0.1)) }}>
+          <div style={{ width: `${50 * prog(t, at(it, 0.1), 1.2)}%`, height: "100%", background: K.red, borderRadius: 14 }} />
         </div>
-        <div style={{ fontFamily: F.display, fontWeight: 700, fontSize: 40, color: K.inkSoft, maxWidth: 560 }}>Combien de bonnes réponses ?</div>
-      </Card>
-      <div style={{ fontFamily: F.display, fontWeight: 700, fontSize: 40, color: K.inkSoft, marginTop: 50, ...rise(t, at(it, 0.55)) }}>
-        Difficile ? Ce n'est pas grave : réécoutez la vidéo.
+        <Card style={{ marginTop: 60, display: "flex", alignItems: "center", gap: 40, ...pop(t, at(it, 0.25)) }}>
+          <div style={{ fontFamily: F.display, fontWeight: 900, fontSize: 120, color: K.ink }}>
+            ?<span style={{ color: K.muted }}> / 20</span>
+          </div>
+          <div style={{ fontFamily: F.display, fontWeight: 700, fontSize: 40, color: K.inkSoft, maxWidth: 560 }}>Combien de bonnes réponses ?</div>
+        </Card>
+        <div style={{ fontFamily: F.display, fontWeight: 700, fontSize: 40, color: K.inkSoft, marginTop: 50, ...rise(t, at(it, 0.55)) }}>
+          {first ? "Difficile ? Ce n'est pas grave : réécoutez la vidéo." : "Continuez comme ça. On passe à la suite !"}
+        </div>
       </div>
-    </div>
-  </Shell>
-);
+    </Shell>
+  );
+};
 
 /* ---------------- conclusion ---------------- */
 
-export const Outro1: React.FC<{ t: number; it: Item }> = ({ t, it }) => (
-  <Shell t={t} it={it}>
-    <div style={{ position: "absolute", top: 150, left: 0, right: 0, textAlign: "center" }}>
-      <div style={{ fontFamily: F.serif, fontStyle: "italic", fontWeight: 800, fontSize: 120, color: K.ink, ...pop(t, it.audioStart) }}>Félicitations !</div>
-      <div style={{ fontFamily: F.display, fontWeight: 800, fontSize: 46, color: K.red, ...rise(t, at(it, 0.12)) }}>Vous avez fini les 40 questions</div>
-    </div>
-    <div style={{ position: "absolute", top: 390, left: 140, right: 140, display: "flex", gap: 40 }}>
-      <div style={{ flex: 1, display: "flex", flexDirection: "column", gap: 26 }}>
-        <Card style={{ borderLeft: `14px solid ${K.green}`, ...pop(t, at(it, 0.38)) }}>
-          <div style={{ fontFamily: F.display, fontWeight: 900, fontSize: 64, color: K.green }}>30 ou plus</div>
-          <div style={{ fontFamily: F.display, fontWeight: 700, fontSize: 38, color: K.ink }}>Bravo, votre niveau A1 est très bon !</div>
-        </Card>
-        <Card style={{ borderLeft: `14px solid ${K.gold}`, ...pop(t, at(it, 0.66)) }}>
-          <div style={{ fontFamily: F.display, fontWeight: 900, fontSize: 64, color: "#C98A0B" }}>Moins de 30</div>
-          <div style={{ fontFamily: F.display, fontWeight: 700, fontSize: 38, color: K.ink }}>Pas de problème : réécoutez et essayez encore.</div>
-        </Card>
+export const Outro1: React.FC<{ t: number; it: Item }> = ({ t, it }) => {
+  const part = usePart();
+  const first = part.n === 1;
+  const [tGood, tLow] = first ? [at(it, 0.38), at(it, 0.66)] : [cue(it, "Trente"), cue(it, "Moins de trente")];
+  return (
+    <Shell t={t} it={it}>
+      <div style={{ position: "absolute", top: 150, left: 0, right: 0, textAlign: "center" }}>
+        <div style={{ fontFamily: F.serif, fontStyle: "italic", fontWeight: 800, fontSize: 120, color: K.ink, ...pop(t, it.audioStart) }}>Félicitations !</div>
+        <div style={{ fontFamily: F.display, fontWeight: 800, fontSize: 46, color: K.red, ...rise(t, at(it, 0.12)) }}>
+          {first ? "Vous avez fini les 40 questions" : `Partie ${part.n} terminée · ${part.last} questions travaillées`}
+        </div>
       </div>
-      <Card style={{ width: 640, padding: "26px 30px", ...pop(t, at(it, 0.25)) }}>
-        <div style={{ fontFamily: F.display, fontWeight: 800, fontSize: 26, color: K.inkSoft, letterSpacing: 2, marginBottom: 12 }}>CORRIGÉ</div>
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(5, 1fr)", gap: 8 }}>
-          {SCRIPT.questions.map((q, i) => (
-            <div
-              key={q.n}
-              style={{
-                display: "flex",
-                justifyContent: "space-between",
-                padding: "6px 12px",
-                borderRadius: 12,
-                background: K.paper,
-                fontFamily: F.display,
-                fontSize: 24,
-                opacity: prog(t, at(it, 0.25) + i * 0.03, 0.2),
-              }}
-            >
-              <span style={{ color: K.inkSoft, fontWeight: 600 }}>{q.n}</span>
-              <span style={{ color: [K.red, K.blue, K.green, K.ink][LETTERS.indexOf(q.answer)], fontWeight: 900 }}>{q.answer}</span>
+      <div style={{ position: "absolute", top: 390, left: 140, right: 140, display: "flex", gap: 40 }}>
+        <div style={{ flex: 1, display: "flex", flexDirection: "column", gap: 26 }}>
+          <Card style={{ borderLeft: `14px solid ${K.green}`, ...pop(t, tGood) }}>
+            <div style={{ fontFamily: F.display, fontWeight: 900, fontSize: 64, color: K.green }}>30 ou plus</div>
+            <div style={{ fontFamily: F.display, fontWeight: 700, fontSize: 38, color: K.ink }}>
+              {first ? "Bravo, votre niveau A1 est très bon !" : "Excellent ! Votre niveau A1 progresse."}
             </div>
-          ))}
+          </Card>
+          <Card style={{ borderLeft: `14px solid ${K.gold}`, ...pop(t, tLow) }}>
+            <div style={{ fontFamily: F.display, fontWeight: 900, fontSize: 64, color: "#C98A0B" }}>Moins de 30</div>
+            <div style={{ fontFamily: F.display, fontWeight: 700, fontSize: 38, color: K.ink }}>
+              {first ? "Pas de problème : réécoutez et essayez encore." : "Réécoutez la vidéo : c'est comme ça qu'on progresse."}
+            </div>
+          </Card>
         </div>
-      </Card>
-    </div>
-  </Shell>
-);
+        <Card style={{ width: 640, padding: "26px 30px", ...pop(t, at(it, 0.25)) }}>
+          <div style={{ fontFamily: F.display, fontWeight: 800, fontSize: 26, color: K.inkSoft, letterSpacing: 2, marginBottom: 12 }}>CORRIGÉ</div>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(5, 1fr)", gap: 8 }}>
+            {part.script.questions.map((q, i) => (
+              <div
+                key={q.n}
+                style={{
+                  display: "flex",
+                  justifyContent: "space-between",
+                  padding: "6px 12px",
+                  borderRadius: 12,
+                  background: K.paper,
+                  fontFamily: F.display,
+                  fontSize: 24,
+                  opacity: prog(t, at(it, 0.25) + i * 0.03, 0.2),
+                }}
+              >
+                <span style={{ color: K.inkSoft, fontWeight: 600 }}>{q.n}</span>
+                <span style={{ color: [K.red, K.blue, K.green, K.ink][LETTERS.indexOf(q.answer)], fontWeight: 900 }}>{q.answer}</span>
+              </div>
+            ))}
+          </div>
+        </Card>
+      </div>
+    </Shell>
+  );
+};
 
-export const Outro2: React.FC<{ t: number; it: Item }> = ({ t, it }) => (
-  <Shell t={t} it={it}>
-    <div style={{ position: "absolute", top: 230, left: 0, right: 0, display: "flex", flexDirection: "column", alignItems: "center" }}>
-      <Card style={{ display: "flex", alignItems: "center", gap: 26, ...pop(t, it.audioStart) }}>
-        <div style={{ fontFamily: F.display, fontWeight: 900, fontSize: 70, color: K.red }}>? / 40</div>
-        <div style={{ fontFamily: F.display, fontWeight: 800, fontSize: 42, color: K.ink }}>Écrivez votre score dans les commentaires !</div>
-      </Card>
-      <div
-        style={{
-          marginTop: 60,
-          display: "flex",
-          alignItems: "center",
-          gap: 34,
-          padding: "30px 46px",
-          borderRadius: 40,
-          background: K.red,
-          color: K.white,
-          boxShadow: `0 18px 0 ${K.redDeep}`,
-          ...pop(t, at(it, 0.3)),
-        }}
-      >
-        <div style={{ fontFamily: F.display, fontWeight: 900, fontSize: 52 }}>Abonnez-vous</div>
-        <div style={{ width: 4, height: 70, background: "rgba(255,255,255,0.5)" }} />
-        <div>
-          <div style={{ fontFamily: F.display, fontWeight: 800, fontSize: 30, opacity: 0.85, letterSpacing: 2 }}>PROCHAINE VIDÉO</div>
-          <div style={{ fontFamily: F.display, fontWeight: 900, fontSize: 44 }}>Partie 2 · Q41 → Q80</div>
+export const Outro2: React.FC<{ t: number; it: Item }> = ({ t, it }) => {
+  const { n, last } = usePart();
+  return (
+    <Shell t={t} it={it}>
+      <div style={{ position: "absolute", top: 230, left: 0, right: 0, display: "flex", flexDirection: "column", alignItems: "center" }}>
+        <Card style={{ display: "flex", alignItems: "center", gap: 26, ...pop(t, it.audioStart) }}>
+          <div style={{ fontFamily: F.display, fontWeight: 900, fontSize: 70, color: K.red }}>? / 40</div>
+          <div style={{ fontFamily: F.display, fontWeight: 800, fontSize: 42, color: K.ink }}>Écrivez votre score dans les commentaires !</div>
+        </Card>
+        <div
+          style={{
+            marginTop: 60,
+            display: "flex",
+            alignItems: "center",
+            gap: 34,
+            padding: "30px 46px",
+            borderRadius: 40,
+            background: K.red,
+            color: K.white,
+            boxShadow: `0 18px 0 ${K.redDeep}`,
+            ...pop(t, at(it, 0.3)),
+          }}
+        >
+          <div style={{ fontFamily: F.display, fontWeight: 900, fontSize: 52 }}>Abonnez-vous</div>
+          <div style={{ width: 4, height: 70, background: "rgba(255,255,255,0.5)" }} />
+          <div>
+            <div style={{ fontFamily: F.display, fontWeight: 800, fontSize: 30, opacity: 0.85, letterSpacing: 2 }}>PROCHAINE VIDÉO</div>
+            <div style={{ fontFamily: F.display, fontWeight: 900, fontSize: 44 }}>
+              Partie {n + 1} · Q{last + 1} → Q{last + 40}
+            </div>
+          </div>
+        </div>
+        <div style={{ display: "flex", alignItems: "center", gap: 24, marginTop: 70, ...rise(t, at(it, 0.7)) }}>
+          <MapleLeaf size={80} />
+          <div style={{ fontFamily: F.serif, fontStyle: "italic", fontWeight: 800, fontSize: 84, color: K.ink }}>Bon courage pour le TCF Canada !</div>
         </div>
       </div>
-      <div style={{ display: "flex", alignItems: "center", gap: 24, marginTop: 70, ...rise(t, at(it, 0.7)) }}>
-        <MapleLeaf size={80} />
-        <div style={{ fontFamily: F.serif, fontStyle: "italic", fontWeight: 800, fontSize: 84, color: K.ink }}>Bon courage pour le TCF Canada !</div>
-      </div>
-    </div>
-  </Shell>
-);
+    </Shell>
+  );
+};

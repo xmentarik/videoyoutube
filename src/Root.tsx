@@ -3,7 +3,7 @@ import { HelloWorld } from "./HelloWorld";
 import { FrenchLesson } from "./french/FrenchLesson";
 import { Thumbnail } from "./french/Thumbnail";
 import { TcfThumbnail } from "./tcf/Thumbnail";
-import { TCF_DURATION_S, TcfVideo } from "./tcf/TcfVideo";
+import { TcfVideo, tcfDuration } from "./tcf/TcfVideo";
 import { DURATION_S, FPS } from "./french/theme";
 
 export const RemotionRoot: React.FC = () => {
@@ -19,18 +19,23 @@ export const RemotionRoot: React.FC = () => {
         height={1080}
         defaultProps={{ showArabic: true }}
       />
-      {/* TCF Canada — compréhension orale A1, partie 1 (Q1–40). Audio : public/tcf/audio/ */}
-      <Composition
-        id="TcfA1Partie1"
-        component={TcfVideo}
-        durationInFrames={Math.round(TCF_DURATION_S * FPS)}
-        fps={FPS}
-        width={1920}
-        height={1080}
-      />
+      {/* TCF Canada — compréhension orale A1, partie 1 (Q1–40) et partie 2 (Q41–80). Audio : public/tcf/audio/ */}
+      {[1, 2].map((part) => (
+        <Composition
+          key={part}
+          id={`TcfA1Partie${part}`}
+          component={TcfVideo}
+          durationInFrames={Math.round(tcfDuration(part) * FPS)}
+          fps={FPS}
+          width={1920}
+          height={1080}
+          defaultProps={{ part }}
+        />
+      ))}
       {/* الصورة المصغّرة ليوتيوب */}
       <Still id="MiniatureCours01" component={Thumbnail} width={1280} height={720} />
-      <Still id="MiniatureTcfA1Partie1" component={TcfThumbnail} width={1280} height={720} />
+      <Still id="MiniatureTcfA1Partie1" component={TcfThumbnail} width={1280} height={720} defaultProps={{ part: 1, sample: 1 }} />
+      <Still id="MiniatureTcfA1Partie2" component={TcfThumbnail} width={1280} height={720} defaultProps={{ part: 2, sample: 80 }} />
       {/* فيديو تجريبي: 1920x1080 بمعدل 30 إطاراً في الثانية، مدته 5 ثوانٍ */}
       <Composition
         id="HelloWorld"

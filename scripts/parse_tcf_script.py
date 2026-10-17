@@ -1,4 +1,7 @@
-"""Parse the TTS script (markdown) into src/tcf/script.json for the Remotion video."""
+"""Parse a TTS script (markdown) into src/tcf/script_pN.json for the Remotion video.
+
+usage: python3 scripts/parse_tcf_script.py scripts/TCF_Canada_CO_A1_Partie2_script_TTS.md src/tcf/script_p2.json
+"""
 import json, re, sys
 
 src, out = sys.argv[1], sys.argv[2]
@@ -61,9 +64,10 @@ for bid, kind, body in blocks:
             expl = re.sub(r"^La bonne réponse est [ABCD] : [^.!]*[.!]\s*", "", t)
             q["explanation"] = expl
     else:
-        seg["kind"] = bid.split("_")[0]  # intro / section / pause / outro
-        if bid.startswith("section_"):
-            seg["section"] = int(bid.split("_")[1])
+        base = re.sub(r"^p\d+_", "", bid)  # part 2+ ids are prefixed: p2_intro_01
+        seg["kind"] = base.split("_")[0]  # intro / section / pause / outro
+        if base.startswith("section_"):
+            seg["section"] = int(base.split("_")[1])
     segments.append(seg)
 
 json.dump({"sections": sections, "questions": [questions[k] for k in sorted(questions)], "segments": segments},

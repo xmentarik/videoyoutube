@@ -1,9 +1,11 @@
 import React from "react";
 import { AbsoluteFill } from "remotion";
 import { useFonts } from "../french/fonts";
+import { LETTERS, PARTS } from "./data";
 import { CheckMark, F, K, MapleLeaf } from "./ui";
 
-// YouTube thumbnail (1280×720) for the TCF Canada A1 video — same palette and type as the video.
+// YouTube thumbnail (1280×720) for one part of the TCF Canada A1 series — same palette and type as the video.
+// `sample` = the question shown on the card (pick one with a short prompt).
 
 const Headphones: React.FC<{ size: number; color: string }> = ({ size, color }) => (
   <svg width={size} height={size} viewBox="0 0 100 100">
@@ -47,8 +49,9 @@ const Choice: React.FC<{ l: string; text: string; right?: boolean }> = ({ l, tex
   </div>
 );
 
-export const TcfThumbnail: React.FC = () => {
+export const TcfThumbnail: React.FC<{ part: number; sample: number }> = ({ part, sample }) => {
   useFonts();
+  const q = PARTS[part].question(sample);
   return (
     <AbsoluteFill style={{ background: K.paper, overflow: "hidden" }}>
       {/* backdrop */}
@@ -145,12 +148,11 @@ export const TcfThumbnail: React.FC = () => {
           gap: 12,
         }}
       >
-        <div style={{ fontFamily: F.display, fontWeight: 800, fontSize: 26, letterSpacing: 3, color: K.red }}>QUESTION 1</div>
-        <div style={{ fontFamily: F.display, fontWeight: 900, fontSize: 44, lineHeight: 1.05, color: K.ink, marginBottom: 6 }}>Où habite Sophie ?</div>
-        <Choice l="A" text="à Québec" />
-        <Choice l="B" text="à Montréal" right />
-        <Choice l="C" text="à Toronto" />
-        <Choice l="D" text="à Ottawa" />
+        <div style={{ fontFamily: F.display, fontWeight: 800, fontSize: 26, letterSpacing: 3, color: K.red }}>QUESTION {q.n}</div>
+        <div style={{ fontFamily: F.display, fontWeight: 900, fontSize: 44, lineHeight: 1.05, color: K.ink, marginBottom: 6 }}>{q.prompt.replace(/ ([?!:])/g, "\u00a0$1")}</div>
+        {q.choices.map((c, i) => (
+          <Choice key={c} l={LETTERS[i]} text={c} right={LETTERS[i] === q.answer} />
+        ))}
       </div>
 
       {/* level badge */}
@@ -195,7 +197,7 @@ export const TcfThumbnail: React.FC = () => {
           boxShadow: "0 12px 24px rgba(15,27,45,0.18)",
         }}
       >
-        PARTIE 1
+        PARTIE {part}
       </div>
     </AbsoluteFill>
   );

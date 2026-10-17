@@ -1,0 +1,1714 @@
+{
+ "sections": {
+  "1": {
+   "title": "La nourriture et les restaurants",
+   "from": 41,
+   "to": 50
+  },
+  "2": {
+   "title": "Le travail et l'école",
+   "from": 51,
+   "to": 60
+  },
+  "3": {
+   "title": "La santé et le corps",
+   "from": 61,
+   "to": 70
+  },
+  "4": {
+   "title": "Les loisirs et la vie quotidienne",
+   "from": 71,
+   "to": 80
+  }
+ },
+ "questions": [
+  {
+   "n": 41,
+   "answer": "C",
+   "docType": "dialogue",
+   "voice": "both",
+   "lines": [
+    {
+     "who": "Paul",
+     "text": "Bonjour madame. Vous désirez ?"
+    },
+    {
+     "who": "Sophie",
+     "text": "Une soupe et une salade, s'il vous plaît."
+    },
+    {
+     "who": "Paul",
+     "text": "Et comme boisson ?"
+    },
+    {
+     "who": "Sophie",
+     "text": "Un jus d'orange."
+    }
+   ],
+   "prompt": "Qu'est-ce que la femme boit ?",
+   "choices": [
+    "de l'eau",
+    "un café",
+    "un jus d'orange",
+    "du thé"
+   ],
+   "explanation": "La soupe et la salade, c'est pour manger. Le jus d'orange, c'est la boisson."
+  },
+  {
+   "n": 42,
+   "answer": "A",
+   "docType": "annonce",
+   "voice": "PAUL",
+   "lines": [
+    {
+     "who": "Paul",
+     "text": "Le matin, je mange des céréales et je bois un thé. Je ne bois pas de café."
+    }
+   ],
+   "prompt": "Qu'est-ce que l'homme boit le matin ?",
+   "choices": [
+    "du thé",
+    "du café",
+    "du lait",
+    "du jus"
+   ],
+   "explanation": "Attention à la négation : « Je ne bois pas de café. »"
+  },
+  {
+   "n": 43,
+   "answer": "D",
+   "docType": "dialogue",
+   "voice": "both",
+   "lines": [
+    {
+     "who": "Sophie",
+     "text": "Tu aimes le poisson ?"
+    },
+    {
+     "who": "Paul",
+     "text": "Non, je n'aime pas ça. Je préfère le poulet."
+    }
+   ],
+   "prompt": "Qu'est-ce que l'homme préfère ?",
+   "choices": [
+    "le poisson",
+    "le bœuf",
+    "les légumes",
+    "le poulet"
+   ],
+   "explanation": "Il n'aime pas le poisson. Il préfère le poulet."
+  },
+  {
+   "n": 44,
+   "answer": "B",
+   "docType": "dialogue",
+   "voice": "both",
+   "lines": [
+    {
+     "who": "Paul",
+     "text": "L'addition, s'il vous plaît."
+    },
+    {
+     "who": "Sophie",
+     "text": "Oui, monsieur. Ça fait quarante-deux dollars."
+    }
+   ],
+   "prompt": "Combien coûte le repas ?",
+   "choices": [
+    "vingt-quatre dollars",
+    "quarante-deux dollars",
+    "cinquante-deux dollars",
+    "douze dollars"
+   ],
+   "explanation": "« L'addition », c'est la facture au restaurant."
+  },
+  {
+   "n": 45,
+   "answer": "B",
+   "docType": "annonce",
+   "voice": "SOPHIE",
+   "lines": [
+    {
+     "who": "Sophie",
+     "text": "Pour faire une omelette, il faut trois œufs, un peu de lait et un peu de sel. C'est facile !"
+    }
+   ],
+   "prompt": "Combien d'œufs faut-il pour l'omelette ?",
+   "choices": [
+    "deux",
+    "trois",
+    "quatre",
+    "six"
+   ],
+   "explanation": ""
+  },
+  {
+   "n": 46,
+   "answer": "D",
+   "docType": "dialogue",
+   "voice": "both",
+   "lines": [
+    {
+     "who": "Sophie",
+     "text": "On mange au restaurant ce soir ?"
+    },
+    {
+     "who": "Paul",
+     "text": "Non, je suis fatigué. On mange à la maison."
+    }
+   ],
+   "prompt": "Où est-ce qu'ils mangent ce soir ?",
+   "choices": [
+    "au restaurant",
+    "chez des amis",
+    "au café",
+    "à la maison"
+   ],
+   "explanation": "Sophie propose le restaurant, mais Paul dit non."
+  },
+  {
+   "n": 47,
+   "answer": "A",
+   "docType": "annonce",
+   "voice": "PAUL",
+   "lines": [
+    {
+     "who": "Paul",
+     "text": "Bonjour à tous ! Aujourd'hui, le menu du midi : poulet, riz et salade. Et comme dessert : un gâteau au chocolat !"
+    }
+   ],
+   "prompt": "Quel est le dessert ?",
+   "choices": [
+    "un gâteau au chocolat",
+    "une tarte aux pommes",
+    "une glace",
+    "des fruits"
+   ],
+   "explanation": ""
+  },
+  {
+   "n": 48,
+   "answer": "C",
+   "docType": "dialogue",
+   "voice": "both",
+   "lines": [
+    {
+     "who": "Paul",
+     "text": "Tu veux du sucre dans ton café ?"
+    },
+    {
+     "who": "Sophie",
+     "text": "Non merci. Juste un peu de lait."
+    }
+   ],
+   "prompt": "Qu'est-ce que la femme veut dans son café ?",
+   "choices": [
+    "du sucre",
+    "du sucre et du lait",
+    "du lait",
+    "rien"
+   ],
+   "explanation": "« Non merci » pour le sucre, mais « juste un peu de lait »."
+  },
+  {
+   "n": 49,
+   "answer": "D",
+   "docType": "annonce",
+   "voice": "SOPHIE",
+   "lines": [
+    {
+     "who": "Sophie",
+     "text": "J'ai faim ! Il est treize heures, et je n'ai pas mangé ce matin."
+    }
+   ],
+   "prompt": "Pourquoi est-ce que la femme a faim ?",
+   "choices": [
+    "elle a fait du sport",
+    "elle a mal au ventre",
+    "elle travaille beaucoup",
+    "elle n'a pas mangé ce matin"
+   ],
+   "explanation": ""
+  },
+  {
+   "n": 50,
+   "answer": "A",
+   "docType": "dialogue",
+   "voice": "both",
+   "lines": [
+    {
+     "who": "Sophie",
+     "text": "Bonjour ! Deux baguettes et quatre croissants, s'il vous plaît."
+    },
+    {
+     "who": "Paul",
+     "text": "Voilà, madame !"
+    }
+   ],
+   "prompt": "Combien de croissants est-ce que la femme achète ?",
+   "choices": [
+    "quatre",
+    "deux",
+    "six",
+    "huit"
+   ],
+   "explanation": "Deux, c'est le nombre de baguettes."
+  },
+  {
+   "n": 51,
+   "answer": "B",
+   "docType": "dialogue",
+   "voice": "both",
+   "lines": [
+    {
+     "who": "Paul",
+     "text": "Tu travailles où ?"
+    },
+    {
+     "who": "Sophie",
+     "text": "Je travaille dans une banque, au centre-ville."
+    }
+   ],
+   "prompt": "Où travaille la femme ?",
+   "choices": [
+    "dans une école",
+    "dans une banque",
+    "dans un hôpital",
+    "dans un magasin"
+   ],
+   "explanation": ""
+  },
+  {
+   "n": 52,
+   "answer": "C",
+   "docType": "annonce",
+   "voice": "PAUL",
+   "lines": [
+    {
+     "who": "Paul",
+     "text": "Je commence le travail à sept heures, et je finis à quinze heures."
+    }
+   ],
+   "prompt": "À quelle heure est-ce que l'homme finit le travail ?",
+   "choices": [
+    "sept heures",
+    "dix-sept heures",
+    "quinze heures",
+    "treize heures"
+   ],
+   "explanation": "Sept heures, c'est le début. Quinze heures, c'est la fin."
+  },
+  {
+   "n": 53,
+   "answer": "A",
+   "docType": "dialogue",
+   "voice": "both",
+   "lines": [
+    {
+     "who": "Sophie",
+     "text": "Tu travailles le samedi ?"
+    },
+    {
+     "who": "Paul",
+     "text": "Non. Je travaille du lundi au vendredi."
+    }
+   ],
+   "prompt": "Quand est-ce que l'homme travaille ?",
+   "choices": [
+    "du lundi au vendredi",
+    "du lundi au samedi",
+    "le week-end",
+    "le samedi seulement"
+   ],
+   "explanation": "Le samedi, il ne travaille pas."
+  },
+  {
+   "n": 54,
+   "answer": "D",
+   "docType": "message",
+   "voice": "SOPHIE",
+   "lines": [
+    {
+     "who": "Sophie",
+     "text": "Bonjour Paul, c'est Isabelle. La réunion de demain est à dix heures, dans la salle trois. Merci !"
+    }
+   ],
+   "prompt": "Où est la réunion ?",
+   "choices": [
+    "dans la salle deux",
+    "dans la salle dix",
+    "dans le bureau du directeur",
+    "dans la salle trois"
+   ],
+   "explanation": "Dix, c'est l'heure : dix heures."
+  },
+  {
+   "n": 55,
+   "answer": "C",
+   "docType": "dialogue",
+   "voice": "both",
+   "lines": [
+    {
+     "who": "Paul",
+     "text": "Tu as un nouveau travail ?"
+    },
+    {
+     "who": "Sophie",
+     "text": "Oui ! Je suis serveuse dans un restaurant."
+    }
+   ],
+   "prompt": "Quel est le nouveau travail de la femme ?",
+   "choices": [
+    "cuisinière",
+    "vendeuse",
+    "serveuse",
+    "secrétaire"
+   ],
+   "explanation": "Une serveuse apporte les plats aux clients, au restaurant."
+  },
+  {
+   "n": 56,
+   "answer": "B",
+   "docType": "annonce",
+   "voice": "PAUL",
+   "lines": [
+    {
+     "who": "Paul",
+     "text": "Bon, c'est fini pour aujourd'hui. Pour demain, lisez la page vingt-cinq du livre. À demain !"
+    }
+   ],
+   "prompt": "Quelle page faut-il lire ?",
+   "choices": [
+    "la page quinze",
+    "la page vingt-cinq",
+    "la page trente-cinq",
+    "la page cinquante-deux"
+   ],
+   "explanation": ""
+  },
+  {
+   "n": 57,
+   "answer": "D",
+   "docType": "dialogue",
+   "voice": "both",
+   "lines": [
+    {
+     "who": "Sophie",
+     "text": "Tu vas au travail comment ?"
+    },
+    {
+     "who": "Paul",
+     "text": "En voiture. Mais demain, je prends le vélo !"
+    }
+   ],
+   "prompt": "Comment est-ce que l'homme va au travail demain ?",
+   "choices": [
+    "en voiture",
+    "en autobus",
+    "en métro",
+    "à vélo"
+   ],
+   "explanation": "D'habitude, c'est en voiture. Mais la question dit : demain !"
+  },
+  {
+   "n": 58,
+   "answer": "A",
+   "docType": "message",
+   "voice": "SOPHIE",
+   "lines": [
+    {
+     "who": "Sophie",
+     "text": "Bonjour, ici l'école Jean-Talon. Votre fils est malade. Venez le chercher, s'il vous plaît."
+    }
+   ],
+   "prompt": "Qu'est-ce que l'école demande ?",
+   "choices": [
+    "de venir chercher le fils",
+    "d'appeler le médecin",
+    "d'envoyer un courriel",
+    "d'acheter des médicaments"
+   ],
+   "explanation": "« Venez le chercher » : le parent doit aller à l'école."
+  },
+  {
+   "n": 59,
+   "answer": "C",
+   "docType": "dialogue",
+   "voice": "both",
+   "lines": [
+    {
+     "who": "Paul",
+     "text": "Tu as combien d'élèves dans ta classe ?"
+    },
+    {
+     "who": "Sophie",
+     "text": "J'ai vingt et un élèves."
+    }
+   ],
+   "prompt": "Combien d'élèves a la femme ?",
+   "choices": [
+    "douze",
+    "vingt",
+    "vingt et un",
+    "trente et un"
+   ],
+   "explanation": ""
+  },
+  {
+   "n": 60,
+   "answer": "B",
+   "docType": "dialogue",
+   "voice": "both",
+   "lines": [
+    {
+     "who": "Sophie",
+     "text": "Pourquoi tu apprends le français ?"
+    },
+    {
+     "who": "Paul",
+     "text": "Pour travailler au Québec !"
+    }
+   ],
+   "prompt": "Pourquoi est-ce que l'homme apprend le français ?",
+   "choices": [
+    "pour voyager en France",
+    "pour travailler au Québec",
+    "pour ses études",
+    "pour sa famille"
+   ],
+   "explanation": "Comme beaucoup d'entre vous, peut-être !"
+  },
+  {
+   "n": 61,
+   "answer": "A",
+   "docType": "dialogue",
+   "voice": "both",
+   "lines": [
+    {
+     "who": "Sophie",
+     "text": "Qu'est-ce que tu as, Paul ?"
+    },
+    {
+     "who": "Paul",
+     "text": "J'ai mal à la tête."
+    }
+   ],
+   "prompt": "Qu'est-ce que Paul a ?",
+   "choices": [
+    "il a mal à la tête",
+    "il a mal au dos",
+    "il a mal au ventre",
+    "il a mal aux dents"
+   ],
+   "explanation": ""
+  },
+  {
+   "n": 62,
+   "answer": "D",
+   "docType": "dialogue",
+   "voice": "both",
+   "lines": [
+    {
+     "who": "Paul",
+     "text": "Prenez ce médicament trois fois par jour, pendant une semaine."
+    },
+    {
+     "who": "Sophie",
+     "text": "D'accord. Merci, docteur."
+    }
+   ],
+   "prompt": "Combien de fois par jour faut-il prendre le médicament ?",
+   "choices": [
+    "une fois",
+    "deux fois",
+    "sept fois",
+    "trois fois"
+   ],
+   "explanation": "Une semaine, c'est la durée du traitement."
+  },
+  {
+   "n": 63,
+   "answer": "B",
+   "docType": "annonce",
+   "voice": "SOPHIE",
+   "lines": [
+    {
+     "who": "Sophie",
+     "text": "J'ai de la fièvre, et je tousse. Je reste à la maison aujourd'hui."
+    }
+   ],
+   "prompt": "Qu'est-ce que la femme fait aujourd'hui ?",
+   "choices": [
+    "elle va au travail",
+    "elle reste à la maison",
+    "elle va à l'hôpital",
+    "elle va à la pharmacie"
+   ],
+   "explanation": "Elle est malade : elle a de la fièvre et elle tousse."
+  },
+  {
+   "n": 64,
+   "answer": "C",
+   "docType": "message",
+   "voice": "PAUL",
+   "lines": [
+    {
+     "who": "Paul",
+     "text": "Bonjour, ici la clinique dentaire. Votre rendez-vous est lundi, à neuf heures trente. Bonne journée !"
+    }
+   ],
+   "prompt": "À quelle heure est le rendez-vous ?",
+   "choices": [
+    "neuf heures",
+    "dix heures trente",
+    "neuf heures trente",
+    "dix-neuf heures trente"
+   ],
+   "explanation": "Attention : neuf, et pas dix-neuf !"
+  },
+  {
+   "n": 65,
+   "answer": "A",
+   "docType": "dialogue",
+   "voice": "both",
+   "lines": [
+    {
+     "who": "Paul",
+     "text": "Tu fais du sport ?"
+    },
+    {
+     "who": "Sophie",
+     "text": "Oui ! Je cours trois fois par semaine. C'est bon pour la santé."
+    }
+   ],
+   "prompt": "Quel sport fait la femme ?",
+   "choices": [
+    "elle court",
+    "elle nage",
+    "elle fait du vélo",
+    "elle fait du yoga"
+   ],
+   "explanation": "« Je cours » vient du verbe « courir »."
+  },
+  {
+   "n": 66,
+   "answer": "C",
+   "docType": "dialogue",
+   "voice": "both",
+   "lines": [
+    {
+     "who": "Sophie",
+     "text": "Bonjour, je voudrais quelque chose pour la gorge, s'il vous plaît."
+    },
+    {
+     "who": "Paul",
+     "text": "Voilà des pastilles. Prenez une pastille toutes les quatre heures."
+    }
+   ],
+   "prompt": "Où est-ce que la femme a mal ?",
+   "choices": [
+    "à la tête",
+    "aux oreilles",
+    "à la gorge",
+    "au ventre"
+   ],
+   "explanation": "Elle demande « quelque chose pour la gorge »."
+  },
+  {
+   "n": 67,
+   "answer": "D",
+   "docType": "annonce",
+   "voice": "PAUL",
+   "lines": [
+    {
+     "who": "Paul",
+     "text": "Aïe ! Je suis tombé à vélo. J'ai mal au bras. Je vais à l'hôpital."
+    }
+   ],
+   "prompt": "Où est-ce que l'homme a mal ?",
+   "choices": [
+    "à la jambe",
+    "au pied",
+    "au dos",
+    "au bras"
+   ],
+   "explanation": ""
+  },
+  {
+   "n": 68,
+   "answer": "B",
+   "docType": "dialogue",
+   "voice": "both",
+   "lines": [
+    {
+     "who": "Sophie",
+     "text": "Allô, bonjour. Je voudrais un rendez-vous avec le docteur Martin."
+    },
+    {
+     "who": "Paul",
+     "text": "Demain matin, c'est possible ?"
+    },
+    {
+     "who": "Sophie",
+     "text": "Non, l'après-midi, s'il vous plaît."
+    }
+   ],
+   "prompt": "Quand est-ce que la femme veut son rendez-vous ?",
+   "choices": [
+    "demain matin",
+    "demain après-midi",
+    "ce soir",
+    "lundi prochain"
+   ],
+   "explanation": "Le secrétaire propose le matin, mais elle préfère l'après-midi."
+  },
+  {
+   "n": 69,
+   "answer": "A",
+   "docType": "annonce",
+   "voice": "SOPHIE",
+   "lines": [
+    {
+     "who": "Sophie",
+     "text": "Je dors huit heures par nuit. Je me couche à vingt-deux heures, et je me lève à six heures."
+    }
+   ],
+   "prompt": "À quelle heure est-ce que la femme se couche ?",
+   "choices": [
+    "vingt-deux heures",
+    "vingt heures",
+    "huit heures",
+    "six heures"
+   ],
+   "explanation": "Se coucher, c'est aller au lit. Se lever, c'est sortir du lit."
+  },
+  {
+   "n": 70,
+   "answer": "D",
+   "docType": "annonce",
+   "voice": "PAUL",
+   "lines": [
+    {
+     "who": "Paul",
+     "text": "Information pour les visiteurs : les visites sont de quatorze heures à vingt heures, tous les jours."
+    }
+   ],
+   "prompt": "À quelle heure finissent les visites ?",
+   "choices": [
+    "quatorze heures",
+    "dix-huit heures",
+    "vingt et une heures",
+    "vingt heures"
+   ],
+   "explanation": "Les visites commencent à quatorze heures et finissent à vingt heures."
+  },
+  {
+   "n": 71,
+   "answer": "C",
+   "docType": "dialogue",
+   "voice": "both",
+   "lines": [
+    {
+     "who": "Paul",
+     "text": "Qu'est-ce que tu fais ce week-end ?"
+    },
+    {
+     "who": "Sophie",
+     "text": "Samedi, je vais au cinéma. Et dimanche, je reste chez moi."
+    }
+   ],
+   "prompt": "Qu'est-ce que la femme fait samedi ?",
+   "choices": [
+    "elle reste chez elle",
+    "elle va au parc",
+    "elle va au cinéma",
+    "elle va au musée"
+   ],
+   "explanation": "Elle reste chez elle le dimanche, pas le samedi."
+  },
+  {
+   "n": 72,
+   "answer": "B",
+   "docType": "annonce",
+   "voice": "PAUL",
+   "lines": [
+    {
+     "who": "Paul",
+     "text": "J'adore la musique ! Je joue de la guitare depuis dix ans."
+    }
+   ],
+   "prompt": "De quel instrument joue l'homme ?",
+   "choices": [
+    "du piano",
+    "de la guitare",
+    "du violon",
+    "de la batterie"
+   ],
+   "explanation": "Il joue de la guitare depuis dix ans."
+  },
+  {
+   "n": 73,
+   "answer": "D",
+   "docType": "dialogue",
+   "voice": "both",
+   "lines": [
+    {
+     "who": "Sophie",
+     "text": "Bonjour, je voudrais ouvrir un compte."
+    },
+    {
+     "who": "Paul",
+     "text": "Bien sûr, madame. Vous avez une pièce d'identité ?"
+    },
+    {
+     "who": "Sophie",
+     "text": "Oui. Voilà mon passeport."
+    }
+   ],
+   "prompt": "Qu'est-ce que la femme veut faire ?",
+   "choices": [
+    "retirer de l'argent",
+    "changer de l'argent",
+    "payer une facture",
+    "ouvrir un compte"
+   ],
+   "explanation": "C'est souvent la première chose à faire quand on arrive au Canada !"
+  },
+  {
+   "n": 74,
+   "answer": "A",
+   "docType": "message",
+   "voice": "SOPHIE",
+   "lines": [
+    {
+     "who": "Sophie",
+     "text": "Bonjour, c'est madame Gagnon, la propriétaire. L'appartement est libre. Le loyer est de mille deux cents dollars par mois."
+    }
+   ],
+   "prompt": "Combien coûte le loyer ?",
+   "choices": [
+    "mille deux cents dollars",
+    "mille cent dollars",
+    "deux mille cent dollars",
+    "mille vingt dollars"
+   ],
+   "explanation": "Le loyer, c'est l'argent qu'on paie chaque mois pour un logement."
+  },
+  {
+   "n": 75,
+   "answer": "B",
+   "docType": "dialogue",
+   "voice": "both",
+   "lines": [
+    {
+     "who": "Paul",
+     "text": "Tu as un animal ?"
+    },
+    {
+     "who": "Sophie",
+     "text": "Oui, j'ai un chat. Il s'appelle Minou !"
+    }
+   ],
+   "prompt": "Quel animal a la femme ?",
+   "choices": [
+    "un chien",
+    "un chat",
+    "un oiseau",
+    "un poisson"
+   ],
+   "explanation": "Il s'appelle Minou."
+  },
+  {
+   "n": 76,
+   "answer": "C",
+   "docType": "annonce",
+   "voice": "PAUL",
+   "lines": [
+    {
+     "who": "Paul",
+     "text": "Information : la bibliothèque est fermée le dimanche. Le samedi, elle est ouverte de dix heures à seize heures."
+    }
+   ],
+   "prompt": "Quel jour est-ce que la bibliothèque est fermée ?",
+   "choices": [
+    "le samedi",
+    "le lundi",
+    "le dimanche",
+    "le vendredi"
+   ],
+   "explanation": "Le samedi, elle est ouverte."
+  },
+  {
+   "n": 77,
+   "answer": "A",
+   "docType": "dialogue",
+   "voice": "both",
+   "lines": [
+    {
+     "who": "Sophie",
+     "text": "Il pleut… On va au parc quand même ?"
+    },
+    {
+     "who": "Paul",
+     "text": "Non ! On regarde un film à la maison."
+    }
+   ],
+   "prompt": "Qu'est-ce qu'ils vont faire ?",
+   "choices": [
+    "regarder un film à la maison",
+    "aller au parc",
+    "aller au cinéma",
+    "faire du sport"
+   ],
+   "explanation": "Il pleut, alors pas de parc !"
+  },
+  {
+   "n": 78,
+   "answer": "D",
+   "docType": "annonce",
+   "voice": "SOPHIE",
+   "lines": [
+    {
+     "who": "Sophie",
+     "text": "En été, je vais à la plage. Et en hiver, je fais du ski avec mes amis."
+    }
+   ],
+   "prompt": "Qu'est-ce que la femme fait en hiver ?",
+   "choices": [
+    "elle va à la plage",
+    "elle nage",
+    "elle fait du vélo",
+    "elle fait du ski"
+   ],
+   "explanation": "La plage, c'est en été."
+  },
+  {
+   "n": 79,
+   "answer": "B",
+   "docType": "dialogue",
+   "voice": "both",
+   "lines": [
+    {
+     "who": "Sophie",
+     "text": "Bonjour, je voudrais essayer ce pantalon."
+    },
+    {
+     "who": "Paul",
+     "text": "Oui. Quelle taille ?"
+    },
+    {
+     "who": "Sophie",
+     "text": "Trente-huit."
+    }
+   ],
+   "prompt": "Quelle est la taille de la femme ?",
+   "choices": [
+    "trente-six",
+    "trente-huit",
+    "quarante-huit",
+    "vingt-huit"
+   ],
+   "explanation": ""
+  },
+  {
+   "n": 80,
+   "answer": "C",
+   "docType": "dialogue",
+   "voice": "both",
+   "lines": [
+    {
+     "who": "Paul",
+     "text": "Bonne fête, Sophie ! C'est pour toi."
+    },
+    {
+     "who": "Sophie",
+     "text": "Oh, merci ! Un livre ! J'adore lire !"
+    }
+   ],
+   "prompt": "Quel est le cadeau ?",
+   "choices": [
+    "des fleurs",
+    "un gâteau",
+    "un livre",
+    "un sac"
+   ],
+   "explanation": "Petite info : au Québec, « bonne fête » veut dire « joyeux anniversaire » !"
+  }
+ ],
+ "segments": [
+  {
+   "id": "p2_intro_01",
+   "text": "Bonjour et bienvenue dans la partie deux ! On continue notre préparation au TCF Canada : la compréhension orale, niveau A1.",
+   "kind": "intro"
+  },
+  {
+   "id": "p2_intro_02",
+   "text": "Aujourd'hui : les questions quarante et un à quatre-vingts. Rappel de la méthode : vous écoutez le document une seule fois. Vous lisez la question. Vous choisissez : A, B, C ou D. Ensuite, je donne la réponse et une explication.",
+   "kind": "intro"
+  },
+  {
+   "id": "p2_intro_03",
+   "text": "Vous n'avez pas vu la partie un ? Le lien est dans la description. Prenez un papier et un stylo, et comptez vos points. On commence !",
+   "kind": "intro"
+  },
+  {
+   "id": "p2_section_01",
+   "text": "Section un : la nourriture et les restaurants. Bon appétit… et écoutez bien !",
+   "kind": "section",
+   "section": 1
+  },
+  {
+   "id": "q41_1_document",
+   "text": "Paul: Bonjour madame. Vous désirez ?\nSophie: Une soupe et une salade, s'il vous plaît.\nPaul: Et comme boisson ?\nSophie: Un jus d'orange.",
+   "q": 41,
+   "kind": "document"
+  },
+  {
+   "id": "q41_2_question",
+   "text": "Question quarante et un. Qu'est-ce que la femme boit ? A : de l'eau. B : un café. C : un jus d'orange. D : du thé.",
+   "q": 41,
+   "kind": "question"
+  },
+  {
+   "id": "q41_3_reponse",
+   "text": "La bonne réponse est C : un jus d'orange. La soupe et la salade, c'est pour manger. Le jus d'orange, c'est la boisson.",
+   "q": 41,
+   "kind": "answer"
+  },
+  {
+   "id": "q42_1_document",
+   "text": "Le matin, je mange des céréales et je bois un thé. Je ne bois pas de café.",
+   "q": 42,
+   "kind": "document"
+  },
+  {
+   "id": "q42_2_question",
+   "text": "Question quarante-deux. Qu'est-ce que l'homme boit le matin ? A : du thé. B : du café. C : du lait. D : du jus.",
+   "q": 42,
+   "kind": "question"
+  },
+  {
+   "id": "q42_3_reponse",
+   "text": "La bonne réponse est A : du thé. Attention à la négation : « Je ne bois pas de café. »",
+   "q": 42,
+   "kind": "answer"
+  },
+  {
+   "id": "q43_1_document",
+   "text": "Sophie: Tu aimes le poisson ?\nPaul: Non, je n'aime pas ça. Je préfère le poulet.",
+   "q": 43,
+   "kind": "document"
+  },
+  {
+   "id": "q43_2_question",
+   "text": "Question quarante-trois. Qu'est-ce que l'homme préfère ? A : le poisson. B : le bœuf. C : les légumes. D : le poulet.",
+   "q": 43,
+   "kind": "question"
+  },
+  {
+   "id": "q43_3_reponse",
+   "text": "La bonne réponse est D : le poulet. Il n'aime pas le poisson. Il préfère le poulet.",
+   "q": 43,
+   "kind": "answer"
+  },
+  {
+   "id": "q44_1_document",
+   "text": "Paul: L'addition, s'il vous plaît.\nSophie: Oui, monsieur. Ça fait quarante-deux dollars.",
+   "q": 44,
+   "kind": "document"
+  },
+  {
+   "id": "q44_2_question",
+   "text": "Question quarante-quatre. Combien coûte le repas ? A : vingt-quatre dollars. B : quarante-deux dollars. C : cinquante-deux dollars. D : douze dollars.",
+   "q": 44,
+   "kind": "question"
+  },
+  {
+   "id": "q44_3_reponse",
+   "text": "La bonne réponse est B : quarante-deux dollars. « L'addition », c'est la facture au restaurant.",
+   "q": 44,
+   "kind": "answer"
+  },
+  {
+   "id": "q45_1_document",
+   "text": "Pour faire une omelette, il faut trois œufs, un peu de lait et un peu de sel. C'est facile !",
+   "q": 45,
+   "kind": "document"
+  },
+  {
+   "id": "q45_2_question",
+   "text": "Question quarante-cinq. Combien d'œufs faut-il pour l'omelette ? A : deux. B : trois. C : quatre. D : six.",
+   "q": 45,
+   "kind": "question"
+  },
+  {
+   "id": "q45_3_reponse",
+   "text": "La bonne réponse est B : trois œufs.",
+   "q": 45,
+   "kind": "answer"
+  },
+  {
+   "id": "q46_1_document",
+   "text": "Sophie: On mange au restaurant ce soir ?\nPaul: Non, je suis fatigué. On mange à la maison.",
+   "q": 46,
+   "kind": "document"
+  },
+  {
+   "id": "q46_2_question",
+   "text": "Question quarante-six. Où est-ce qu'ils mangent ce soir ? A : au restaurant. B : chez des amis. C : au café. D : à la maison.",
+   "q": 46,
+   "kind": "question"
+  },
+  {
+   "id": "q46_3_reponse",
+   "text": "La bonne réponse est D : à la maison. Sophie propose le restaurant, mais Paul dit non.",
+   "q": 46,
+   "kind": "answer"
+  },
+  {
+   "id": "q47_1_document",
+   "text": "Bonjour à tous ! Aujourd'hui, le menu du midi : poulet, riz et salade. Et comme dessert : un gâteau au chocolat !",
+   "q": 47,
+   "kind": "document"
+  },
+  {
+   "id": "q47_2_question",
+   "text": "Question quarante-sept. Quel est le dessert ? A : un gâteau au chocolat. B : une tarte aux pommes. C : une glace. D : des fruits.",
+   "q": 47,
+   "kind": "question"
+  },
+  {
+   "id": "q47_3_reponse",
+   "text": "La bonne réponse est A : un gâteau au chocolat.",
+   "q": 47,
+   "kind": "answer"
+  },
+  {
+   "id": "q48_1_document",
+   "text": "Paul: Tu veux du sucre dans ton café ?\nSophie: Non merci. Juste un peu de lait.",
+   "q": 48,
+   "kind": "document"
+  },
+  {
+   "id": "q48_2_question",
+   "text": "Question quarante-huit. Qu'est-ce que la femme veut dans son café ? A : du sucre. B : du sucre et du lait. C : du lait. D : rien.",
+   "q": 48,
+   "kind": "question"
+  },
+  {
+   "id": "q48_3_reponse",
+   "text": "La bonne réponse est C : du lait. « Non merci » pour le sucre, mais « juste un peu de lait ».",
+   "q": 48,
+   "kind": "answer"
+  },
+  {
+   "id": "q49_1_document",
+   "text": "J'ai faim ! Il est treize heures, et je n'ai pas mangé ce matin.",
+   "q": 49,
+   "kind": "document"
+  },
+  {
+   "id": "q49_2_question",
+   "text": "Question quarante-neuf. Pourquoi est-ce que la femme a faim ? A : elle a fait du sport. B : elle a mal au ventre. C : elle travaille beaucoup. D : elle n'a pas mangé ce matin.",
+   "q": 49,
+   "kind": "question"
+  },
+  {
+   "id": "q49_3_reponse",
+   "text": "La bonne réponse est D : elle n'a pas mangé ce matin.",
+   "q": 49,
+   "kind": "answer"
+  },
+  {
+   "id": "q50_1_document",
+   "text": "Sophie: Bonjour ! Deux baguettes et quatre croissants, s'il vous plaît.\nPaul: Voilà, madame !",
+   "q": 50,
+   "kind": "document"
+  },
+  {
+   "id": "q50_2_question",
+   "text": "Question cinquante. Combien de croissants est-ce que la femme achète ? A : quatre. B : deux. C : six. D : huit.",
+   "q": 50,
+   "kind": "question"
+  },
+  {
+   "id": "q50_3_reponse",
+   "text": "La bonne réponse est A : quatre croissants. Deux, c'est le nombre de baguettes.",
+   "q": 50,
+   "kind": "answer"
+  },
+  {
+   "id": "p2_section_02",
+   "text": "Bravo ! Section deux : le travail et l'école. Écoutez bien les heures et les jours !",
+   "kind": "section",
+   "section": 2
+  },
+  {
+   "id": "q51_1_document",
+   "text": "Paul: Tu travailles où ?\nSophie: Je travaille dans une banque, au centre-ville.",
+   "q": 51,
+   "kind": "document"
+  },
+  {
+   "id": "q51_2_question",
+   "text": "Question cinquante et un. Où travaille la femme ? A : dans une école. B : dans une banque. C : dans un hôpital. D : dans un magasin.",
+   "q": 51,
+   "kind": "question"
+  },
+  {
+   "id": "q51_3_reponse",
+   "text": "La bonne réponse est B : dans une banque.",
+   "q": 51,
+   "kind": "answer"
+  },
+  {
+   "id": "q52_1_document",
+   "text": "Je commence le travail à sept heures, et je finis à quinze heures.",
+   "q": 52,
+   "kind": "document"
+  },
+  {
+   "id": "q52_2_question",
+   "text": "Question cinquante-deux. À quelle heure est-ce que l'homme finit le travail ? A : sept heures. B : dix-sept heures. C : quinze heures. D : treize heures.",
+   "q": 52,
+   "kind": "question"
+  },
+  {
+   "id": "q52_3_reponse",
+   "text": "La bonne réponse est C : quinze heures. Sept heures, c'est le début. Quinze heures, c'est la fin.",
+   "q": 52,
+   "kind": "answer"
+  },
+  {
+   "id": "q53_1_document",
+   "text": "Sophie: Tu travailles le samedi ?\nPaul: Non. Je travaille du lundi au vendredi.",
+   "q": 53,
+   "kind": "document"
+  },
+  {
+   "id": "q53_2_question",
+   "text": "Question cinquante-trois. Quand est-ce que l'homme travaille ? A : du lundi au vendredi. B : du lundi au samedi. C : le week-end. D : le samedi seulement.",
+   "q": 53,
+   "kind": "question"
+  },
+  {
+   "id": "q53_3_reponse",
+   "text": "La bonne réponse est A : du lundi au vendredi. Le samedi, il ne travaille pas.",
+   "q": 53,
+   "kind": "answer"
+  },
+  {
+   "id": "q54_1_document",
+   "text": "Bonjour Paul, c'est Isabelle. La réunion de demain est à dix heures, dans la salle trois. Merci !",
+   "q": 54,
+   "kind": "document"
+  },
+  {
+   "id": "q54_2_question",
+   "text": "Question cinquante-quatre. Où est la réunion ? A : dans la salle deux. B : dans la salle dix. C : dans le bureau du directeur. D : dans la salle trois.",
+   "q": 54,
+   "kind": "question"
+  },
+  {
+   "id": "q54_3_reponse",
+   "text": "La bonne réponse est D : dans la salle trois. Dix, c'est l'heure : dix heures.",
+   "q": 54,
+   "kind": "answer"
+  },
+  {
+   "id": "q55_1_document",
+   "text": "Paul: Tu as un nouveau travail ?\nSophie: Oui ! Je suis serveuse dans un restaurant.",
+   "q": 55,
+   "kind": "document"
+  },
+  {
+   "id": "q55_2_question",
+   "text": "Question cinquante-cinq. Quel est le nouveau travail de la femme ? A : cuisinière. B : vendeuse. C : serveuse. D : secrétaire.",
+   "q": 55,
+   "kind": "question"
+  },
+  {
+   "id": "q55_3_reponse",
+   "text": "La bonne réponse est C : serveuse. Une serveuse apporte les plats aux clients, au restaurant.",
+   "q": 55,
+   "kind": "answer"
+  },
+  {
+   "id": "q56_1_document",
+   "text": "Bon, c'est fini pour aujourd'hui. Pour demain, lisez la page vingt-cinq du livre. À demain !",
+   "q": 56,
+   "kind": "document"
+  },
+  {
+   "id": "q56_2_question",
+   "text": "Question cinquante-six. Quelle page faut-il lire ? A : la page quinze. B : la page vingt-cinq. C : la page trente-cinq. D : la page cinquante-deux.",
+   "q": 56,
+   "kind": "question"
+  },
+  {
+   "id": "q56_3_reponse",
+   "text": "La bonne réponse est B : la page vingt-cinq.",
+   "q": 56,
+   "kind": "answer"
+  },
+  {
+   "id": "q57_1_document",
+   "text": "Sophie: Tu vas au travail comment ?\nPaul: En voiture. Mais demain, je prends le vélo !",
+   "q": 57,
+   "kind": "document"
+  },
+  {
+   "id": "q57_2_question",
+   "text": "Question cinquante-sept. Comment est-ce que l'homme va au travail demain ? A : en voiture. B : en autobus. C : en métro. D : à vélo.",
+   "q": 57,
+   "kind": "question"
+  },
+  {
+   "id": "q57_3_reponse",
+   "text": "La bonne réponse est D : à vélo. D'habitude, c'est en voiture. Mais la question dit : demain !",
+   "q": 57,
+   "kind": "answer"
+  },
+  {
+   "id": "q58_1_document",
+   "text": "Bonjour, ici l'école Jean-Talon. Votre fils est malade. Venez le chercher, s'il vous plaît.",
+   "q": 58,
+   "kind": "document"
+  },
+  {
+   "id": "q58_2_question",
+   "text": "Question cinquante-huit. Qu'est-ce que l'école demande ? A : de venir chercher le fils. B : d'appeler le médecin. C : d'envoyer un courriel. D : d'acheter des médicaments.",
+   "q": 58,
+   "kind": "question"
+  },
+  {
+   "id": "q58_3_reponse",
+   "text": "La bonne réponse est A : de venir chercher le fils. « Venez le chercher » : le parent doit aller à l'école.",
+   "q": 58,
+   "kind": "answer"
+  },
+  {
+   "id": "q59_1_document",
+   "text": "Paul: Tu as combien d'élèves dans ta classe ?\nSophie: J'ai vingt et un élèves.",
+   "q": 59,
+   "kind": "document"
+  },
+  {
+   "id": "q59_2_question",
+   "text": "Question cinquante-neuf. Combien d'élèves a la femme ? A : douze. B : vingt. C : vingt et un. D : trente et un.",
+   "q": 59,
+   "kind": "question"
+  },
+  {
+   "id": "q59_3_reponse",
+   "text": "La bonne réponse est C : vingt et un élèves.",
+   "q": 59,
+   "kind": "answer"
+  },
+  {
+   "id": "q60_1_document",
+   "text": "Sophie: Pourquoi tu apprends le français ?\nPaul: Pour travailler au Québec !",
+   "q": 60,
+   "kind": "document"
+  },
+  {
+   "id": "q60_2_question",
+   "text": "Question soixante. Pourquoi est-ce que l'homme apprend le français ? A : pour voyager en France. B : pour travailler au Québec. C : pour ses études. D : pour sa famille.",
+   "q": 60,
+   "kind": "question"
+  },
+  {
+   "id": "q60_3_reponse",
+   "text": "La bonne réponse est B : pour travailler au Québec. Comme beaucoup d'entre vous, peut-être !",
+   "q": 60,
+   "kind": "answer"
+  },
+  {
+   "id": "p2_pause_milieu",
+   "text": "Super ! Vous êtes à la moitié de la partie deux ! Combien de bonnes réponses sur vingt ? Continuez comme ça. On passe à la suite !",
+   "kind": "pause"
+  },
+  {
+   "id": "p2_section_03",
+   "text": "Section trois : la santé et le corps. La tête, le dos, le ventre… et le médecin. Écoutez bien !",
+   "kind": "section",
+   "section": 3
+  },
+  {
+   "id": "q61_1_document",
+   "text": "Sophie: Qu'est-ce que tu as, Paul ?\nPaul: J'ai mal à la tête.",
+   "q": 61,
+   "kind": "document"
+  },
+  {
+   "id": "q61_2_question",
+   "text": "Question soixante et un. Qu'est-ce que Paul a ? A : il a mal à la tête. B : il a mal au dos. C : il a mal au ventre. D : il a mal aux dents.",
+   "q": 61,
+   "kind": "question"
+  },
+  {
+   "id": "q61_3_reponse",
+   "text": "La bonne réponse est A : il a mal à la tête.",
+   "q": 61,
+   "kind": "answer"
+  },
+  {
+   "id": "q62_1_document",
+   "text": "Paul: Prenez ce médicament trois fois par jour, pendant une semaine.\nSophie: D'accord. Merci, docteur.",
+   "q": 62,
+   "kind": "document"
+  },
+  {
+   "id": "q62_2_question",
+   "text": "Question soixante-deux. Combien de fois par jour faut-il prendre le médicament ? A : une fois. B : deux fois. C : sept fois. D : trois fois.",
+   "q": 62,
+   "kind": "question"
+  },
+  {
+   "id": "q62_3_reponse",
+   "text": "La bonne réponse est D : trois fois par jour. Une semaine, c'est la durée du traitement.",
+   "q": 62,
+   "kind": "answer"
+  },
+  {
+   "id": "q63_1_document",
+   "text": "J'ai de la fièvre, et je tousse. Je reste à la maison aujourd'hui.",
+   "q": 63,
+   "kind": "document"
+  },
+  {
+   "id": "q63_2_question",
+   "text": "Question soixante-trois. Qu'est-ce que la femme fait aujourd'hui ? A : elle va au travail. B : elle reste à la maison. C : elle va à l'hôpital. D : elle va à la pharmacie.",
+   "q": 63,
+   "kind": "question"
+  },
+  {
+   "id": "q63_3_reponse",
+   "text": "La bonne réponse est B : elle reste à la maison. Elle est malade : elle a de la fièvre et elle tousse.",
+   "q": 63,
+   "kind": "answer"
+  },
+  {
+   "id": "q64_1_document",
+   "text": "Bonjour, ici la clinique dentaire. Votre rendez-vous est lundi, à neuf heures trente. Bonne journée !",
+   "q": 64,
+   "kind": "document"
+  },
+  {
+   "id": "q64_2_question",
+   "text": "Question soixante-quatre. À quelle heure est le rendez-vous ? A : neuf heures. B : dix heures trente. C : neuf heures trente. D : dix-neuf heures trente.",
+   "q": 64,
+   "kind": "question"
+  },
+  {
+   "id": "q64_3_reponse",
+   "text": "La bonne réponse est C : neuf heures trente. Attention : neuf, et pas dix-neuf !",
+   "q": 64,
+   "kind": "answer"
+  },
+  {
+   "id": "q65_1_document",
+   "text": "Paul: Tu fais du sport ?\nSophie: Oui ! Je cours trois fois par semaine. C'est bon pour la santé.",
+   "q": 65,
+   "kind": "document"
+  },
+  {
+   "id": "q65_2_question",
+   "text": "Question soixante-cinq. Quel sport fait la femme ? A : elle court. B : elle nage. C : elle fait du vélo. D : elle fait du yoga.",
+   "q": 65,
+   "kind": "question"
+  },
+  {
+   "id": "q65_3_reponse",
+   "text": "La bonne réponse est A : elle court. « Je cours » vient du verbe « courir ».",
+   "q": 65,
+   "kind": "answer"
+  },
+  {
+   "id": "q66_1_document",
+   "text": "Sophie: Bonjour, je voudrais quelque chose pour la gorge, s'il vous plaît.\nPaul: Voilà des pastilles. Prenez une pastille toutes les quatre heures.",
+   "q": 66,
+   "kind": "document"
+  },
+  {
+   "id": "q66_2_question",
+   "text": "Question soixante-six. Où est-ce que la femme a mal ? A : à la tête. B : aux oreilles. C : à la gorge. D : au ventre.",
+   "q": 66,
+   "kind": "question"
+  },
+  {
+   "id": "q66_3_reponse",
+   "text": "La bonne réponse est C : à la gorge. Elle demande « quelque chose pour la gorge ».",
+   "q": 66,
+   "kind": "answer"
+  },
+  {
+   "id": "q67_1_document",
+   "text": "Aïe ! Je suis tombé à vélo. J'ai mal au bras. Je vais à l'hôpital.",
+   "q": 67,
+   "kind": "document"
+  },
+  {
+   "id": "q67_2_question",
+   "text": "Question soixante-sept. Où est-ce que l'homme a mal ? A : à la jambe. B : au pied. C : au dos. D : au bras.",
+   "q": 67,
+   "kind": "question"
+  },
+  {
+   "id": "q67_3_reponse",
+   "text": "La bonne réponse est D : au bras.",
+   "q": 67,
+   "kind": "answer"
+  },
+  {
+   "id": "q68_1_document",
+   "text": "Sophie: Allô, bonjour. Je voudrais un rendez-vous avec le docteur Martin.\nPaul: Demain matin, c'est possible ?\nSophie: Non, l'après-midi, s'il vous plaît.",
+   "q": 68,
+   "kind": "document"
+  },
+  {
+   "id": "q68_2_question",
+   "text": "Question soixante-huit. Quand est-ce que la femme veut son rendez-vous ? A : demain matin. B : demain après-midi. C : ce soir. D : lundi prochain.",
+   "q": 68,
+   "kind": "question"
+  },
+  {
+   "id": "q68_3_reponse",
+   "text": "La bonne réponse est B : demain après-midi. Le secrétaire propose le matin, mais elle préfère l'après-midi.",
+   "q": 68,
+   "kind": "answer"
+  },
+  {
+   "id": "q69_1_document",
+   "text": "Je dors huit heures par nuit. Je me couche à vingt-deux heures, et je me lève à six heures.",
+   "q": 69,
+   "kind": "document"
+  },
+  {
+   "id": "q69_2_question",
+   "text": "Question soixante-neuf. À quelle heure est-ce que la femme se couche ? A : vingt-deux heures. B : vingt heures. C : huit heures. D : six heures.",
+   "q": 69,
+   "kind": "question"
+  },
+  {
+   "id": "q69_3_reponse",
+   "text": "La bonne réponse est A : vingt-deux heures. Se coucher, c'est aller au lit. Se lever, c'est sortir du lit.",
+   "q": 69,
+   "kind": "answer"
+  },
+  {
+   "id": "q70_1_document",
+   "text": "Information pour les visiteurs : les visites sont de quatorze heures à vingt heures, tous les jours.",
+   "q": 70,
+   "kind": "document"
+  },
+  {
+   "id": "q70_2_question",
+   "text": "Question soixante-dix. À quelle heure finissent les visites ? A : quatorze heures. B : dix-huit heures. C : vingt et une heures. D : vingt heures.",
+   "q": 70,
+   "kind": "question"
+  },
+  {
+   "id": "q70_3_reponse",
+   "text": "La bonne réponse est D : vingt heures. Les visites commencent à quatorze heures et finissent à vingt heures.",
+   "q": 70,
+   "kind": "answer"
+  },
+  {
+   "id": "p2_section_04",
+   "text": "Dernière section ! Section quatre : les loisirs et la vie quotidienne. Le week-end, la banque, le logement… Allez, courage !",
+   "kind": "section",
+   "section": 4
+  },
+  {
+   "id": "q71_1_document",
+   "text": "Paul: Qu'est-ce que tu fais ce week-end ?\nSophie: Samedi, je vais au cinéma. Et dimanche, je reste chez moi.",
+   "q": 71,
+   "kind": "document"
+  },
+  {
+   "id": "q71_2_question",
+   "text": "Question soixante et onze. Qu'est-ce que la femme fait samedi ? A : elle reste chez elle. B : elle va au parc. C : elle va au cinéma. D : elle va au musée.",
+   "q": 71,
+   "kind": "question"
+  },
+  {
+   "id": "q71_3_reponse",
+   "text": "La bonne réponse est C : elle va au cinéma. Elle reste chez elle le dimanche, pas le samedi.",
+   "q": 71,
+   "kind": "answer"
+  },
+  {
+   "id": "q72_1_document",
+   "text": "J'adore la musique ! Je joue de la guitare depuis dix ans.",
+   "q": 72,
+   "kind": "document"
+  },
+  {
+   "id": "q72_2_question",
+   "text": "Question soixante-douze. De quel instrument joue l'homme ? A : du piano. B : de la guitare. C : du violon. D : de la batterie.",
+   "q": 72,
+   "kind": "question"
+  },
+  {
+   "id": "q72_3_reponse",
+   "text": "La bonne réponse est B : de la guitare. Il joue de la guitare depuis dix ans.",
+   "q": 72,
+   "kind": "answer"
+  },
+  {
+   "id": "q73_1_document",
+   "text": "Sophie: Bonjour, je voudrais ouvrir un compte.\nPaul: Bien sûr, madame. Vous avez une pièce d'identité ?\nSophie: Oui. Voilà mon passeport.",
+   "q": 73,
+   "kind": "document"
+  },
+  {
+   "id": "q73_2_question",
+   "text": "Question soixante-treize. Qu'est-ce que la femme veut faire ? A : retirer de l'argent. B : changer de l'argent. C : payer une facture. D : ouvrir un compte.",
+   "q": 73,
+   "kind": "question"
+  },
+  {
+   "id": "q73_3_reponse",
+   "text": "La bonne réponse est D : ouvrir un compte. C'est souvent la première chose à faire quand on arrive au Canada !",
+   "q": 73,
+   "kind": "answer"
+  },
+  {
+   "id": "q74_1_document",
+   "text": "Bonjour, c'est madame Gagnon, la propriétaire. L'appartement est libre. Le loyer est de mille deux cents dollars par mois.",
+   "q": 74,
+   "kind": "document"
+  },
+  {
+   "id": "q74_2_question",
+   "text": "Question soixante-quatorze. Combien coûte le loyer ? A : mille deux cents dollars. B : mille cent dollars. C : deux mille cent dollars. D : mille vingt dollars.",
+   "q": 74,
+   "kind": "question"
+  },
+  {
+   "id": "q74_3_reponse",
+   "text": "La bonne réponse est A : mille deux cents dollars par mois. Le loyer, c'est l'argent qu'on paie chaque mois pour un logement.",
+   "q": 74,
+   "kind": "answer"
+  },
+  {
+   "id": "q75_1_document",
+   "text": "Paul: Tu as un animal ?\nSophie: Oui, j'ai un chat. Il s'appelle Minou !",
+   "q": 75,
+   "kind": "document"
+  },
+  {
+   "id": "q75_2_question",
+   "text": "Question soixante-quinze. Quel animal a la femme ? A : un chien. B : un chat. C : un oiseau. D : un poisson.",
+   "q": 75,
+   "kind": "question"
+  },
+  {
+   "id": "q75_3_reponse",
+   "text": "La bonne réponse est B : un chat. Il s'appelle Minou.",
+   "q": 75,
+   "kind": "answer"
+  },
+  {
+   "id": "q76_1_document",
+   "text": "Information : la bibliothèque est fermée le dimanche. Le samedi, elle est ouverte de dix heures à seize heures.",
+   "q": 76,
+   "kind": "document"
+  },
+  {
+   "id": "q76_2_question",
+   "text": "Question soixante-seize. Quel jour est-ce que la bibliothèque est fermée ? A : le samedi. B : le lundi. C : le dimanche. D : le vendredi.",
+   "q": 76,
+   "kind": "question"
+  },
+  {
+   "id": "q76_3_reponse",
+   "text": "La bonne réponse est C : le dimanche. Le samedi, elle est ouverte.",
+   "q": 76,
+   "kind": "answer"
+  },
+  {
+   "id": "q77_1_document",
+   "text": "Sophie: Il pleut… On va au parc quand même ?\nPaul: Non ! On regarde un film à la maison.",
+   "q": 77,
+   "kind": "document"
+  },
+  {
+   "id": "q77_2_question",
+   "text": "Question soixante-dix-sept. Qu'est-ce qu'ils vont faire ? A : regarder un film à la maison. B : aller au parc. C : aller au cinéma. D : faire du sport.",
+   "q": 77,
+   "kind": "question"
+  },
+  {
+   "id": "q77_3_reponse",
+   "text": "La bonne réponse est A : regarder un film à la maison. Il pleut, alors pas de parc !",
+   "q": 77,
+   "kind": "answer"
+  },
+  {
+   "id": "q78_1_document",
+   "text": "En été, je vais à la plage. Et en hiver, je fais du ski avec mes amis.",
+   "q": 78,
+   "kind": "document"
+  },
+  {
+   "id": "q78_2_question",
+   "text": "Question soixante-dix-huit. Qu'est-ce que la femme fait en hiver ? A : elle va à la plage. B : elle nage. C : elle fait du vélo. D : elle fait du ski.",
+   "q": 78,
+   "kind": "question"
+  },
+  {
+   "id": "q78_3_reponse",
+   "text": "La bonne réponse est D : elle fait du ski. La plage, c'est en été.",
+   "q": 78,
+   "kind": "answer"
+  },
+  {
+   "id": "q79_1_document",
+   "text": "Sophie: Bonjour, je voudrais essayer ce pantalon.\nPaul: Oui. Quelle taille ?\nSophie: Trente-huit.",
+   "q": 79,
+   "kind": "document"
+  },
+  {
+   "id": "q79_2_question",
+   "text": "Question soixante-dix-neuf. Quelle est la taille de la femme ? A : trente-six. B : trente-huit. C : quarante-huit. D : vingt-huit.",
+   "q": 79,
+   "kind": "question"
+  },
+  {
+   "id": "q79_3_reponse",
+   "text": "La bonne réponse est B : trente-huit.",
+   "q": 79,
+   "kind": "answer"
+  },
+  {
+   "id": "q80_1_document",
+   "text": "Paul: Bonne fête, Sophie ! C'est pour toi.\nSophie: Oh, merci ! Un livre ! J'adore lire !",
+   "q": 80,
+   "kind": "document"
+  },
+  {
+   "id": "q80_2_question",
+   "text": "Question quatre-vingts. Quel est le cadeau ? A : des fleurs. B : un gâteau. C : un livre. D : un sac.",
+   "q": 80,
+   "kind": "question"
+  },
+  {
+   "id": "q80_3_reponse",
+   "text": "La bonne réponse est C : un livre. Petite info : au Québec, « bonne fête » veut dire « joyeux anniversaire » !",
+   "q": 80,
+   "kind": "answer"
+  },
+  {
+   "id": "p2_outro_01",
+   "text": "Félicitations ! Vous avez fini la partie deux ! Vous avez maintenant travaillé quatre-vingts questions. Comptez vos points. Trente bonnes réponses ou plus sur quarante ? Excellent ! Moins de trente ? Réécoutez la vidéo. C'est comme ça qu'on progresse.",
+   "kind": "outro"
+  },
+  {
+   "id": "p2_outro_02",
+   "text": "Écrivez votre score dans les commentaires ! Et abonnez-vous pour la partie trois : les questions quatre-vingt-un à cent vingt. Merci et à bientôt. Bon courage pour le TCF Canada !",
+   "kind": "outro"
+  }
+ ]
+}

@@ -1,11 +1,11 @@
 """Generate the 130 TCF voice files from the TTS script.
 
 usage:
-  GEMINI_API_KEY=... python3 scripts/generate_tcf_audio.py gemini [--only=q01,q02] [--force]
-  python3 scripts/generate_tcf_audio.py edge [--only=intro]         (pip install edge-tts)
+  GEMINI_API_KEY=... python3 scripts/generate_tcf_audio.py gemini [--part=2] [--only=q01,q02] [--force]
+  python3 scripts/generate_tcf_audio.py edge [--part=2] [--only=intro]         (pip install edge-tts)
 
 Files land in public/tcf/audio/<block_id>.wav, named exactly like the script blocks.
-Then run: npm run tcf:audio && npm run tcf:build
+Then run: python3 scripts/measure_tcf_audio.py --part=N, then render TcfA1PartieN.
 """
 import base64
 import json
@@ -20,7 +20,8 @@ import urllib.request
 import wave
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-SCRIPT = os.path.join(ROOT, "scripts", "TCF_Canada_CO_A1_Partie1_script_TTS.md")
+PART = next((a.split("=", 1)[1] for a in sys.argv if a.startswith("--part=")), "1")
+SCRIPT = os.path.join(ROOT, "scripts", f"TCF_Canada_CO_A1_Partie{PART}_script_TTS.md")
 OUT = os.path.join(ROOT, "public", "tcf", "audio")
 
 GEMINI_MODEL = os.environ.get("GEMINI_TTS_MODEL", "gemini-2.5-flash-preview-tts")
@@ -30,7 +31,8 @@ EDGE_VOICES = {"Narratrice": "fr-FR-DeniseNeural", "Paul": "fr-CA-AntoineNeural"
 
 def parse():
     md = open(SCRIPT, encoding="utf-8").read()
-    styles = dict(re.findall(r"### (NARRATRICE|PAUL|SOPHIE)\n.*?\n```\n(.*?)\n```", md, re.S))
+    # the "Voix suggérée : …" line between the heading and the block is optional
+    styles = dict(re.findall(r"### (NARRATRICE|PAUL|SOPHIE)\n(?:[^`\n][^\n]*\n)?```\n([\s\S]*?)\n```", md))
     blocks = []
     for m in re.finditer(r"`([a-z0-9_]+)`\s*·\s*([^\n]+)\n```\n(.*?)\n```", md, re.S):
         bid, kind, text = m.group(1), m.group(2), m.group(3).strip()

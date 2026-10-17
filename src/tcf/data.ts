@@ -1,8 +1,12 @@
-import audioJson from "./audio.json";
-import scriptJson from "./script.json";
+import { createContext, useContext } from "react";
+import audioP1 from "./audio_p1.json";
+import audioP2 from "./audio_p2.json";
+import scriptP1 from "./script_p1.json";
+import scriptP2 from "./script_p2.json";
 
-// script.json  ← scripts/parse_tcf_script.py  (texte, questions, réponses)
-// audio.json   ← scripts/measure_tcf_audio.py (durée réelle + repères de chaque fichier audio)
+// Une vidéo par partie de la série (40 questions chacune) :
+// script_pN.json  ← scripts/parse_tcf_script.py  (texte, questions, réponses)
+// audio_pN.json   ← scripts/measure_tcf_audio.py --part=N (durée réelle + repères de chaque fichier audio)
 // Tant qu'un fichier audio manque, sa durée est estimée à partir du texte : la vidéo
 // reste prévisualisable (muette) et se recale toute seule quand l'audio arrive.
 
@@ -21,12 +25,11 @@ export type Question = {
 type Segment = { id: string; text: string; kind: string; q?: number; section?: number };
 type AudioInfo = { file: string; duration: number; marks?: number[] };
 
-export const SCRIPT = scriptJson as unknown as {
+type Script = {
   sections: Record<string, { title: string; from: number; to: number }>;
   questions: Question[];
   segments: Segment[];
 };
-const AUDIO = audioJson as Record<string, AudioInfo>;
 
 export const LETTERS: Letter[] = ["A", "B", "C", "D"];
 export const COUNTDOWN_S = 5;
@@ -65,12 +68,12 @@ const proportionalMarks = (text: string, needles: string[], dur: number) => {
 const LEAD: Record<string, number> = { document: 1.4, question: 0.5, answer: 0.3, section: 0.6, intro: 0.4, pause: 0.6, outro: 0.4 };
 const TAIL: Record<string, number> = { document: 0.8, question: 0.3, answer: 2.2, section: 1.0, intro: 0.6, pause: 1.0, outro: 0.8 };
 
-export const buildTimeline = () => {
+const buildTimeline = (script: Script, audio: Record<string, AudioInfo>) => {
   const items: Item[] = [];
   let t = 0.3;
-  const qById = new Map(SCRIPT.questions.map((q) => [q.n, q]));
-  for (const seg of SCRIPT.segments) {
-    const a = AUDIO[seg.id];
+  const qById = new Map(script.questions.map((q) => [q.n, q]));
+  for (const seg of script.segments) {
+    const a = audio[seg.id];
     const dur = a ? a.duration : estimate(seg.text);
     const lead = LEAD[seg.kind] ?? 0.4;
     const tail = TAIL[seg.kind] ?? 0.6;
@@ -107,8 +110,25 @@ export const buildTimeline = () => {
   return { items, total: t + 1.5 };
 };
 
-export const TIMELINE = buildTimeline();
-export const HAS_AUDIO = Object.keys(AUDIO).length > 0;
-export const question = (n: number) => SCRIPT.questions[n - 1];
-export const sectionOf = (n: number) =>
-  Object.entries(SCRIPT.sections).find(([, s]) => n >= s.from && n <= s.to)?.[0] ?? "1";
+const makePart = (n: number, scriptJson: unknown, audioJson: unknown) => {
+  const script = scriptJson as Script;
+  const qs = script.questions;
+  return {
+    n,
+    script,
+    timeline: buildTimeline(script, audioJson as Record<string, AudioInfo>),
+    first: qs[0].n,
+    last: qs[qs.length - 1].n,
+    question: (q: number) => qs.find((x) => x.n === q) as Question,
+    sectionOf: (q: number) => Object.entries(script.sections).find(([, s]) => q >= s.from && q <= s.to)?.[0] ?? "1",
+  };
+};
+
+export type Part = ReturnType<typeof makePart>;
+export const PARTS: Record<number, Part> = {
+  1: makePart(1, scriptP1, audioP1),
+  2: makePart(2, scriptP2, audioP2),
+};
+
+export const PartContext = createContext<Part>(PARTS[1]);
+export const usePart = () => useContext(PartContext);

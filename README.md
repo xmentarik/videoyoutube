@@ -32,15 +32,18 @@ npm install
 - لإخفاء الترجمة العربية: غيّر `showArabic` إلى `false` في `src/Root.tsx` (أو من لوحة Props في Studio).
 - إذا غيّرت التعليق الصوتي، حدّث الأوقات في `src/french/timeline.ts` و`src/french/captions.ts`.
 
-## فيديو TCF Canada — الفهم الشفهي A1 (الجزء 1)
+## فيديوهات TCF Canada — الفهم الشفهي A1 (سلسلة 200 سؤال، 40 سؤالاً لكل جزء)
 
-- النص: `scripts/TCF_Canada_CO_A1_Partie1_script_TTS.md` ← يُحوَّل إلى `src/tcf/script.json` بالأمر
-  `python3 scripts/parse_tcf_script.py scripts/TCF_Canada_CO_A1_Partie1_script_TTS.md src/tcf/script.json`
-- توليد الصوت تلقائياً: `GEMINI_API_KEY=... npm run tcf:voices` (Google AI Studio)، أو `python3 scripts/generate_tcf_audio.py edge` (Edge TTS، يتطلب `pip install edge-tts`).
-- الصوت: ضع الملفات الـ 130 في `public/tcf/audio/` بأسمائها (`intro_01.wav`، `q01_1_document.wav`…)، ثم شغّل
-  `npm run tcf:audio` لقياس المدد وكتابة `src/tcf/audio.json`، ثم `npm run tcf:build`.
+الجزء 1 (Q1–40) والجزء 2 (Q41–80) يشتركان في نفس الكود؛ الأوامر `tcf:*` للجزء 1 و`tcf2:*` للجزء 2.
+
+- النص: `scripts/TCF_Canada_CO_A1_PartieN_script_TTS.md` ← يُحوَّل إلى `src/tcf/script_pN.json` بالأمر
+  `python3 scripts/parse_tcf_script.py scripts/TCF_Canada_CO_A1_Partie2_script_TTS.md src/tcf/script_p2.json`
+- توليد الصوت تلقائياً: `GEMINI_API_KEY=... npm run tcf2:voices` (Google AI Studio)، أو `python3 scripts/generate_tcf_audio.py edge --part=2` (Edge TTS، يتطلب `pip install edge-tts`).
+- الصوت: الملفات في `public/tcf/audio/` بأسماء كتل النص (`p2_intro_01.wav`، `q41_1_document.wav`…)، ثم شغّل
+  `npm run tcf2:audio` لقياس المدد وكتابة `src/tcf/audio_p2.json`، ثم `npm run tcf2:build`.
+- لإضافة جزء جديد: سجّله في `PARTS` (`src/tcf/data.ts`)، وفي مشاهد `SCENES` (`src/tcf/TcfVideo.tsx`)، وفي `src/Root.tsx`.
 - قبل وصول الصوت، المدد تُقدَّر من النص، فيمكن معاينة الفيديو (بدون صوت) في Studio.
-- الصورة المصغّرة: `npm run tcf:thumbnail` ← `out/miniature-tcf-a1-partie1.png`. العنوان والوصف والوسوم (SEO) في `scripts/TCF_Canada_CO_A1_Partie1_youtube.md`.
+- الصورة المصغّرة: `npm run tcf:thumbnail` / `npm run tcf2:thumbnail`. العنوان والوصف والوسوم (SEO) في `scripts/TCF_Canada_CO_A1_PartieN_youtube.md`.
 
 ## مثال: إضافة مقطع فيديو
 
