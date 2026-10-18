@@ -1,7 +1,7 @@
 """Generate the 130 TCF voice files from the TTS script.
 
 usage:
-  GEMINI_API_KEY=... python3 scripts/generate_tcf_audio.py gemini [--part=2] [--only=q01,q02] [--force]
+  [GEMINI_API_KEY=...] python3 scripts/generate_tcf_audio.py gemini [--part=2] [--only=q01,q02] [--force]
   python3 scripts/generate_tcf_audio.py edge [--part=2] [--only=intro]         (pip install edge-tts)
 
 Files land in public/tcf/audio/<block_id>.wav, named exactly like the script blocks.
@@ -80,7 +80,10 @@ def gemini(block, styles, key):
     }
     url = f"https://generativelanguage.googleapis.com/v1beta/models/{GEMINI_MODEL}:generateContent"
     for attempt in range(6):
-        req = urllib.request.Request(url, json.dumps(body).encode(), {"Content-Type": "application/json", "x-goog-api-key": key})
+        headers = {"Content-Type": "application/json"}
+        if key:  # otherwise the environment's network secret adds x-goog-api-key
+            headers["x-goog-api-key"] = key
+        req = urllib.request.Request(url, json.dumps(body).encode(), headers)
         try:
             data = json.load(urllib.request.urlopen(req, timeout=180))
             part = data["candidates"][0]["content"]["parts"][0]["inlineData"]
@@ -140,8 +143,6 @@ def main():
         prefixes = only.split(",")
         blocks = [b for b in blocks if any(b["id"].startswith(p) for p in prefixes)]
     key = os.environ.get("GEMINI_API_KEY") or os.environ.get("GOOGLE_API_KEY")
-    if engine == "gemini" and not key:
-        raise SystemExit("GEMINI_API_KEY manquante.")
     os.makedirs(OUT, exist_ok=True)
     for i, b in enumerate(blocks, 1):
         path = os.path.join(OUT, f"{b['id']}.wav")
