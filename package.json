@@ -21,6 +21,7 @@
     "tcf3:thumbnail": "remotion still MiniatureTcfA1Partie3 out/miniature-tcf-a1-partie3.png",
     "dialogues:align": "python3 scripts/parse_dialogues.py && python3 scripts/align_dialogues.py",
     "dialogues:build": "remotion render DialoguesEntretienA1 out/dialogues-entretien-a1.mp4",
+    "dialogues:thumbnail": "remotion still MiniatureDialoguesEntretienA1 out/miniature-dialogues-entretien-a1.png",
     "upgrade": "remotion upgrade",
     "lint": "tsc"
   },

@@ -3,7 +3,7 @@ import React from "react";
 // Flat SVG busts (viewBox 360×460, head centred at 180,150). Animated by the parent:
 // mouth 0–1 (audio level while speaking), blink 0–1, look −1…1 (pupils/face turn), tilt in degrees.
 
-export type Pose = { mouth: number; blink: number; look: number; tilt: number; brow: number; phone?: boolean };
+export type Pose = { mouth: number; blink: number; look: number; tilt: number; brow: number; phone?: boolean; grin?: boolean };
 
 const Eyes: React.FC<{ p: Pose; lashes?: boolean; ink: string }> = ({ p, lashes, ink }) => {
   const open = Math.max(0.08, 1 - p.blink);
@@ -36,6 +36,13 @@ const Eyes: React.FC<{ p: Pose; lashes?: boolean; ink: string }> = ({ p, lashes,
 
 const Mouth: React.FC<{ p: Pose; lip: string; dx: number }> = ({ p, lip, dx }) => {
   const h = 3 + 22 * p.mouth;
+  if (p.grin)
+    return (
+      <g>
+        <path d={`M${156 + dx} 196 Q${180 + dx} 236 ${204 + dx} 196 Z`} fill="#5A1E1E" stroke={lip} strokeWidth={4} strokeLinejoin="round" />
+        <path d={`M${162 + dx} 198 L${198 + dx} 198 L${194 + dx} 206 L${166 + dx} 206 Z`} fill="#fff" />
+      </g>
+    );
   if (p.mouth < 0.06) return <path d={`M${162 + dx} 203 q18 12 36 0`} stroke={lip} strokeWidth={6} fill="none" strokeLinecap="round" />;
   return (
     <g>

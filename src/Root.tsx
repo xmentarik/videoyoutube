@@ -3,6 +3,7 @@ import { HelloWorld } from "./HelloWorld";
 import { FrenchLesson } from "./french/FrenchLesson";
 import { Thumbnail } from "./french/Thumbnail";
 import { DIALOGUES_DURATION_S, DialoguesVideo } from "./dialogues/DialoguesVideo";
+import { DialoguesThumbnail } from "./dialogues/Thumbnail";
 import { TcfThumbnail } from "./tcf/Thumbnail";
 import { TcfVideo, tcfDuration } from "./tcf/TcfVideo";
 import { DURATION_S, FPS } from "./french/theme";
@@ -46,6 +47,7 @@ export const RemotionRoot: React.FC = () => {
       <Still id="MiniatureCours01" component={Thumbnail} width={1280} height={720} />
       <Still id="MiniatureTcfA1Partie1" component={TcfThumbnail} width={1280} height={720} defaultProps={{ part: 1, sample: 1 }} />
       <Still id="MiniatureTcfA1Partie2" component={TcfThumbnail} width={1280} height={720} defaultProps={{ part: 2, sample: 80 }} />
+      <Still id="MiniatureDialoguesEntretienA1" component={DialoguesThumbnail} width={1280} height={720} />
       <Still id="MiniatureTcfA1Partie3" component={TcfThumbnail} width={1280} height={720} defaultProps={{ part: 3, sample: 101 }} />
       {/* فيديو تجريبي: 1920x1080 بمعدل 30 إطاراً في الثانية، مدته 5 ثوانٍ */}
       <Composition
