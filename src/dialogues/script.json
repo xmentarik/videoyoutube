@@ -1,0 +1,995 @@
+{
+ "sections": [
+  {
+   "n": 1,
+   "title": "L'arrivée et la présentation",
+   "from": 1,
+   "to": 10,
+   "theme": "Présentation",
+   "vocab": [
+    "entretien d'embauche",
+    "s'appeler",
+    "épeler",
+    "habiter",
+    "courriel",
+    "permis de travail",
+    "poste"
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Les études et l'expérience",
+   "from": 11,
+   "to": 20,
+   "theme": "Études et expérience",
+   "vocab": [
+    "CV",
+    "diplôme",
+    "expérience",
+    "vente",
+    "qualités",
+    "langues",
+    "ordinateur",
+    "référence"
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Les horaires et les conditions",
+   "from": 21,
+   "to": 30,
+   "theme": "Conditions",
+   "vocab": [
+    "temps plein",
+    "horaires",
+    "pause",
+    "salaire",
+    "disponible",
+    "contrat",
+    "vacances",
+    "uniforme"
+   ]
+  },
+  {
+   "n": 4,
+   "title": "La fin de l'entretien et la réponse",
+   "from": 31,
+   "to": 40,
+   "theme": "Fin et embauche",
+   "vocab": [
+    "formation",
+    "réponse",
+    "bonne nouvelle",
+    "documents",
+    "signer",
+    "équipe"
+   ]
+  }
+ ],
+ "dialogues": [
+  {
+   "n": 1,
+   "title": "À l'accueil",
+   "section": 1,
+   "lines": [
+    {
+     "who": "Paul",
+     "text": "Bonjour, madame. Je peux vous aider ?"
+    },
+    {
+     "who": "Sophie",
+     "text": "Bonjour. J'ai un entretien d'embauche à dix heures."
+    },
+    {
+     "who": "Paul",
+     "text": "Très bien. Quel est votre nom ?"
+    },
+    {
+     "who": "Sophie",
+     "text": "Je m'appelle Sophie Martin."
+    },
+    {
+     "who": "Paul",
+     "text": "Merci. Asseyez-vous, s'il vous plaît."
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Le nom",
+   "section": 1,
+   "lines": [
+    {
+     "who": "Paul",
+     "text": "Bonjour. Vous êtes madame… ?"
+    },
+    {
+     "who": "Sophie",
+     "text": "Martin. Sophie Martin."
+    },
+    {
+     "who": "Paul",
+     "text": "Martin, ça s'écrit comment ?"
+    },
+    {
+     "who": "Sophie",
+     "text": "M, A, R, T, I, N."
+    },
+    {
+     "who": "Paul",
+     "text": "Parfait, merci."
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "L'âge",
+   "section": 1,
+   "lines": [
+    {
+     "who": "Paul",
+     "text": "Quel âge avez-vous, madame Martin ?"
+    },
+    {
+     "who": "Sophie",
+     "text": "J'ai vingt-six ans."
+    },
+    {
+     "who": "Paul",
+     "text": "Et vous êtes née où ?"
+    },
+    {
+     "who": "Sophie",
+     "text": "Je suis née à Casablanca, au Maroc."
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "L'adresse",
+   "section": 1,
+   "lines": [
+    {
+     "who": "Paul",
+     "text": "Vous habitez où ?"
+    },
+    {
+     "who": "Sophie",
+     "text": "J'habite à Montréal, au quinze, rue Sainte-Catherine."
+    },
+    {
+     "who": "Paul",
+     "text": "C'est loin d'ici ?"
+    },
+    {
+     "who": "Sophie",
+     "text": "Non, c'est à vingt minutes en métro."
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Le téléphone",
+   "section": 1,
+   "lines": [
+    {
+     "who": "Paul",
+     "text": "Quel est votre numéro de téléphone ?"
+    },
+    {
+     "who": "Sophie",
+     "text": "C'est le cinq, un, quatre, deux, trois, trois, huit, zéro, six, un."
+    },
+    {
+     "who": "Paul",
+     "text": "Cinq, un, quatre… deux, trois, trois… huit, zéro, six, un. C'est bien ça ?"
+    },
+    {
+     "who": "Sophie",
+     "text": "Oui, c'est ça."
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Le courriel",
+   "section": 1,
+   "lines": [
+    {
+     "who": "Paul",
+     "text": "Vous avez une adresse courriel ?"
+    },
+    {
+     "who": "Sophie",
+     "text": "Oui. C'est sophie point martin arobase gmail point com."
+    },
+    {
+     "who": "Paul",
+     "text": "Merci. Je vous envoie un message demain."
+    },
+    {
+     "who": "Sophie",
+     "text": "D'accord, merci beaucoup."
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "La nationalité",
+   "section": 1,
+   "lines": [
+    {
+     "who": "Paul",
+     "text": "Vous êtes de quelle nationalité ?"
+    },
+    {
+     "who": "Sophie",
+     "text": "Je suis marocaine."
+    },
+    {
+     "who": "Paul",
+     "text": "Vous avez un permis de travail au Canada ?"
+    },
+    {
+     "who": "Sophie",
+     "text": "Oui, j'ai un permis de travail."
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "La famille",
+   "section": 1,
+   "lines": [
+    {
+     "who": "Paul",
+     "text": "Vous êtes mariée ?"
+    },
+    {
+     "who": "Sophie",
+     "text": "Oui, je suis mariée. J'ai un fils."
+    },
+    {
+     "who": "Paul",
+     "text": "Il a quel âge ?"
+    },
+    {
+     "who": "Sophie",
+     "text": "Il a quatre ans. Il va à la garderie."
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Le poste",
+   "section": 1,
+   "lines": [
+    {
+     "who": "Paul",
+     "text": "Vous voulez travailler pour quel poste ?"
+    },
+    {
+     "who": "Sophie",
+     "text": "Je voudrais travailler comme vendeuse."
+    },
+    {
+     "who": "Paul",
+     "text": "Dans notre magasin de vêtements ?"
+    },
+    {
+     "who": "Sophie",
+     "text": "Oui, j'aime beaucoup la mode."
+    }
+   ]
+  },
+  {
+   "n": 10,
+   "title": "Le bureau",
+   "section": 1,
+   "lines": [
+    {
+     "who": "Paul",
+     "text": "Madame Martin ? Le directeur vous attend."
+    },
+    {
+     "who": "Sophie",
+     "text": "Son bureau est où ?"
+    },
+    {
+     "who": "Paul",
+     "text": "Au deuxième étage. Prenez l'ascenseur, à gauche."
+    },
+    {
+     "who": "Sophie",
+     "text": "Merci, monsieur."
+    }
+   ]
+  },
+  {
+   "n": 11,
+   "title": "Le CV",
+   "section": 2,
+   "lines": [
+    {
+     "who": "Paul",
+     "text": "Vous avez votre CV, madame ?"
+    },
+    {
+     "who": "Sophie",
+     "text": "Oui, voilà."
+    },
+    {
+     "who": "Paul",
+     "text": "Merci. Vous avez deux pages. C'est très bien."
+    },
+    {
+     "who": "Sophie",
+     "text": "J'ai aussi une lettre de motivation."
+    }
+   ]
+  },
+  {
+   "n": 12,
+   "title": "Les études",
+   "section": 2,
+   "lines": [
+    {
+     "who": "Paul",
+     "text": "Vous avez fait des études ?"
+    },
+    {
+     "who": "Sophie",
+     "text": "Oui, j'ai un diplôme en commerce."
+    },
+    {
+     "who": "Paul",
+     "text": "Vous avez étudié où ?"
+    },
+    {
+     "who": "Sophie",
+     "text": "À l'université, à Rabat."
+    }
+   ]
+  },
+  {
+   "n": 13,
+   "title": "L'expérience",
+   "section": 2,
+   "lines": [
+    {
+     "who": "Paul",
+     "text": "Vous avez de l'expérience ?"
+    },
+    {
+     "who": "Sophie",
+     "text": "Oui, j'ai trois ans d'expérience."
+    },
+    {
+     "who": "Paul",
+     "text": "Dans quel domaine ?"
+    },
+    {
+     "who": "Sophie",
+     "text": "Dans la vente. Je travaille dans une boutique."
+    }
+   ]
+  },
+  {
+   "n": 14,
+   "title": "Le travail actuel",
+   "section": 2,
+   "lines": [
+    {
+     "who": "Paul",
+     "text": "Vous travaillez maintenant ?"
+    },
+    {
+     "who": "Sophie",
+     "text": "Oui, je travaille dans un café, le week-end."
+    },
+    {
+     "who": "Paul",
+     "text": "Qu'est-ce que vous faites ?"
+    },
+    {
+     "who": "Sophie",
+     "text": "Je sers les clients et je prépare le café."
+    }
+   ]
+  },
+  {
+   "n": 15,
+   "title": "Pourquoi ce travail ?",
+   "section": 2,
+   "lines": [
+    {
+     "who": "Paul",
+     "text": "Pourquoi vous voulez travailler ici ?"
+    },
+    {
+     "who": "Sophie",
+     "text": "J'aime votre entreprise. Et j'aime parler avec les clients."
+    },
+    {
+     "who": "Paul",
+     "text": "C'est important dans ce travail."
+    },
+    {
+     "who": "Sophie",
+     "text": "Oui, je suis très sociable."
+    }
+   ]
+  },
+  {
+   "n": 16,
+   "title": "Les qualités",
+   "section": 2,
+   "lines": [
+    {
+     "who": "Paul",
+     "text": "Quelles sont vos qualités ?"
+    },
+    {
+     "who": "Sophie",
+     "text": "Je suis sérieuse, ponctuelle et souriante."
+    },
+    {
+     "who": "Paul",
+     "text": "Et votre défaut ?"
+    },
+    {
+     "who": "Sophie",
+     "text": "Je parle beaucoup !"
+    }
+   ]
+  },
+  {
+   "n": 17,
+   "title": "Les langues",
+   "section": 2,
+   "lines": [
+    {
+     "who": "Paul",
+     "text": "Vous parlez quelles langues ?"
+    },
+    {
+     "who": "Sophie",
+     "text": "Je parle arabe, français et un peu anglais."
+    },
+    {
+     "who": "Paul",
+     "text": "Et votre anglais, c'est quel niveau ?"
+    },
+    {
+     "who": "Sophie",
+     "text": "C'est un niveau débutant. Je prends des cours le soir."
+    }
+   ]
+  },
+  {
+   "n": 18,
+   "title": "L'ordinateur",
+   "section": 2,
+   "lines": [
+    {
+     "who": "Paul",
+     "text": "Vous utilisez un ordinateur ?"
+    },
+    {
+     "who": "Sophie",
+     "text": "Oui, tous les jours."
+    },
+    {
+     "who": "Paul",
+     "text": "Vous connaissez Word et Excel ?"
+    },
+    {
+     "who": "Sophie",
+     "text": "Oui, je connais Word et Excel."
+    }
+   ]
+  },
+  {
+   "n": 19,
+   "title": "Le permis de conduire",
+   "section": 2,
+   "lines": [
+    {
+     "who": "Paul",
+     "text": "Vous avez un permis de conduire ?"
+    },
+    {
+     "who": "Sophie",
+     "text": "Non, je n'ai pas de permis."
+    },
+    {
+     "who": "Paul",
+     "text": "Ce n'est pas un problème. Le magasin est près du métro."
+    },
+    {
+     "who": "Sophie",
+     "text": "Ah, c'est bien !"
+    }
+   ]
+  },
+  {
+   "n": 20,
+   "title": "Les références",
+   "section": 2,
+   "lines": [
+    {
+     "who": "Paul",
+     "text": "Vous avez une référence ?"
+    },
+    {
+     "who": "Sophie",
+     "text": "Oui, mon ancienne patronne, madame Dubois."
+    },
+    {
+     "who": "Paul",
+     "text": "Vous avez son numéro ?"
+    },
+    {
+     "who": "Sophie",
+     "text": "Oui, il est sur mon CV, en bas de la page."
+    }
+   ]
+  },
+  {
+   "n": 21,
+   "title": "Les heures par semaine",
+   "section": 3,
+   "lines": [
+    {
+     "who": "Paul",
+     "text": "Le poste est à temps plein. Trente-cinq heures par semaine."
+    },
+    {
+     "who": "Sophie",
+     "text": "Du lundi au vendredi ?"
+    },
+    {
+     "who": "Paul",
+     "text": "Non, du mardi au samedi."
+    },
+    {
+     "who": "Sophie",
+     "text": "D'accord, pas de problème."
+    }
+   ]
+  },
+  {
+   "n": 22,
+   "title": "L'heure de début",
+   "section": 3,
+   "lines": [
+    {
+     "who": "Sophie",
+     "text": "Le travail commence à quelle heure ?"
+    },
+    {
+     "who": "Paul",
+     "text": "À neuf heures le matin."
+    },
+    {
+     "who": "Sophie",
+     "text": "Et il finit à quelle heure ?"
+    },
+    {
+     "who": "Paul",
+     "text": "À dix-sept heures."
+    }
+   ]
+  },
+  {
+   "n": 23,
+   "title": "La pause",
+   "section": 3,
+   "lines": [
+    {
+     "who": "Sophie",
+     "text": "Il y a une pause pour le déjeuner ?"
+    },
+    {
+     "who": "Paul",
+     "text": "Oui, une heure. De midi à treize heures."
+    },
+    {
+     "who": "Sophie",
+     "text": "Il y a une cuisine pour les employés ?"
+    },
+    {
+     "who": "Paul",
+     "text": "Oui, avec un micro-ondes et un frigo."
+    }
+   ]
+  },
+  {
+   "n": 24,
+   "title": "Le salaire",
+   "section": 3,
+   "lines": [
+    {
+     "who": "Sophie",
+     "text": "Excusez-moi, quel est le salaire ?"
+    },
+    {
+     "who": "Paul",
+     "text": "C'est dix-huit dollars de l'heure."
+    },
+    {
+     "who": "Sophie",
+     "text": "Et on est payé quand ?"
+    },
+    {
+     "who": "Paul",
+     "text": "Toutes les deux semaines, le jeudi."
+    }
+   ]
+  },
+  {
+   "n": 25,
+   "title": "Le week-end",
+   "section": 3,
+   "lines": [
+    {
+     "who": "Paul",
+     "text": "Vous pouvez travailler le samedi ?"
+    },
+    {
+     "who": "Sophie",
+     "text": "Oui, le samedi, c'est possible."
+    },
+    {
+     "who": "Paul",
+     "text": "Et le dimanche ?"
+    },
+    {
+     "who": "Sophie",
+     "text": "Non, le dimanche, je reste avec mon fils."
+    }
+   ]
+  },
+  {
+   "n": 26,
+   "title": "La date de début",
+   "section": 3,
+   "lines": [
+    {
+     "who": "Paul",
+     "text": "Vous êtes disponible quand ?"
+    },
+    {
+     "who": "Sophie",
+     "text": "Je suis disponible le premier novembre."
+    },
+    {
+     "who": "Paul",
+     "text": "Le premier novembre… C'est un lundi ?"
+    },
+    {
+     "who": "Sophie",
+     "text": "Non, c'est un dimanche. Je commence le lundi deux."
+    }
+   ]
+  },
+  {
+   "n": 27,
+   "title": "Le contrat",
+   "section": 3,
+   "lines": [
+    {
+     "who": "Sophie",
+     "text": "C'est un contrat de combien de temps ?"
+    },
+    {
+     "who": "Paul",
+     "text": "C'est un contrat de six mois. Après, c'est peut-être permanent."
+    },
+    {
+     "who": "Sophie",
+     "text": "D'accord. C'est intéressant."
+    }
+   ]
+  },
+  {
+   "n": 28,
+   "title": "Les vacances",
+   "section": 3,
+   "lines": [
+    {
+     "who": "Sophie",
+     "text": "Il y a combien de semaines de vacances ?"
+    },
+    {
+     "who": "Paul",
+     "text": "Deux semaines par année."
+    },
+    {
+     "who": "Sophie",
+     "text": "Je peux prendre mes vacances en été ?"
+    },
+    {
+     "who": "Paul",
+     "text": "Oui, en juillet ou en août."
+    }
+   ]
+  },
+  {
+   "n": 29,
+   "title": "L'uniforme",
+   "section": 3,
+   "lines": [
+    {
+     "who": "Sophie",
+     "text": "Il y a un uniforme ?"
+    },
+    {
+     "who": "Paul",
+     "text": "Oui, un t-shirt noir avec le logo du magasin."
+    },
+    {
+     "who": "Sophie",
+     "text": "Et le pantalon ?"
+    },
+    {
+     "who": "Paul",
+     "text": "Un pantalon noir. C'est à vous."
+    }
+   ]
+  },
+  {
+   "n": 30,
+   "title": "Le transport",
+   "section": 3,
+   "lines": [
+    {
+     "who": "Paul",
+     "text": "Vous venez comment au travail ?"
+    },
+    {
+     "who": "Sophie",
+     "text": "En autobus et en métro."
+    },
+    {
+     "who": "Paul",
+     "text": "La station de métro est en face du magasin."
+    },
+    {
+     "who": "Sophie",
+     "text": "Ah, c'est très pratique !"
+    }
+   ]
+  },
+  {
+   "n": 31,
+   "title": "Les questions",
+   "section": 4,
+   "lines": [
+    {
+     "who": "Paul",
+     "text": "Vous avez des questions, madame Martin ?"
+    },
+    {
+     "who": "Sophie",
+     "text": "Oui, une question. Il y a combien d'employés ?"
+    },
+    {
+     "who": "Paul",
+     "text": "Il y a douze employés dans le magasin."
+    },
+    {
+     "who": "Sophie",
+     "text": "Merci."
+    }
+   ]
+  },
+  {
+   "n": 32,
+   "title": "La formation",
+   "section": 4,
+   "lines": [
+    {
+     "who": "Sophie",
+     "text": "Il y a une formation au début ?"
+    },
+    {
+     "who": "Paul",
+     "text": "Oui, une formation de trois jours."
+    },
+    {
+     "who": "Sophie",
+     "text": "Avec qui ?"
+    },
+    {
+     "who": "Paul",
+     "text": "Avec Julie, la responsable de l'équipe."
+    }
+   ]
+  },
+  {
+   "n": 33,
+   "title": "La réponse",
+   "section": 4,
+   "lines": [
+    {
+     "who": "Sophie",
+     "text": "Vous donnez la réponse quand ?"
+    },
+    {
+     "who": "Paul",
+     "text": "Vendredi. Je vous téléphone l'après-midi."
+    },
+    {
+     "who": "Sophie",
+     "text": "D'accord. Merci beaucoup, monsieur."
+    },
+    {
+     "who": "Paul",
+     "text": "Merci à vous. Bonne journée !"
+    }
+   ]
+  },
+  {
+   "n": 34,
+   "title": "Au revoir",
+   "section": 4,
+   "lines": [
+    {
+     "who": "Paul",
+     "text": "Merci d'être venue, madame Martin."
+    },
+    {
+     "who": "Sophie",
+     "text": "Merci pour l'entretien."
+    },
+    {
+     "who": "Paul",
+     "text": "La sortie est à droite, après l'escalier."
+    },
+    {
+     "who": "Sophie",
+     "text": "Merci. Au revoir !"
+    }
+   ]
+  },
+  {
+   "n": 35,
+   "title": "Le message vocal",
+   "section": 4,
+   "lines": [
+    {
+     "who": "Paul",
+     "text": "Allô, bonjour. Je voudrais parler à madame Martin."
+    },
+    {
+     "who": "Sophie",
+     "text": "Oui, c'est moi."
+    },
+    {
+     "who": "Paul",
+     "text": "C'est Paul, du magasin Mode Plus. Vous avez une minute ?"
+    },
+    {
+     "who": "Sophie",
+     "text": "Oui, bien sûr !"
+    }
+   ]
+  },
+  {
+   "n": 36,
+   "title": "Bonne nouvelle",
+   "section": 4,
+   "lines": [
+    {
+     "who": "Paul",
+     "text": "J'ai une bonne nouvelle. Vous avez le poste !"
+    },
+    {
+     "who": "Sophie",
+     "text": "C'est vrai ? Oh, merci beaucoup !"
+    },
+    {
+     "who": "Paul",
+     "text": "Vous commencez le lundi deux novembre."
+    },
+    {
+     "who": "Sophie",
+     "text": "Parfait ! Je suis très contente."
+    }
+   ]
+  },
+  {
+   "n": 37,
+   "title": "Les documents",
+   "section": 4,
+   "lines": [
+    {
+     "who": "Paul",
+     "text": "Lundi, apportez vos documents, s'il vous plaît."
+    },
+    {
+     "who": "Sophie",
+     "text": "Quels documents ?"
+    },
+    {
+     "who": "Paul",
+     "text": "Votre passeport, votre permis de travail et votre numéro d'assurance sociale."
+    },
+    {
+     "who": "Sophie",
+     "text": "D'accord, je note."
+    }
+   ]
+  },
+  {
+   "n": 38,
+   "title": "Le premier jour",
+   "section": 4,
+   "lines": [
+    {
+     "who": "Sophie",
+     "text": "Bonjour ! C'est mon premier jour."
+    },
+    {
+     "who": "Paul",
+     "text": "Bienvenue, Sophie ! Vous êtes à l'heure. Bravo !"
+    },
+    {
+     "who": "Sophie",
+     "text": "Merci. Je commence où ?"
+    },
+    {
+     "who": "Paul",
+     "text": "D'abord, au bureau. Vous signez le contrat."
+    }
+   ]
+  },
+  {
+   "n": 39,
+   "title": "Le contrat signé",
+   "section": 4,
+   "lines": [
+    {
+     "who": "Paul",
+     "text": "Voilà le contrat. Signez ici, en bas de la page."
+    },
+    {
+     "who": "Sophie",
+     "text": "J'ai besoin d'un stylo."
+    },
+    {
+     "who": "Paul",
+     "text": "Voilà un stylo bleu."
+    },
+    {
+     "who": "Sophie",
+     "text": "Merci. C'est fait !"
+    }
+   ]
+  },
+  {
+   "n": 40,
+   "title": "L'équipe",
+   "section": 4,
+   "lines": [
+    {
+     "who": "Paul",
+     "text": "Sophie, je vous présente l'équipe. Voici Julie et Karim."
+    },
+    {
+     "who": "Sophie",
+     "text": "Bonjour ! Enchantée."
+    },
+    {
+     "who": "Paul",
+     "text": "Julie travaille à la caisse. Karim travaille dans l'entrepôt."
+    },
+    {
+     "who": "Sophie",
+     "text": "Je suis contente de travailler avec vous !"
+    }
+   ]
+  }
+ ]
+}

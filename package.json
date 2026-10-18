@@ -19,6 +19,8 @@
     "tcf3:audio": "python3 scripts/measure_tcf_audio.py --part=3",
     "tcf3:build": "remotion render TcfA1Partie3 out/tcf-canada-a1-partie3.mp4",
     "tcf3:thumbnail": "remotion still MiniatureTcfA1Partie3 out/miniature-tcf-a1-partie3.png",
+    "dialogues:align": "python3 scripts/parse_dialogues.py && python3 scripts/align_dialogues.py",
+    "dialogues:build": "remotion render DialoguesEntretienA1 out/dialogues-entretien-a1.mp4",
     "upgrade": "remotion upgrade",
     "lint": "tsc"
   },

@@ -45,6 +45,12 @@ npm install
 - قبل وصول الصوت، المدد تُقدَّر من النص، فيمكن معاينة الفيديو (بدون صوت) في Studio.
 - الصورة المصغّرة: `npm run tcf:thumbnail` / `npm run tcf2:thumbnail`. العنوان والوصف والوسوم (SEO) في `scripts/TCF_Canada_CO_A1_PartieN_youtube.md`.
 
+## فيديو «40 dialogues A1 — L'entretien d'embauche» (رسوم متحركة)
+
+- النص: `scripts/dialogues_employe_candidate_A1.md`، والصوت: `public/dialogues/part1.wav` … `part4.wav` (كل ملف = 10 حوارات متتالية من قسم واحد، بول + صوفي).
+- `npm run dialogues:align` ← يحوّل النص إلى `src/dialogues/script.json`، ثم يحدّد توقيت كل جملة في الصوت (`src/dialogues/timing.json`) دون التعرّف على الكلام: تقطيع على فترات الصمت + تمييز صوت الرجل/المرأة بطبقة الصوت (يتطلب `pip install librosa`).
+- `npm run dialogues:build` ← `out/dialogues-entretien-a1.mp4`. الشخصيات والديكور في `src/dialogues/` (`Characters.tsx`، `Scenes.tsx`).
+
 ## مثال: إضافة مقطع فيديو
 
 ```tsx

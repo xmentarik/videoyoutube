@@ -2,6 +2,7 @@ import { Composition, Still } from "remotion";
 import { HelloWorld } from "./HelloWorld";
 import { FrenchLesson } from "./french/FrenchLesson";
 import { Thumbnail } from "./french/Thumbnail";
+import { DIALOGUES_DURATION_S, DialoguesVideo } from "./dialogues/DialoguesVideo";
 import { TcfThumbnail } from "./tcf/Thumbnail";
 import { TcfVideo, tcfDuration } from "./tcf/TcfVideo";
 import { DURATION_S, FPS } from "./french/theme";
@@ -32,6 +33,15 @@ export const RemotionRoot: React.FC = () => {
           defaultProps={{ part }}
         />
       ))}
+      {/* 40 dialogues A1 — entretien d'embauche (Paul + Sophie). Audio : public/dialogues/partN.wav */}
+      <Composition
+        id="DialoguesEntretienA1"
+        component={DialoguesVideo}
+        durationInFrames={Math.round(DIALOGUES_DURATION_S * FPS)}
+        fps={FPS}
+        width={1920}
+        height={1080}
+      />
       {/* الصورة المصغّرة ليوتيوب */}
       <Still id="MiniatureCours01" component={Thumbnail} width={1280} height={720} />
       <Still id="MiniatureTcfA1Partie1" component={TcfThumbnail} width={1280} height={720} defaultProps={{ part: 1, sample: 1 }} />
